@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { AuroraBackground } from "./ui/aurora-background";
-import Image from "next/image";
 
 export function Hero({ children }: { children: React.ReactNode }) {
     return (

@@ -1,34 +1,123 @@
-import Image from "next/image";
 import { Hero } from "@/components/hero";
-import { Envelope, Telephone } from "@mynaui/icons-react";
+import { FormModal } from "@/components/modal";
+import { contactEmail, contactPhone } from "@/consts";
+import {
+  IconMail,
+  IconPhone
+} from "@tabler/icons-react";
+import Image from "next/image";
 export default function Home() {
   return (
-    <main>
-      <Hero ><><div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
-        <Image
-          className="invert dark:invert-0"
-          src="/vavicom-logo-1_white.png"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-      </div>
+    <>
+      <Hero ><>
+        <div className="text-3xl md:text-7xl mt-8 sm:mt-0 font-bold dark:text-white text-center">
+          <Image
+            className="invert"
+            src="/vavicom-logo-1_white.png"
+            alt="Next.js logo"
+            width={180}
+            height={38}
+            priority
+          />
+        </div>
         <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
           Kompleksowa obsługa księgowa
           <p className="text-center flex items-center justify-center gap-1">
-            <Telephone />+48 884 267 820
+            <IconPhone />{contactPhone}
           </p>
           <p className="text-center flex items-center justify-center gap-1">
-            <Envelope />info@vavicom.pl
+            <IconMail />{contactEmail}
           </p>
         </div>
-        <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
-          KONTAKT
-        </button>
+        <FormModal />
       </>
       </Hero>
-    </main>
+      {/* <div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        BBBBBBBBBBBBBB
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        AAAAAAAAAAAAAAA
+      </div><div>
+        CCCCCCCCCCCCCCCC
+      </div>
+      <div>
+        CCCCCCCCCCCCCCCC
+      </div>
+      <div>
+        CCCCCCCCCCCCCCCC
+      </div>
+      <div>
+        CCCCCCCCCCCCCCCC
+      </div>
+      <div>
+        CCCCCCCCCCCCCCCC
+      </div>
+      <div>
+        CCCCCCCCCCCCCCCC
+      </div>
+      <div>
+        CCCCCCCCCCCCCCCC
+      </div>
+      <div>
+        CCCCCCCCCCCCCCCC
+      </div>
+      <div>
+        CCCCCCCCCCCCCCCC
+      </div>
+      <div>
+        CCCCCCCCCCCCCCCC
+      </div>
+      <div>
+        CCCCCCCCCCCCCCCC
+      </div>
+      <div>
+        CCCCCCCCCCCCCCCC
+      </div> */}
+
+      {/* <div className="flex justify-center items-center">
+        <FormModal />
+      </div> */}
+
+    </>
   );
 }
 
