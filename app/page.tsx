@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Hero } from "@/components/hero";
+import { Envelope, Telephone } from "@mynaui/icons-react";
 export default function Home() {
   return (
     <main>
@@ -15,8 +16,12 @@ export default function Home() {
       </div>
         <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
           Kompleksowa obsługa księgowa
-          <p className="text-center">+48 884 267 820</p>
-          <p className="text-center">info@vavicom.pl</p>
+          <p className="text-center flex items-center justify-center gap-1">
+            <Telephone />+48 884 267 820
+          </p>
+          <p className="text-center flex items-center justify-center gap-1">
+            <Envelope />info@vavicom.pl
+          </p>
         </div>
         <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
           KONTAKT
