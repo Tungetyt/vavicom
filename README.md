@@ -1,6 +1,7 @@
 TODO:
  *mdx
  *recaptcha EmailJS
+ *language switching English, Ukraininan
  *sections
     *Products
     *testimonials
@@ -9,6 +10,7 @@ TODO:
     *About us + history + values + team
     *Map + CTA
     *Footer with Polecenia
+
 
     
  
