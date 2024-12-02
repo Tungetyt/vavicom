@@ -21,7 +21,7 @@ export default function Home() {
           />
         </div>
         <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
-          Kompleksowa obsługa księgowa
+          <span className="text-3xl">Kompleksowa obsługa księgowa</span>
           <div className="md:text-2xl text-center">
             <p>Oddziały: Warszawa • Piaseczno</p>
             <p className="flex items-center justify-center gap-1">
