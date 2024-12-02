@@ -6,6 +6,7 @@ import React, { useRef, useState } from "react";
 import { Textarea } from "./ui/textarea";
 import emailjs from '@emailjs/browser';
 import { contactEmail, contactPhone } from "@/consts";
+import { NEXT_PUBLIC_EMAILJS_SERVICE_ID, NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, NEXT_PUBLIC_EMAILJS_PUBLIC_KEY } from "@/env";
 
 const inputNames = {
   user_email: "user_email",
@@ -20,14 +21,6 @@ export default function ContactForm() {
     e.preventDefault();
 
     const form = ref.current;
-    const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
-    const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
-    const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY;
-
-    if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
-      console.error("EmailJS environment variables are not set");
-      return;
-    }
 
     if (!form) {
       console.error("Form not found");
@@ -37,8 +30,8 @@ export default function ContactForm() {
     setSentState("loading");
 
     emailjs
-      .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form, {
-        publicKey: EMAILJS_PUBLIC_KEY,
+      .sendForm(NEXT_PUBLIC_EMAILJS_SERVICE_ID, NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, form, {
+        publicKey: NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
       })
       .then(
         () => {
@@ -64,11 +57,11 @@ export default function ContactForm() {
         <div className="flex flex-col gap-4 space-y-2 md:space-y-0 mb-4">
           <LabelInputContainer>
             <Label htmlFor={inputNames.user_email}>Twój email</Label>
-            <Input disabled={sentState === "loading" || sentState === "success"} autoFocus id={inputNames.user_email} placeholder="email@gmail.com" type="email" required />
+            <Input disabled={sentState === "loading" || sentState === "success"} autoFocus name={inputNames.user_email} id={inputNames.user_email} placeholder="email@gmail.com" type="email" required />
           </LabelInputContainer>
           <LabelInputContainer>
             <Label htmlFor={inputNames.message}>Opisz w czym możemy Ci pomóc</Label>
-            <Textarea disabled={sentState === "loading" || sentState === "success"} className="min-h-32 sm:min-h-28" id={inputNames.message} defaultValue={"Dzień dobry,\nchciałabym/chciałbym się z wami skontaktować.\n"} placeholder="Dzień dobry, chciałabym/chciałbym się z wami skontaktować..." />
+            <Textarea disabled={sentState === "loading" || sentState === "success"} className="min-h-32 sm:min-h-28" name={inputNames.message} id={inputNames.message} defaultValue={"Dzień dobry,\nchciałabym/chciałbym się z wami skontaktować.\n"} placeholder="Dzień dobry, chciałabym/chciałbym się z wami skontaktować..." />
           </LabelInputContainer>
         </div>
 
