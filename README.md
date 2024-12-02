@@ -2,6 +2,7 @@ TODO:
  *mdx
  *recaptcha EmailJS
  *language switching English, Ukraininan
+ *tracking, but not with GA
  *sections
     *Products
     *testimonials
