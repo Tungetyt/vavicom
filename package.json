@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "pnpm biome check --write ."
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -29,6 +30,7 @@
     }
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@total-typescript/ts-reset": "^0.6.1",
     "@types/node": "^20",
     "@types/react": "^18",
