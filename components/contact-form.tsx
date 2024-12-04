@@ -1,16 +1,17 @@
 'use client'
 import {Input} from '@/components/ui/input'
 import {Label} from '@/components/ui/label'
-import {cn} from '@/lib/utils'
-import React, {useRef, useState} from 'react'
-import {Textarea} from './ui/textarea'
-import emailjs from '@emailjs/browser'
 import {contactEmail, contactPhone} from '@/consts'
 import {
+	NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
 	NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-	NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-	NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+	NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
 } from '@/env'
+import {cn} from '@/lib/utils'
+import emailjs from '@emailjs/browser'
+import type React from 'react'
+import {useRef, useState} from 'react'
+import {Textarea} from './ui/textarea'
 
 const inputNames = {
 	user_email: 'user_email',

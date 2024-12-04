@@ -1,8 +1,9 @@
 'use client'
 import {cn} from '@/lib/utils'
 import {AnimatePresence, motion} from 'framer-motion'
-import React, {
-	ReactNode,
+import type React from 'react'
+import {
+	type ReactNode,
 	createContext,
 	useContext,
 	useEffect,
