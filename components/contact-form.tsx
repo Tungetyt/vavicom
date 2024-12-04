@@ -53,7 +53,7 @@ export default function ContactForm() {
 				},
 				error => {
 					setSentState('error')
-					console.log('FAILED...', error.text)
+					console.log('FAILED...', error)
 				}
 			)
 
