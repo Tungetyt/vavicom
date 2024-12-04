@@ -7,7 +7,14 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore":  [".next", "dist", "node_modules", "pnpm-lock.yaml", "yarn.lock", "package-lock.json"]
+		"ignore": [
+			".next",
+			"dist",
+			"node_modules",
+			"pnpm-lock.yaml",
+			"yarn.lock",
+			"package-lock.json"
+		]
 	},
 	"organizeImports": {
 		"enabled": true
