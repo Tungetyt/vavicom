@@ -54,6 +54,7 @@ export const ModalTrigger = ({
 				'px-4 py-2 rounded-md text-black dark:text-white text-center relative overflow-hidden',
 				className
 			)}
+			type='button'
 			onClick={() => setOpen(true)}
 		>
 			{children}
@@ -195,6 +196,7 @@ const CloseIcon = () => {
 	const {setOpen} = useModal()
 	return (
 		<button
+			type='button'
 			onClick={() => setOpen(false)}
 			className='absolute top-4 right-4 group'
 		>
@@ -209,7 +211,9 @@ const CloseIcon = () => {
 				strokeLinecap='round'
 				strokeLinejoin='round'
 				className='text-black dark:text-white h-4 w-4 group-hover:scale-125 group-hover:rotate-3 transition duration-200'
+				role='img'
 			>
+				<title>Close modal</title>
 				<path stroke='none' d='M0 0h24v24H0z' fill='none' />
 				<path d='M18 6l-12 12' />
 				<path d='M6 6l12 12' />

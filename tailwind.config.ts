@@ -1,7 +1,11 @@
 const {
 	default: flattenColorPalette
 } = require('tailwindcss/lib/util/flattenColorPalette')
-import type {Config} from 'tailwindcss'
+import type {
+	Config,
+	PluginAPI,
+	RecursiveKeyValuePair
+} from 'tailwindcss/types/config'
 
 const config = {
 	darkMode: ['class'],
@@ -90,11 +94,11 @@ const config = {
 } satisfies Config
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
-function addVariablesForColors({addBase, theme}: any) {
+function addVariablesForColors({addBase, theme}: PluginAPI) {
 	const allColors = flattenColorPalette(theme('colors'))
 	const newVars = Object.fromEntries(
 		Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-	)
+	) as RecursiveKeyValuePair<string, string>
 
 	addBase({
 		':root': newVars
