@@ -43,3 +43,6 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+#IDE
+/.vscode
