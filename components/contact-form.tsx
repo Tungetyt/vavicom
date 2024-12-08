@@ -10,7 +10,7 @@ import {
 import {cn} from '@/lib/utils'
 import emailjs from '@emailjs/browser'
 import type React from 'react'
-import {useActionState, useEffect, useRef} from 'react'
+import {useActionState, useEffect} from 'react'
 import {useModal} from './ui/animated-modal'
 import {Textarea} from './ui/textarea'
 
@@ -33,31 +33,32 @@ const useModalHistory = () => {
 	}, [open, setOpen])
 }
 
+type State = 'init' | 'sent' | 'failed'
+
 export default function ContactForm() {
 	useModalHistory()
-	const ref = useRef<HTMLFormElement>(null)
 
-	const [state, submit, isPending] = useActionState(async () => {
-		const form = ref.current
-		if (!form) return 'form-not-found'
+	const [state, submit, isPending] = useActionState(
+		async (_state: State, formData: FormData) => {
+			try {
+				const response = await emailjs.send(
+					NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+					NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+					Object.fromEntries(formData.entries()),
+					{
+						publicKey: NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+					}
+				)
 
-		try {
-			const response = await emailjs.sendForm(
-				NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-				NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-				form,
-				{
-					publicKey: NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-				}
-			)
+				if (response.status < 300) return 'sent'
+			} catch (error) {
+				console.error(error)
+			}
 
-			if (response.status < 400) return 'sent'
-		} catch (error) {
-			console.error(error)
-		}
-
-		return 'failure'
-	}, 'init')
+			return 'failed'
+		},
+		'init'
+	)
 
 	return (
 		<div className='max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black'>
@@ -66,7 +67,7 @@ export default function ContactForm() {
 				<span className='whitespace-nowrap'>({contactPhone})</span>
 			</h2>
 
-			<form ref={ref} className='mt-8' action={submit}>
+			<form className='mt-8' action={submit}>
 				<div className='flex flex-col gap-4 space-y-2 md:space-y-0 mb-4'>
 					<LabelInputContainer>
 						<Label htmlFor={inputNames.user_email}>Twój email</Label>
@@ -112,12 +113,11 @@ export default function ContactForm() {
 					</button>
 				)}
 
-				{state === 'failure' ||
-					(state === 'form-not-found' && (
-						<p className='text-destructive'>
-							Nastąpił błąd, wiadomość nie została wysłana. Przepraszamy.
-						</p>
-					))}
+				{state === 'failed' && (
+					<p className='text-destructive'>
+						Nastąpił błąd, wiadomość nie została wysłana. Przepraszamy.
+					</p>
+				)}
 			</form>
 		</div>
 	)
