@@ -10,7 +10,8 @@ import {
 import {cn} from '@/lib/utils'
 import emailjs from '@emailjs/browser'
 import type React from 'react'
-import {useRef, useState} from 'react'
+import {useEffect, useRef, useState} from 'react'
+import {useModal} from './ui/animated-modal'
 import {Textarea} from './ui/textarea'
 
 const inputNames = {
@@ -18,7 +19,26 @@ const inputNames = {
 	message: 'message'
 } as const satisfies Record<string, string>
 
+const useModalHistory = () => {
+	const {open, setOpen} = useModal()
+
+	useEffect(() => {
+		const handlePopState = () => setOpen(false)
+		if (open) {
+			history.pushState({}, '', '#form')
+			window.addEventListener('popstate', handlePopState)
+		} else {
+			history.replaceState({}, '', window.location.pathname)
+		}
+
+		return () => {
+			window.removeEventListener('popstate', handlePopState)
+		}
+	}, [open, setOpen])
+}
+
 export default function ContactForm() {
+	useModalHistory()
 	const ref = useRef<HTMLFormElement>(null)
 	const [sentState, setSentState] = useState<
 		'error' | 'success' | 'loading' | null
