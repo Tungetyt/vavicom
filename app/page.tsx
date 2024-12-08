@@ -18,9 +18,11 @@ export default function Home() {
 							priority
 						/>
 					</div>
-					<div className='font-extralight text-base md:text-4xl dark:text-neutral-200 py-4'>
-						<span className='text-3xl'>Kompleksowa obsługa księgowa</span>
-						<div className='md:text-2xl text-center'>
+					<div className='text-center font-extralight text-base dark:text-neutral-200 py-4'>
+						<div className='text-lg sm:text-2xl md:text-2xl'>
+							Kompleksowa obsługa księgowa
+						</div>
+						<div className='text-base sm:text-lg md:text-xl'>
 							<p>Oddziały: Warszawa • Józefosław</p>
 							<p className='flex items-center justify-center gap-1'>
 								<IconPhone />
