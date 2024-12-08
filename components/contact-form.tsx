@@ -10,7 +10,7 @@ import {
 import {cn} from '@/lib/utils'
 import emailjs from '@emailjs/browser'
 import type React from 'react'
-import {useEffect, useRef, useState} from 'react'
+import {useActionState, useEffect, useRef} from 'react'
 import {useModal} from './ui/animated-modal'
 import {Textarea} from './ui/textarea'
 
@@ -27,37 +27,22 @@ const useModalHistory = () => {
 		if (open) {
 			history.pushState({}, '', '#form')
 			window.addEventListener('popstate', handlePopState)
-		} else {
-			history.replaceState({}, '', window.location.pathname)
-		}
+		} else history.replaceState({}, '', window.location.pathname)
 
-		return () => {
-			window.removeEventListener('popstate', handlePopState)
-		}
+		return () => window.removeEventListener('popstate', handlePopState)
 	}, [open, setOpen])
 }
 
 export default function ContactForm() {
 	useModalHistory()
 	const ref = useRef<HTMLFormElement>(null)
-	const [sentState, setSentState] = useState<
-		'error' | 'success' | 'loading' | null
-	>(null)
 
-	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-		e.preventDefault()
-
+	const [state, submit, isPending] = useActionState(async () => {
 		const form = ref.current
+		if (!form) return 'form-not-found'
 
-		if (!form) {
-			console.error('Form not found')
-			return
-		}
-
-		setSentState('loading')
-
-		emailjs
-			.sendForm(
+		try {
+			const response = await emailjs.sendForm(
 				NEXT_PUBLIC_EMAILJS_SERVICE_ID,
 				NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
 				form,
@@ -65,20 +50,15 @@ export default function ContactForm() {
 					publicKey: NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
 				}
 			)
-			.then(
-				() => {
-					setSentState('success')
 
-					console.log('SUCCESS!')
-				},
-				error => {
-					setSentState('error')
-					console.log('FAILED...', error)
-				}
-			)
+			if (response.status < 400) return 'sent'
+		} catch (error) {
+			console.error(error)
+		}
 
-		console.log('Form submitted')
-	}
+		return 'failure'
+	}, 'init')
+
 	return (
 		<div className='max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black'>
 			<h2 className='font-bold text-xl text-neutral-800 dark:text-neutral-200'>
@@ -86,12 +66,12 @@ export default function ContactForm() {
 				<span className='whitespace-nowrap'>({contactPhone})</span>
 			</h2>
 
-			<form ref={ref} className='mt-8' onSubmit={handleSubmit}>
+			<form ref={ref} className='mt-8' action={submit}>
 				<div className='flex flex-col gap-4 space-y-2 md:space-y-0 mb-4'>
 					<LabelInputContainer>
 						<Label htmlFor={inputNames.user_email}>Twój email</Label>
 						<Input
-							disabled={sentState === 'loading' || sentState === 'success'}
+							disabled={isPending || state === 'sent'}
 							autoFocus
 							name={inputNames.user_email}
 							id={inputNames.user_email}
@@ -105,7 +85,7 @@ export default function ContactForm() {
 							Opisz w czym możemy Ci pomóc
 						</Label>
 						<Textarea
-							disabled={sentState === 'loading' || sentState === 'success'}
+							disabled={isPending || state === 'sent'}
 							className='min-h-32 sm:min-h-28'
 							name={inputNames.message}
 							id={inputNames.message}
@@ -117,7 +97,7 @@ export default function ContactForm() {
 					</LabelInputContainer>
 				</div>
 
-				{sentState === 'success' ? (
+				{state === 'sent' ? (
 					<p className='text-green-700'>
 						Wiadomość została wysłana! Dziękujemy!
 					</p>
@@ -125,18 +105,19 @@ export default function ContactForm() {
 					<button
 						className='bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]'
 						type='submit'
-						disabled={sentState === 'loading'}
+						disabled={isPending}
 					>
-						{sentState === 'loading' ? 'Wysyłanie...' : 'Wyślij'} &rarr;
+						{isPending ? 'Wysyłanie...' : 'Wyślij'} &rarr;
 						<BottomGradient />
 					</button>
 				)}
 
-				{sentState === 'error' && (
-					<p className='text-destructive'>
-						Nastąpił błąd, wiadomość nie została wysłana. Przepraszamy.
-					</p>
-				)}
+				{state === 'failure' ||
+					(state === 'form-not-found' && (
+						<p className='text-destructive'>
+							Nastąpił błąd, wiadomość nie została wysłana. Przepraszamy.
+						</p>
+					))}
 			</form>
 		</div>
 	)
