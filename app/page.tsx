@@ -1,9 +1,51 @@
 import {Hero} from '@/components/hero'
 import {FormModal} from '@/components/modal'
+import ProductCard from '@/components/product-card'
 import {contactEmail, contactPhone} from '@/consts'
-import {IconMail, IconPhone} from '@tabler/icons-react'
+import {images} from '@/lib/images'
+import {
+	IconBook2,
+	IconCoins,
+	IconGavel,
+	IconMail,
+	IconPhone,
+	IconReportAnalytics,
+	IconReportMoney,
+	IconTaxEuro
+} from '@tabler/icons-react'
 import Image from 'next/image'
+
 export default function Home() {
+	const products = [
+		<>
+			<IconBook2 key='IconBook2' size={64} />
+			Księgowość
+		</>,
+		<>
+			<IconCoins key='IconCoins' size={64} />
+			Kadry i płace
+		</>,
+		<>
+			<IconTaxEuro key='IconTaxEuro' size={64}></IconTaxEuro>
+			Rozliczenia
+		</>,
+		<>
+			<IconReportMoney key='IconReportMoney' size={64}></IconReportMoney>
+			Usługi finansowe
+		</>,
+		<>
+			<IconReportAnalytics
+				key='IconReportAnalytics'
+				size={64}
+			></IconReportAnalytics>
+			Usługi biznesowe
+		</>,
+		<>
+			<IconGavel key='IconGavel' size={64}></IconGavel>
+			Usługi pozostałe
+		</>
+	] as const
+
 	return (
 		<>
 			<Hero>
@@ -37,90 +79,13 @@ export default function Home() {
 					<FormModal />
 				</>
 			</Hero>
-			{/* <div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        BBBBBBBBBBBBBB
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        AAAAAAAAAAAAAAA
-      </div><div>
-        CCCCCCCCCCCCCCCC
-      </div>
-      <div>
-        CCCCCCCCCCCCCCCC
-      </div>
-      <div>
-        CCCCCCCCCCCCCCCC
-      </div>
-      <div>
-        CCCCCCCCCCCCCCCC
-      </div>
-      <div>
-        CCCCCCCCCCCCCCCC
-      </div>
-      <div>
-        CCCCCCCCCCCCCCCC
-      </div>
-      <div>
-        CCCCCCCCCCCCCCCC
-      </div>
-      <div>
-        CCCCCCCCCCCCCCCC
-      </div>
-      <div>
-        CCCCCCCCCCCCCCCC
-      </div>
-      <div>
-        CCCCCCCCCCCCCCCC
-      </div>
-      <div>
-        CCCCCCCCCCCCCCCC
-      </div>
-      <div>
-        CCCCCCCCCCCCCCCC
-      </div> */}
-
-			{/* <div className="flex justify-center items-center">
-        <FormModal />
-      </div> */}
+			<div className='text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:max-w-md md:max-w-2xl justify-items-center mx-auto [&>*]:[width:clamp(4rem,90%,16rem)] '>
+				{images.slice(0, products.length).map((image, index) => (
+					<ProductCard key={image} imageURL={image}>
+						{products[index]}
+					</ProductCard>
+				))}
+			</div>
 		</>
 	)
 }
