@@ -1,1 +1,2 @@
-./git-hook.sh
+pnpm lint-staged
+tsc --noEmit

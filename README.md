@@ -1,6 +1,6 @@
 TODO:
  *mdx
- *recaptcha EmailJS
+ *recaptcha (bad idea)
  *language switching English, Ukraininan
  *tracking, but not with GA
  *sections
@@ -14,5 +14,6 @@ TODO:
     *blog
 
 
-    
- 
+
+Products
+    * 

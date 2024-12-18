@@ -11,7 +11,7 @@
 		"prepare": "husky"
 	},
 	"lint-staged": {
-		"*.{js,jsx,ts,tsx,css,json,md}": "pnpm biome check --write"
+		"*.{js,jsx,ts,tsx,css,json,md}": "pnpm biome check --files-ignore-unknown true --write ."
 	},
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
