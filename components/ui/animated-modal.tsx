@@ -94,14 +94,8 @@ export const ModalBody = ({
 						opacity: 1,
 						backdropFilter: 'blur(10px)'
 					}}
-					exit={{
-						opacity: 0,
-						backdropFilter: 'blur(0px)'
-					}}
 					className='fixed [perspective:800px] [transform-style:preserve-3d] inset-0 h-full w-full  flex sm:items-center justify-center z-50'
 				>
-					<Overlay />
-
 					<motion.div
 						ref={modalRef}
 						className={cn(
@@ -119,11 +113,6 @@ export const ModalBody = ({
 							scale: 1,
 							rotateX: 0,
 							y: 0
-						}}
-						exit={{
-							opacity: 0,
-							scale: 0.8,
-							rotateX: 10
 						}}
 						transition={{
 							type: 'spring',
