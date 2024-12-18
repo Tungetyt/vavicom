@@ -26,22 +26,19 @@ export default function Home() {
 			Kadry i płace
 		</>,
 		<>
-			<IconTaxEuro key='IconTaxEuro' size={64}></IconTaxEuro>
+			<IconTaxEuro key='IconTaxEuro' size={64} />
 			Rozliczenia
 		</>,
 		<>
-			<IconReportMoney key='IconReportMoney' size={64}></IconReportMoney>
+			<IconReportMoney key='IconReportMoney' size={64} />
 			Usługi finansowe
 		</>,
 		<>
-			<IconReportAnalytics
-				key='IconReportAnalytics'
-				size={64}
-			></IconReportAnalytics>
+			<IconReportAnalytics key='IconReportAnalytics' size={64} />
 			Usługi biznesowe
 		</>,
 		<>
-			<IconGavel key='IconGavel' size={64}></IconGavel>
+			<IconGavel key='IconGavel' size={64} />
 			Usługi pozostałe
 		</>
 	] as const

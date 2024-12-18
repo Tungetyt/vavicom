@@ -1,5 +1,4 @@
 'use client'
-import {cn} from '@/lib/utils'
 import type {FC, ReactNode} from 'react'
 
 const ProductCard: FC<{imageURL: string; children: ReactNode}> = ({
@@ -18,7 +17,7 @@ const ProductCard: FC<{imageURL: string; children: ReactNode}> = ({
 					className='absolute w-full h-full top-0 left-0 transition duration-300
                      bg-white/100 backdrop-blur-md opacity-70
                      group-hover/card:bg-white/100 group-hover/card:opacity-45'
-				></div>
+				/>
 				<div className='text content relative z-10'>
 					<p className='font-normal text-3xl text-gray-950 my-4 flex flex-col items-center'>
 						{children}
