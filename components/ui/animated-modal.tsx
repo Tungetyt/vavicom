@@ -210,7 +210,7 @@ const CloseIcon = () => {
 				strokeWidth='2'
 				strokeLinecap='round'
 				strokeLinejoin='round'
-				className='text-black dark:text-white h-4 w-4 group-hover:scale-125 group-hover:rotate-3 transition duration-200'
+				className='text-black dark:text-white h-12 w-12 group-hover:scale-125 group-hover:rotate-3 transition duration-200'
 				role='img'
 			>
 				<title>Close modal</title>
