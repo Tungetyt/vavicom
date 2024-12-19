@@ -6,7 +6,7 @@ const ProductCard: FC<{imageURL: string; children: ReactNode}> = ({
 	children
 }) => {
 	return (
-		<div className='w-full group/card aspect-square'>
+		<div className=' group/card aspect-square w-[clamp(4rem,90%,16rem)]'>
 			<div
 				style={{backgroundImage: `url('${imageURL}')`}}
 				className={

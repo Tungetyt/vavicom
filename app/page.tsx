@@ -78,7 +78,7 @@ const Home = () => (
 				<FormModal />
 			</>
 		</Hero>
-		<div className='text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:max-w-md md:max-w-2xl justify-items-center mx-auto [&>*]:[width:clamp(4rem,90%,16rem)] '>
+		<div className='text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:max-w-md md:max-w-2xl justify-items-center mx-auto '>
 			{images.slice(0, products.length).map((image, index) => (
 				<ProductCard key={image} imageURL={image}>
 					{products[index]}
