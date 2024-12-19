@@ -8,19 +8,23 @@ import {
 import {images} from '@/lib/images'
 import {motion} from 'framer-motion'
 import Image from 'next/image'
-import ContactForm from './contact-form'
+import type {ReactNode} from 'react'
 
-export function FormModal() {
+export function ModalWithImages({
+	children,
+	trigger,
+	triggerClassName
+}: {
+	children: ReactNode
+	trigger: ReactNode
+	triggerClassName?: string
+}) {
 	return (
 		<Modal>
-			<ModalTrigger className='mb-32 sm:mb-0 bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 sm:px-8 py-2 sm:py-4 hover:bg-black/[0.8] hover:shadow-lg'>
-				<span className='group-hover/modal-btn:translate-x-40 text-center transition duration-500'>
-					KONTAKT
-				</span>
-			</ModalTrigger>
+			<ModalTrigger className={triggerClassName ?? ''}>{trigger}</ModalTrigger>
 			<ModalBody>
 				<ModalContent>
-					<ContactForm />
+					{children}
 					<div className='flex justify-center items-center mt-8'>
 						{images.map(image => (
 							<motion.div

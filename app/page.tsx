@@ -1,5 +1,6 @@
+import ContactForm from '@/components/contact-form'
 import {Hero} from '@/components/hero'
-import {FormModal} from '@/components/modal'
+import {ModalWithImages} from '@/components/modal'
 import ProductCard from '@/components/product-card'
 import {contactEmail, contactPhone} from '@/consts'
 import {images} from '@/lib/images'
@@ -75,14 +76,29 @@ const Home = () => (
 						</p>
 					</div>
 				</div>
-				<FormModal />
+				<ModalWithImages
+					trigger={
+						<span className='group-hover/modal-btn:translate-x-40 text-center transition duration-500'>
+							KONTAKT
+						</span>
+					}
+					triggerClassName='mb-32 sm:mb-0 bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 sm:px-8 py-2 sm:py-4 hover:bg-black/[0.8] hover:shadow-lg'
+				>
+					<ContactForm />
+				</ModalWithImages>
 			</>
 		</Hero>
 		<div className='text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:max-w-md md:max-w-2xl justify-items-center mx-auto '>
 			{images.slice(0, products.length).map((image, index) => (
-				<ProductCard key={image} imageURL={image}>
-					{products[index]}
-				</ProductCard>
+				<ModalWithImages
+					key={image}
+					trigger={
+						<ProductCard imageURL={image}>{products[index]}</ProductCard>
+					}
+					triggerClassName='w-[clamp(4rem,90%,16rem)]'
+				>
+					LOREM IPSUM
+				</ModalWithImages>
 			))}
 		</div>
 	</>
