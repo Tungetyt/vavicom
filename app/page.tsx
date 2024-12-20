@@ -186,16 +186,14 @@ const Home = () => (
 	<>
 		<Hero>
 			<>
-				<div className='text-3xl md:text-7xl mt-32 sm:mt-0 font-bold dark:text-white text-center'>
-					<Image
-						className='invert'
-						src='/vavicom-logo-1_white.png'
-						alt='Next.js logo'
-						width={180}
-						height={38}
-						priority
-					/>
-				</div>
+				<Image
+					className='invert mt-32 sm:mt-0'
+					src='/vavicom-logo-1_white.png'
+					alt='Next.js logo'
+					width={180}
+					height={38}
+					priority
+				/>
 				<div className='text-center font-extralight text-base dark:text-neutral-200 py-4'>
 					<div className='text-lg sm:text-2xl md:text-2xl'>
 						Kompleksowa obsługa księgowa
