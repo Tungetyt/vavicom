@@ -21,7 +21,7 @@ const ProductCard: FC<{imageURL: string; children: ReactNode}> = ({
                      group-hover/card:bg-white/100 group-hover/card:opacity-45'
 					/>
 					<div className='text content relative z-10'>
-						<p className='font-normal text-3xl text-gray-950 my-4 flex flex-col items-center'>
+						<p className='font-normal text-xl text-gray-950 my-4 flex flex-col items-center'>
 							{children}
 						</p>
 					</div>
