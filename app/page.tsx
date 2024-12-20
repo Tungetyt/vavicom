@@ -22,7 +22,7 @@ const size = 64
 const productsContent = [
 	{
 		icon: <IconBook2 key='IconBook2' size={size} />,
-		header: 'Księgowość',
+		title: 'Księgowość',
 		content: [
 			'Skomplikowane i dynamiczne zmiany prawa gospodarczego, w tym sprawozdawczości finansowej i podatkowej wymagają nieustannego śledzenia i prawidłowego interpretowania przepisów prawa.',
 			'Zlecając bieżące prowadzenie ksiąg rachunkowych i sporządzanie sprawozdań finansowych, możesz przestać koncentrować się na śledzeniu zmian w przepisach i skupić się na codziennym prowadzeniu biznesu.',
@@ -53,7 +53,7 @@ const productsContent = [
 	},
 	{
 		icon: <IconCoins key='IconCoins' size={size} />,
-		header: 'Kadry i płace',
+		title: 'Kadry i płace',
 		content: [
 			'Zapewniamy kompleksową obsługę w zakresie naliczania płac zgodnie z obowiązującymi przepisami prawa pracy, ubezpieczeń społecznych oraz podatku dochodowego od osób fizycznych.',
 			'Dbamy również o prawidłowe, zgodne z kodeksem pracy, administrowanie teczkami personalnymi i całą dokumentacją dotyczącą stosunku pracy i urlopów. Przygotowujemy deklaracje rozliczeniowe do ZUS, PFRON oraz urzędu skarbowego. Współpracujemy z tymi instytucjami w zakresie przygotowanej dokumentacji w przypadku jakichkolwiek pytań.',
@@ -84,7 +84,7 @@ const productsContent = [
 	},
 	{
 		icon: <IconTaxEuro key='IconTaxEuro' size={size} />,
-		header: 'Rozliczenia księgowo-podatkowe',
+		title: 'Rozliczenia księgowo-podatkowe',
 		content: [
 			'Polski system podatkowy w większości przypadków nakłada cykliczny obowiązek płacenia podatków.',
 			'Wymaga to systematycznego kalkulowania zobowiązań podatkowych oraz sporządzania dla organów skarbowych wielu informacji i zeznań podatkowych o różnych terminach wymagalności. Biuro Rachunkowe VAVICOM oferuje usługi sporządzania wymaganych deklaracji podatkowych, jak również wsparcie w kontaktach z organami podatkowymi, obejmujące m.in. obsługę kontroli podatkowych.',
@@ -110,7 +110,7 @@ const productsContent = [
 	},
 	{
 		icon: <IconReportMoney key='IconReportMoney' size={size} />,
-		header: 'Usługi finansowe',
+		title: 'Usługi finansowe',
 		content: [
 			'Zarządzanie finansami przedsiębiorstwa to nieoderwalna część codziennych zadań właścicieli oraz osób zarządzających.',
 			'Biuro Rachunkowe VAVICOM posiada zespół specjalistów z wieloletnim doświadczeniem w zakresie zarządzania finansami, doradztwa strategicznego oraz optymalizacji procesów gospodarczych i kosztów. W ramach wdrożenia nasi specjaliści zaprojektują system raportowania indywidualnie dobrany do potrzeb każdego Klienta.',
@@ -132,7 +132,7 @@ const productsContent = [
 	},
 	{
 		icon: <IconReportAnalytics key='IconReportAnalytics' size={size} />,
-		header: 'Usługi biznesowe',
+		title: 'Usługi biznesowe',
 		content: [
 			'Każdy zarządzający biznesem potrzebuje eksperckiej wiedzy w zakresie dynamicznie zmieniających się przepisów prawa i właściwym na nie reagowaniem.',
 			'',
@@ -155,7 +155,7 @@ const productsContent = [
 	},
 	{
 		icon: <IconGavel key='IconGavel' size={size} />,
-		header: 'Usługi pozostałe',
+		title: 'Usługi pozostałe',
 		content: [
 			'Digitalizacja jest usługą wdrożenia najnowocześniejszych rozwiązań technologicznych i informatycznych, które gwarantują utrzymanie najwyższej jakości obsługi kontrahentów, przy jednoczesnym optymalnym wykorzystaniu posiadanych zasobów. Często związana jest z przemodelowaniem dotychczasowego planu biznesowego i sposobu działania, przynosi poprawę komunikacji wewnętrznej i zewnętrznej oraz znacznie przyspiesza dostęp do informacji, pozwalającej na dokładniejsze i skuteczniejsze kontrolowanie procesów.',
 			'Potrzebujesz przeprowadzić zmianę zarządu lub zmienili się wspólnicy? Chcesz dokonać zmiany roku obrotowego, obniżyć kapitał zakładowy albo przeciwnie Twoja spółka potrzebuje dokapitalizowania? Nie musisz szukać wyspecjalizowanych kancelarii prawnych.',
@@ -178,7 +178,7 @@ const productsContent = [
 	}
 ] as const satisfies Array<{
 	icon: ReactNode
-	header: string
+	title: string
 	content: Array<string | '' | Array<string>>
 }>
 
@@ -235,19 +235,19 @@ const Home = () => (
 		</Hero>
 		<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:max-w-md md:max-w-2xl justify-items-center mx-auto mb-32'>
 			{images.slice(0, productsContent.length).map((image, index) => {
-				const {icon, content, header} = productsContent[index]
+				const {icon, content, title} = productsContent[index]
 				return (
 					<ModalWithImages
 						key={image}
 						trigger={
 							<ProductCard imageURL={image}>
 								{icon}
-								{header}
+								{title}
 							</ProductCard>
 						}
 						triggerClassName='w-[clamp(4rem,90%,16rem)]'
 					>
-						<p className='text-3xl mb-4'>{header}</p>
+						<p className='text-3xl mb-4'>{title}</p>
 						{content.map(c => {
 							if (typeof c === 'string')
 								return (
