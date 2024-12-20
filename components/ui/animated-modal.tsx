@@ -121,6 +121,20 @@ export const ModalBody = ({
 	)
 }
 
+const useModalHistory = () => {
+	const {open, setOpen} = useModal()
+
+	useEffect(() => {
+		const handlePopState = () => setOpen(false)
+		if (open) {
+			history.pushState({}, '', '#card')
+			window.addEventListener('popstate', handlePopState)
+		} else history.replaceState({}, '', window.location.pathname)
+
+		return () => window.removeEventListener('popstate', handlePopState)
+	}, [open, setOpen])
+}
+
 export const ModalContent = ({
 	children,
 	className
@@ -128,6 +142,8 @@ export const ModalContent = ({
 	children: ReactNode
 	className?: string
 }) => {
+	useModalHistory()
+
 	return (
 		<div className={cn('flex flex-col flex-1 p-8 md:p-10', className)}>
 			{children}

@@ -272,7 +272,7 @@ const Home = () => (
 				)
 			})}
 		</div>
-		<footer className='bg-slate-950  flex justify-center gap-48 py-8 text-white'>
+		<footer className='bg-slate-950 flex flex-wrap justify-center gap-48 py-8 text-white'>
 			<div>MAP</div>
 			<div>
 				<ContactInfo />

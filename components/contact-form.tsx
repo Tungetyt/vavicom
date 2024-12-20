@@ -11,8 +11,7 @@ import {cn} from '@/lib/utils'
 import emailjs from '@emailjs/browser'
 import {IconMail} from '@tabler/icons-react'
 import type React from 'react'
-import {useActionState, useEffect} from 'react'
-import {useModal} from './ui/animated-modal'
+import {useActionState} from 'react'
 import {Textarea} from './ui/textarea'
 
 const inputNames = {
@@ -20,25 +19,9 @@ const inputNames = {
 	message: 'message'
 } as const satisfies Record<string, string>
 
-const useModalHistory = () => {
-	const {open, setOpen} = useModal()
-
-	useEffect(() => {
-		const handlePopState = () => setOpen(false)
-		if (open) {
-			history.pushState({}, '', '#form')
-			window.addEventListener('popstate', handlePopState)
-		} else history.replaceState({}, '', window.location.pathname)
-
-		return () => window.removeEventListener('popstate', handlePopState)
-	}, [open, setOpen])
-}
-
 type State = 'init' | 'sent' | 'failed'
 
 export default function ContactForm() {
-	useModalHistory()
-
 	const [state, submit, isPending] = useActionState(
 		async (_state: State, formData: FormData) => {
 			try {
