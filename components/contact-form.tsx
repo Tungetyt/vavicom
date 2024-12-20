@@ -1,7 +1,7 @@
 'use client'
 import {Input} from '@/components/ui/input'
 import {Label} from '@/components/ui/label'
-import {contactEmail, contactPhone} from '@/consts'
+import {contactEmail} from '@/consts'
 import {
 	NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
 	NEXT_PUBLIC_EMAILJS_SERVICE_ID,
@@ -9,6 +9,7 @@ import {
 } from '@/env'
 import {cn} from '@/lib/utils'
 import emailjs from '@emailjs/browser'
+import {IconMail} from '@tabler/icons-react'
 import type React from 'react'
 import {useActionState, useEffect} from 'react'
 import {useModal} from './ui/animated-modal'
@@ -61,12 +62,14 @@ export default function ContactForm() {
 	)
 
 	return (
-		<div className='max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black'>
-			<h2 className='font-bold text-xl text-neutral-800 dark:text-neutral-200'>
-				Formularz kontaktowy do {contactEmail}{' '}
-				<span className='whitespace-nowrap'>({contactPhone})</span>
+		<div className='max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black text-black'>
+			<h2 className='font-bold text-xl text-neutral-800'>
+				Formularz kontaktowy
 			</h2>
-
+			<p className='flex items-center gap-1.5'>
+				<IconMail />
+				{contactEmail}
+			</p>
 			<form className='mt-8' action={submit}>
 				<div className='flex flex-col gap-4 space-y-2 md:space-y-0 mb-4'>
 					<LabelInputContainer>
