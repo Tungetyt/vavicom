@@ -13,7 +13,9 @@ TODO:
     *Footer with Polecenia
     *blog
 
-
+Tabs
+WorldMap
+Timeline
 
 Products
     * 
