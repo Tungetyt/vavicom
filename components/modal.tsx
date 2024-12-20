@@ -5,7 +5,7 @@ import {
 	ModalContent,
 	ModalTrigger
 } from '@/components/ui/animated-modal'
-import {images} from '@/lib/images'
+import {images, shuffle} from '@/lib/images'
 import {motion} from 'framer-motion'
 import Image from 'next/image'
 import type {ReactNode} from 'react'
@@ -26,7 +26,7 @@ export function ModalWithImages({
 				<ModalContent>
 					{children}
 					<div className='flex justify-center items-center mt-8'>
-						{images.map(image => (
+						{shuffle([...images]).map(image => (
 							<motion.div
 								key={image}
 								style={{

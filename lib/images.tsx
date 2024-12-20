@@ -9,7 +9,7 @@ export const images = [
 	'/17768666122035772285.jpg'
 ] as const satisfies Array<`/${number}.jpg`>
 
-function shuffle(array: Array<string>) {
+export function shuffle(array: Array<string>) {
 	let currentIndex = array.length
 
 	// While there remain elements to shuffle...
@@ -24,6 +24,8 @@ function shuffle(array: Array<string>) {
 			array[currentIndex]
 		]
 	}
+
+	return array
 }
 
 shuffle(images)
