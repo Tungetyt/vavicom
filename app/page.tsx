@@ -2,6 +2,7 @@ import ContactForm from '@/components/contact-form'
 import {Hero} from '@/components/hero'
 import {ModalWithImages} from '@/components/modal'
 import ProductCard from '@/components/product-card'
+import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs'
 import {contactEmail, contactPhone} from '@/consts'
 import {images} from '@/lib/images'
 import {
@@ -208,6 +209,33 @@ const ContactInfo = () => (
 	</div>
 )
 
+const tabs = [
+	{
+		value: 'about',
+		label: 'O nas',
+		content: <>O NAS</>
+	},
+	{
+		value: 'faq',
+		label: 'FAQ',
+		content: <>FAQ</>
+	},
+	{
+		value: 'career',
+		label: 'Kariera',
+		content: <>Kariera</>
+	},
+	{
+		value: 'news',
+		label: 'Aktualności',
+		content: <>Aktualności</>
+	}
+] as const satisfies Array<{
+	value: Lowercase<string>
+	label: Capitalize<string>
+	content: ReactNode
+}>
+
 const Home = () => (
 	<>
 		<Hero>
@@ -272,6 +300,23 @@ const Home = () => (
 				)
 			})}
 		</div>
+		<Tabs
+			defaultValue={tabs[0].value}
+			className='flex flex-col items-center mb-32 px-4 overflow-x-hidden'
+		>
+			<TabsList>
+				{tabs.map(({label, value}) => (
+					<TabsTrigger key={value} value={value}>
+						{label}
+					</TabsTrigger>
+				))}
+			</TabsList>
+			{tabs.map(({content, value}) => (
+				<TabsContent key={value} value={value}>
+					{content}
+				</TabsContent>
+			))}
+		</Tabs>
 		<footer className='bg-slate-950 flex flex-wrap justify-center gap-48 py-8 text-white'>
 			<div>MAP</div>
 			<div>
