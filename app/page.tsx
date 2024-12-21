@@ -178,8 +178,8 @@ const productsContent = [
 	}
 ] as const satisfies Array<{
 	icon: ReactNode
-	title: string
-	content: Array<string | '' | Array<string>>
+	title: Capitalize<string>
+	content: Array<Capitalize<string> | '' | Array<string>>
 }>
 
 const ContactFormModal = () => (
