@@ -213,7 +213,28 @@ const tabs = [
 	{
 		value: 'about',
 		label: 'O nas',
-		content: <>O NAS</>
+		content: (
+			<>
+				<p>
+					Vavicom to nowoczesne, licencjonowane biuro rachunkowe z wieloletnim
+					doświadczeniem, działające w Warszawie (Mokotów, Ursynów) i w całej
+					Polsce. Pomagamy firmom w kompleksowej obsłudze finansowo-księgowej:
+					prowadzimy księgi, rozliczenia podatkowe, listy płac oraz
+					administrację kadrowo-płacową. Nasz zespół specjalistów dba o każdy
+					etap współpracy, wykorzystując sprawdzone procesy i innowacyjne
+					technologie – dzięki temu zapewniamy stały, 24/7 dostęp online do
+					dokumentacji księgowej.
+				</p>
+				<p>
+					Wspieramy zarówno nowych przedsiębiorców, jak i doświadczone podmioty
+					o różnych profilach działalności. Zapewniamy indywidualne podejście,
+					elastyczną ofertę cenową oraz pełne wsparcie w zakresie doradztwa
+					finansowego i podatkowego. Powierzając nam księgowość, zyskujesz
+					profesjonalną opiekę i więcej czasu na rozwijanie swojego biznesu.
+					Skontaktuj się z nami i sprawdź, co możemy zrobić dla Twojej firmy!
+				</p>
+			</>
+		)
 	},
 	{
 		value: 'faq',
