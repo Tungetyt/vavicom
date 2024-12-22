@@ -26,6 +26,14 @@ import type {ReactNode} from 'react'
 
 const size = 64
 
+const addresses = {
+	jozefoslaw: 'Józefosław, ul. Ogrodowa 6/u6, 05-500',
+	warsaw: 'Warszawa, ul. Kłobucka 23C/u115, 02-699'
+} as const satisfies Record<
+	Lowercase<string>,
+	`${Capitalize<string>}, ul. ${Capitalize<string>} ${number}${Uppercase<string>}/u${number}, ${number}-${number}`
+>
+
 const productsContent = [
 	{
 		icon: <IconBook2 key='IconBook2' size={size} />,
@@ -286,8 +294,8 @@ const tabs = [
 		value: 'about',
 		label: 'O nas',
 		content: (
-			<>
-				<p>
+			<div className='bg-white p-6 rounded shadow mb-1'>
+				<p className='mb-6'>
 					Vavicom to nowoczesne, licencjonowane biuro rachunkowe z wieloletnim
 					doświadczeniem, działające w Warszawie (Mokotów, Ursynów) i w całej
 					Polsce. Pomagamy firmom w kompleksowej obsłudze finansowo-księgowej:
@@ -305,14 +313,18 @@ const tabs = [
 					profesjonalną opiekę i więcej czasu na rozwijanie swojego biznesu.
 					Skontaktuj się z nami i sprawdź, co możemy zrobić dla Twojej firmy!
 				</p>
-			</>
+			</div>
 		)
 	},
 	{
 		value: 'faq',
 		label: 'FAQ',
 		content: (
-			<Accordion type='single' collapsible>
+			<Accordion
+				type='single'
+				collapsible
+				className='bg-white pt-2 px-6 rounded shadow  mb-1'
+			>
 				{faqs.map(({q, a}) => (
 					<AccordionItem key={q} value={q}>
 						<AccordionTrigger className='text-left'>{q}</AccordionTrigger>
@@ -325,13 +337,138 @@ const tabs = [
 	{
 		value: 'career',
 		label: 'Kariera',
-		content: <>Kariera</>
-	},
-	{
-		value: 'news',
-		label: 'Aktualności',
-		content: <>Aktualności</>
+		content: (
+			<div className='bg-white p-6 rounded shadow  mb-1'>
+				{/* Sekcja: Adresy biur */}
+				<div>
+					<p className='text-lg font-semibold text-gray-800'>
+						Praca hybrydowa, biura:
+					</p>
+					<ul className='list-disc pl-6 space-y-1 my-2'>
+						{Object.values(addresses).map(address => (
+							<li className='text-gray-700' key={address}>
+								{address}
+							</li>
+						))}
+					</ul>
+				</div>
+
+				{/* Sekcja: Stanowiska */}
+				<div className='mb-4'>
+					<p className='text-gray-800'>
+						W związku z dynamicznym rozwojem poszukujemy nowych osób do naszego
+						zespołu:
+					</p>
+					<ul className='list-disc pl-6 space-y-1 mt-2'>
+						<li className='text-gray-700'>Księgowa / Księgowy</li>
+						<li className='text-gray-700'>Specjalista ds. Kadr i Płac</li>
+						<li className='text-gray-700'>
+							Przedstawiciel handlowy / Account Manager
+						</li>
+						<li className='text-gray-700'>
+							Student (płatny staż w dziale Księgowości)
+						</li>
+					</ul>
+				</div>
+
+				{/* Sekcja: Jak aplikować */}
+				<div className='mb-4'>
+					<h2 className='text-lg font-semibold text-gray-800'>
+						Jak aplikować?
+					</h2>
+					<p className='mt-2 text-gray-700'>
+						{`Prześlij swoje aktualne CV na adres ${contactEmail}. Prosimy także o dołączenie klauzuli o zgodzie na przetwarzanie danych osobowych na potrzeby rekrutacji.`}
+					</p>
+					<p className='mt-2 text-gray-700'>
+						Dołącz do nas i rozwijaj się w innowacyjnym biurze rachunkowym!
+					</p>
+				</div>
+
+				{/* Sekcja: Program stażowy */}
+				<div className='mb-4'>
+					<h2 className='text-lg font-semibold text-gray-800'>
+						Program stażowy
+					</h2>
+					<p className='mt-2 text-gray-700'>
+						Z myślą o studentach ostatnich lat studiów ponownie uruchomiliśmy
+						płatne staże, które umożliwiają:
+					</p>
+					<ul className='list-disc pl-6 space-y-1 mt-2'>
+						<li className='text-gray-700'>
+							Praktyczną naukę zawodu księgowego pod okiem doświadczonych
+							ekspertów.
+						</li>
+						<li className='text-gray-700'>
+							Poznanie specyfiki obsługi różnych podmiotów gospodarczych.
+						</li>
+						<li className='text-gray-700'>
+							Pracę w przyjaznej atmosferze i naukę systemu Comarch ERP Optima.
+						</li>
+						<li className='text-gray-700'>
+							Zapoznanie się z nowoczesnymi rozwiązaniami i procesem obiegu
+							dokumentów w biurze rachunkowym.
+						</li>
+					</ul>
+				</div>
+
+				{/* Sekcja: Wymagania */}
+				<div className='mb-4'>
+					<h2 className='text-lg font-semibold text-gray-800'>
+						Aplikuj, jeśli:
+					</h2>
+					<ul className='list-disc pl-6 space-y-1 mt-2'>
+						<li className='text-gray-700'>
+							Studiujesz księgowość, ekonomię, finanse lub kierunki pokrewne.
+						</li>
+						<li className='text-gray-700'>
+							Lubisz pracę z liczbami, a w MS Office (zwłaszcza Excel i Word)
+							czujesz się pewnie.
+						</li>
+						<li className='text-gray-700'>
+							Masz umiejętności analityczne, cenisz pracę zespołową i potrafisz
+							też działać samodzielnie.
+						</li>
+						<li className='text-gray-700'>
+							Jesteś skrupulatny/-a, dyspozycyjny/-a 2-3 dni w tygodniu i dbasz
+							o poufność danych.
+						</li>
+						<li className='text-gray-700'>
+							Chcesz zdobyć realne doświadczenie w księgowości i
+							sprawozdawczości finansowej.
+						</li>
+					</ul>
+				</div>
+
+				{/* Sekcja: Zakres zadań */}
+				<div>
+					<h2 className='text-lg font-semibold text-gray-800'>Zakres zadań:</h2>
+					<ul className='list-disc pl-6 space-y-1 mt-2'>
+						<li className='text-gray-700'>
+							Księgowanie podstawowych dokumentów i obsługa systemu księgowego.
+						</li>
+						<li className='text-gray-700'>
+							Wsparcie działu w bieżących zadaniach (dokumentacja księgowa,
+							sprawozdawczość).
+						</li>
+						<li className='text-gray-700'>
+							Współpraca z klientami i zewnętrznymi partnerami biznesowymi.
+						</li>
+						<li className='text-gray-700'>
+							Pomoc w prowadzeniu sekretariatu i systemu kancelaryjnego.
+						</li>
+						<li className='text-gray-700'>
+							Dbanie o prawidłowy obieg dokumentów i terminowość rozliczeń.
+						</li>
+					</ul>
+				</div>
+			</div>
+		)
 	}
+	// {
+	// 	value: 'news',
+	// 	label: 'Aktualności',
+	// 	content: <>Aktualności</>
+	// }
 ] as const satisfies Array<{
 	value: Lowercase<string>
 	label: Capitalize<string>
@@ -404,7 +541,7 @@ const Home = () => (
 		</div>
 		<Tabs
 			defaultValue={tabs[0].value}
-			className='flex flex-col items-center mb-32 px-4 overflow-x-hidden'
+			className='grid justify-items-center mb-32 px-4 overflow-x-hidden'
 		>
 			<TabsList>
 				{tabs.map(({label, value}) => (
