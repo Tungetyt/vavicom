@@ -13,6 +13,7 @@ import {contactEmail, contactPhone} from '@/consts'
 import {images} from '@/lib/images'
 import {
 	IconBook2,
+	IconBuilding,
 	IconCoins,
 	IconGavel,
 	IconMail,
@@ -26,13 +27,10 @@ import type {ReactNode} from 'react'
 
 const size = 64
 
-const addresses = {
-	jozefoslaw: 'Józefosław, ul. Ogrodowa 6/u6, 05-500',
-	warsaw: 'Warszawa, ul. Kłobucka 23C/u115, 02-699'
-} as const satisfies Record<
-	Lowercase<string>,
-	`${Capitalize<string>}, ul. ${Capitalize<string>} ${number}${Uppercase<string>}/u${number}, ${number}-${number}`
->
+const addresses = [
+	'Warszawa, ul. Kłobucka 23C/u115, 02-699',
+	'Józefosław, ul. Ogrodowa 6/u6, 05-500'
+] as const satisfies Array<`${Capitalize<string>}, ul. ${Capitalize<string>} ${number}${Uppercase<string>}/u${number}, ${number}-${number}`>
 
 const productsContent = [
 	{
@@ -345,7 +343,7 @@ const tabs = [
 						Praca hybrydowa, biura:
 					</p>
 					<ul className='list-disc pl-6 space-y-1 my-2'>
-						{Object.values(addresses).map(address => (
+						{addresses.map(address => (
 							<li className='text-gray-700' key={address}>
 								{address}
 							</li>
@@ -560,6 +558,12 @@ const Home = () => (
 			<div>MAP</div>
 			<div>
 				<ContactInfo />
+				{addresses.map(address => (
+					<p key={address} className='flex items-center gap-1.5'>
+						<IconBuilding />
+						{address}
+					</p>
+				))}
 				<div className='mb-5' />
 				<ContactFormModal />
 			</div>

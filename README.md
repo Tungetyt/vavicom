@@ -2,7 +2,7 @@ TODO:
  *mdx
  *recaptcha (bad idea)
 *language switching English, Swedish
- *tracking, but not with GA
+*lightweight tracking, but not with GA
  *sections
     *testimonials
     *FAQ
@@ -15,3 +15,5 @@ WorldMap
 Timeline
 
 Link Preview
+
+Map (Lazy loaded) + Link to Google Map
