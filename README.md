@@ -1,7 +1,7 @@
 TODO:
  *mdx
  *recaptcha (bad idea)
- *language switching English, Ukraininan
+*language switching English, Swedish
  *tracking, but not with GA
  *sections
     *testimonials
