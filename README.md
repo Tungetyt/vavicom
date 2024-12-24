@@ -10,10 +10,13 @@ TODO:
     *About us + history + values + team
     *blog
 
-Tabs - for images of the platfomr
 WorldMap
 Timeline
 
 Link Preview
+
+Panel klienta section
+
+Product Cards - display ceny, make bigger
 
 Map (Lazy loaded) + Link to Google Map

@@ -1,6 +1,7 @@
 import ContactForm from '@/components/contact-form'
 import {Hero} from '@/components/hero'
 import {ModalWithImages} from '@/components/modal'
+import OSMap from '@/components/osmap'
 import ProductCard from '@/components/product-card'
 import {
 	Accordion,
@@ -25,12 +26,9 @@ import {
 import Image from 'next/image'
 import type {ReactNode} from 'react'
 
-const size = 64
+import {locations} from '@/lib/utils'
 
-const addresses = [
-	'Warszawa, ul. Kłobucka 23C/u115, 02-699',
-	'Józefosław, ul. Ogrodowa 6/u6, 05-500'
-] as const satisfies Array<`${Capitalize<string>}, ul. ${Capitalize<string>} ${number}${Uppercase<string>}/u${number}, ${number}-${number}`>
+const size = 64
 
 const productsContent = [
 	{
@@ -343,7 +341,7 @@ const tabs = [
 						Praca hybrydowa, biura:
 					</p>
 					<ul className='list-disc pl-6 space-y-1 my-2'>
-						{addresses.map(address => (
+						{locations.map(({address}) => (
 							<li className='text-gray-700' key={address}>
 								{address}
 							</li>
@@ -473,102 +471,111 @@ const tabs = [
 	content: ReactNode
 }>
 
-const Home = () => (
-	<>
-		<Hero>
-			<>
-				<Image
-					className='invert mt-32 sm:mt-0'
-					src='/vavicom-logo-1_white.png'
-					alt='Next.js logo'
-					width={180}
-					height={38}
-					priority
-				/>
-				<div className='text-center font-extralight text-base dark:text-neutral-200 py-4'>
-					<div className='text-lg sm:text-2xl md:text-2xl'>
-						Kompleksowa obsługa księgowa
-					</div>
-					<div className='text-base sm:text-lg md:text-xl flex flex-col items-center'>
-						<p>Oddziały: Warszawa • Józefosław</p>
+const Home = () => {
+	return (
+		<>
+			<Hero>
+				<>
+					<Image
+						className='invert mt-32 sm:mt-0'
+						src='/vavicom-logo-1_white.png'
+						alt='Next.js logo'
+						width={180}
+						height={38}
+						priority
+					/>
+					<div className='text-center font-extralight text-base dark:text-neutral-200 py-4'>
+						<div className='text-lg sm:text-2xl md:text-2xl'>
+							Kompleksowa obsługa księgowa
+						</div>
+						<div className='text-base sm:text-lg md:text-xl flex flex-col items-center'>
+							<p>Oddziały: Warszawa • Józefosław</p>
 
-						<ContactInfo />
+							<ContactInfo />
+						</div>
 					</div>
-				</div>
-				<ContactFormModal />
-			</>
-		</Hero>
-		<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:max-w-md md:max-w-2xl justify-items-center mx-auto mb-32'>
-			{images.slice(0, productsContent.length).map((image, index) => {
-				const {icon, content, title} = productsContent[index]
-				return (
-					<ModalWithImages
-						key={image}
-						trigger={
-							<ProductCard imageURL={image}>
-								{icon}
-								{title}
-							</ProductCard>
-						}
-						triggerClassName='w-[clamp(4rem,90%,16rem)]'
-					>
-						<p className='text-3xl mb-4'>{title}</p>
-						{content.map(c => {
-							if (typeof c === 'string')
+					<ContactFormModal />
+				</>
+			</Hero>
+			<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:max-w-md md:max-w-2xl justify-items-center mx-auto mb-32'>
+				{images.slice(0, productsContent.length).map((image, index) => {
+					const {icon, content, title} = productsContent[index]
+					return (
+						<ModalWithImages
+							key={image}
+							trigger={
+								<ProductCard imageURL={image}>
+									{icon}
+									{title}
+								</ProductCard>
+							}
+							triggerClassName='w-[clamp(4rem,90%,16rem)]'
+						>
+							<p className='text-3xl mb-4'>{title}</p>
+							{content.map(c => {
+								if (typeof c === 'string')
+									return (
+										<p key={crypto.randomUUID()} className='mb-4'>
+											{c}
+										</p>
+									)
+
 								return (
-									<p key={crypto.randomUUID()} className='mb-4'>
-										{c}
-									</p>
+									<ul key={crypto.randomUUID()} className='list-disc ml-6'>
+										{c.map(item => {
+											return (
+												<li key={item} className='mb-4 '>
+													{item}
+												</li>
+											)
+										})}
+									</ul>
 								)
-
-							return (
-								<ul key={crypto.randomUUID()} className='list-disc ml-6'>
-									{c.map(item => {
-										return (
-											<li key={item} className='mb-4 '>
-												{item}
-											</li>
-										)
-									})}
-								</ul>
-							)
-						})}
-					</ModalWithImages>
-				)
-			})}
-		</div>
-		<Tabs
-			defaultValue={tabs[0].value}
-			className='grid justify-items-center mb-32 px-4 overflow-x-hidden'
-		>
-			<TabsList>
-				{tabs.map(({label, value}) => (
-					<TabsTrigger key={value} value={value}>
-						{label}
-					</TabsTrigger>
-				))}
-			</TabsList>
-			{tabs.map(({content, value}) => (
-				<TabsContent key={value} value={value}>
-					{content}
-				</TabsContent>
-			))}
-		</Tabs>
-		<footer className='bg-slate-950 flex flex-wrap justify-center gap-48 py-8 text-white'>
-			<div>MAP</div>
-			<div>
-				<ContactInfo />
-				{addresses.map(address => (
-					<p key={address} className='flex items-center gap-1.5'>
-						<IconBuilding />
-						{address}
-					</p>
-				))}
-				<div className='mb-5' />
-				<ContactFormModal />
+							})}
+						</ModalWithImages>
+					)
+				})}
 			</div>
-		</footer>
-	</>
-)
+			<Tabs
+				// defaultValue={tabs[0].value}
+				className='grid justify-items-center mb-32 px-4 overflow-x-hidden'
+			>
+				<TabsList>
+					{tabs.map(({label, value}) => (
+						<TabsTrigger key={value} value={value}>
+							{label}
+						</TabsTrigger>
+					))}
+				</TabsList>
+				{tabs.map(({content, value}) => (
+					<TabsContent key={value} value={value}>
+						{content}
+					</TabsContent>
+				))}
+			</Tabs>
 
+			<footer className='bg-slate-950 flex flex-wrap justify-center gap-8 p-8 text-white'>
+				<OSMap />
+				<div>
+					<Image
+						className='mx-auto mb-4'
+						src='/vavicom-logo-1_white.png'
+						alt='Next.js logo'
+						width={180}
+						height={38}
+					/>
+					<ContactInfo />
+					{locations.map(({address}) => (
+						<p key={address} className='flex items-center gap-1.5'>
+							<IconBuilding />
+							{address}
+						</p>
+					))}
+					<div className='mb-5' />
+					<ContactFormModal />
+				</div>
+			</footer>
+		</>
+	)
+}
 export default Home
