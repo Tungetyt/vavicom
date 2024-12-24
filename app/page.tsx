@@ -10,29 +10,27 @@ import {
 	AccordionTrigger
 } from '@/components/ui/accordion'
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs'
-import {contactEmail, contactPhone} from '@/consts'
+import {contactEmail, contactPhone, locations} from '@/consts'
 import {images} from '@/lib/images'
 import {
 	IconBook2,
 	IconBuilding,
+	IconChessKnight,
 	IconCoins,
 	IconGavel,
 	IconMail,
 	IconPhone,
 	IconReportAnalytics,
-	IconReportMoney,
 	IconTaxEuro
 } from '@tabler/icons-react'
 import Image from 'next/image'
 import type {ReactNode} from 'react'
 
-import {locations} from '@/lib/utils'
-
 const size = 64
 
 const productsContent = [
 	{
-		icon: <IconBook2 key='IconBook2' size={size} />,
+		icon: <IconBook2 size={size} />,
 		title: 'Księgowość',
 		content: [
 			'Skomplikowane i dynamiczne zmiany prawa gospodarczego, w tym sprawozdawczości finansowej i podatkowej wymagają nieustannego śledzenia i prawidłowego interpretowania przepisów prawa.',
@@ -63,7 +61,7 @@ const productsContent = [
 		]
 	},
 	{
-		icon: <IconCoins key='IconCoins' size={size} />,
+		icon: <IconCoins size={size} />,
 		title: 'Kadry i płace',
 		content: [
 			'Zapewniamy kompleksową obsługę w zakresie naliczania płac zgodnie z obowiązującymi przepisami prawa pracy, ubezpieczeń społecznych oraz podatku dochodowego od osób fizycznych.',
@@ -94,7 +92,7 @@ const productsContent = [
 		]
 	},
 	{
-		icon: <IconTaxEuro key='IconTaxEuro' size={size} />,
+		icon: <IconTaxEuro size={size} />,
 		title: 'Rozliczenia księgowo-podatkowe',
 		content: [
 			'Polski system podatkowy w większości przypadków nakłada cykliczny obowiązek płacenia podatków.',
@@ -120,7 +118,7 @@ const productsContent = [
 		]
 	},
 	{
-		icon: <IconReportMoney key='IconReportMoney' size={size} />,
+		icon: <IconReportAnalytics size={size} />,
 		title: 'Usługi finansowe',
 		content: [
 			'Zarządzanie finansami przedsiębiorstwa to nieoderwalna część codziennych zadań właścicieli oraz osób zarządzających.',
@@ -142,7 +140,7 @@ const productsContent = [
 		]
 	},
 	{
-		icon: <IconReportAnalytics key='IconReportAnalytics' size={size} />,
+		icon: <IconChessKnight size={size} />,
 		title: 'Usługi biznesowe',
 		content: [
 			'Każdy zarządzający biznesem potrzebuje eksperckiej wiedzy w zakresie dynamicznie zmieniających się przepisów prawa i właściwym na nie reagowaniem.',
@@ -165,7 +163,7 @@ const productsContent = [
 		]
 	},
 	{
-		icon: <IconGavel key='IconGavel' size={size} />,
+		icon: <IconGavel size={size} />,
 		title: 'Usługi pozostałe',
 		content: [
 			'Digitalizacja jest usługą wdrożenia najnowocześniejszych rozwiązań technologicznych i informatycznych, które gwarantują utrzymanie najwyższej jakości obsługi kontrahentów, przy jednoczesnym optymalnym wykorzystaniu posiadanych zasobów. Często związana jest z przemodelowaniem dotychczasowego planu biznesowego i sposobu działania, przynosi poprawę komunikacji wewnętrznej i zewnętrznej oraz znacznie przyspiesza dostęp do informacji, pozwalającej na dokładniejsze i skuteczniejsze kontrolowanie procesów.',
