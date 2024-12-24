@@ -497,7 +497,7 @@ const Home = () => {
 					<ContactFormModal />
 				</>
 			</Hero>
-			<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:max-w-md md:max-w-2xl justify-items-center mx-auto mb-32'>
+			<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:max-w-md md:max-w-3xl justify-items-center mx-auto mb-32'>
 				{images.slice(0, productsContent.length).map((image, index) => {
 					const {icon, content, title} = productsContent[index]
 					return (
@@ -509,7 +509,7 @@ const Home = () => {
 									{title}
 								</ProductCard>
 							}
-							triggerClassName='w-[clamp(4rem,90%,16rem)]'
+							triggerClassName='w-[clamp(4rem,100%,16rem)]'
 						>
 							<p className='text-3xl mb-4'>{title}</p>
 							{content.map(c => {
