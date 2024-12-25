@@ -35,7 +35,7 @@ export default function OSMap() {
 	return (
 		<div
 			ref={container}
-			className='mx-auto w-[98%] h-[480px] flex-1  overflow-hidden rounded-xl shadow-md'
+			className='mx-auto w-full sm:min-w-96 h-80 sm:h-[480px] sm:flex-1 overflow-hidden rounded-xl shadow-md'
 		>
 			{OSM && <OSM />}
 		</div>
