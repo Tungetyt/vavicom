@@ -191,14 +191,14 @@ const productsContent = [
 	content: Array<Capitalize<string> | '' | Array<string>>
 }>
 
-const ContactFormModal = () => (
+const ContactFormModal = ({showBorder}: {showBorder?: boolean}) => (
 	<ModalWithImages
 		trigger={
 			<span className='group-hover/modal-btn:translate-x-40 text-center transition duration-500'>
 				KONTAKT
 			</span>
 		}
-		triggerClassName='flex m-auto mb-32 sm:mb-0 bg-slate-950 dark:bg-white rounded-full w-fit  dark:text-black text-white px-4 sm:px-8 py-2 sm:py-4 hover:bg-slate-950/[0.8] hover:shadow-lg border-2 border-white'
+		triggerClassName={`flex m-auto mb-32 sm:mb-0 bg-slate-950 dark:bg-white rounded-full w-fit  dark:text-black text-white px-4 sm:px-8 py-2 sm:py-4 hover:bg-slate-950/[0.8] hover:shadow-lg ${showBorder ? 'border-2 border-white' : ''}`}
 	>
 		<ContactForm />
 	</ModalWithImages>
@@ -570,7 +570,7 @@ const Home = () => {
 						</p>
 					))}
 					<div className='mb-5' />
-					<ContactFormModal />
+					<ContactFormModal showBorder />
 				</div>
 			</footer>
 		</>
