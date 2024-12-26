@@ -33,7 +33,7 @@ import {
 	IconTaxEuro
 } from '@tabler/icons-react'
 import Image from 'next/image'
-import type {ReactNode} from 'react'
+import {Fragment, type ReactNode} from 'react'
 
 const size = 64
 
@@ -390,9 +390,9 @@ const tabs = [
 						Praca hybrydowa, biura:
 					</p>
 					<ul className='list-disc pl-6 space-y-1 my-2'>
-						{locations.map(({address}) => (
+						{locations.map(({address, city}) => (
 							<li className='text-gray-700' key={address}>
-								{address}
+								{city}, {address}
 							</li>
 						))}
 					</ul>
@@ -538,7 +538,18 @@ const Home = () => {
 							Kompleksowa obsługa księgowa
 						</div>
 						<div className='text-base sm:text-lg md:text-xl flex flex-col items-center'>
-							<p>Oddziały: Warszawa • Józefosław</p>
+							<div>
+								Oddziały:{' '}
+								{locations.map(({city, url}, i) => (
+									<Fragment key={url}>
+										{' '}
+										<LinkPreview className='text-black' url={url}>
+											{city}
+										</LinkPreview>
+										{i < locations.length - 1 ? ' •' : null}
+									</Fragment>
+								))}
+							</div>
 
 							<ContactInfo />
 						</div>
@@ -586,7 +597,7 @@ const Home = () => {
 				})}
 			</div>
 			<Tabs
-				// defaultValue={tabs[0].value}
+				defaultValue={tabs[0].value}
 				className='grid justify-items-center mb-32 px-4 overflow-x-hidden'
 			>
 				<TabsList>
@@ -614,10 +625,12 @@ const Home = () => {
 						height={38}
 					/>
 					<ContactInfo />
-					{locations.map(({address, url}) => (
+					{locations.map(({address, url, city}) => (
 						<div key={address} className='flex items-center gap-1.5'>
 							<IconBuilding />
-							<LinkPreview url={url}>{address}</LinkPreview>
+							<LinkPreview url={url}>
+								{city}, {address}
+							</LinkPreview>
 						</div>
 					))}
 					<div className='mb-5' />
