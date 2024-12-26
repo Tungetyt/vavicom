@@ -9,6 +9,7 @@ import {
 	AccordionItem,
 	AccordionTrigger
 } from '@/components/ui/accordion'
+import {LinkPreview} from '@/components/ui/link-preview'
 import {
 	Table,
 	TableBody,
@@ -33,6 +34,7 @@ import {
 } from '@tabler/icons-react'
 import Image from 'next/image'
 import type {ReactNode} from 'react'
+
 const size = 64
 
 const productsContent = [
@@ -612,11 +614,11 @@ const Home = () => {
 						height={38}
 					/>
 					<ContactInfo />
-					{locations.map(({address}) => (
-						<p key={address} className='flex items-center gap-1.5'>
+					{locations.map(({address, url}) => (
+						<div key={address} className='flex items-center gap-1.5'>
 							<IconBuilding />
-							{address}
-						</p>
+							<LinkPreview url={url}>{address}</LinkPreview>
+						</div>
 					))}
 					<div className='mb-5' />
 					<ContactFormModal showBorder />
