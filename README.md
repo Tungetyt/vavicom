@@ -1,14 +1,12 @@
 TODO:
- *mdx
+ *mdx (not sure)
  *recaptcha (bad idea)
 *language switching English, Swedish
-*lightweight tracking, but not with GA
+*lightweight tracking, but not with GA -> umami
  *sections
     *testimonials
-    *FAQ
-    *Career
     *About us + history + values + team
-    *blog
+    *blog - aktualnosci
 
 WorldMap
 Timeline
@@ -16,8 +14,6 @@ Timeline
 Link Preview
 
 Panel klienta section
-
-Product Cards - display ceny, make bigger
 
 Map (Lazy loaded) + Link to Google Map
 

@@ -9,6 +9,14 @@ import {
 	AccordionItem,
 	AccordionTrigger
 } from '@/components/ui/accordion'
+import {
+	Table,
+	TableBody,
+	TableCell,
+	TableHead,
+	TableHeader,
+	TableRow
+} from '@/components/ui/table'
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs'
 import {contactEmail, contactPhone, locations} from '@/consts'
 import {images} from '@/lib/images'
@@ -25,7 +33,6 @@ import {
 } from '@tabler/icons-react'
 import Image from 'next/image'
 import type {ReactNode} from 'react'
-
 const size = 64
 
 const productsContent = [
@@ -283,7 +290,49 @@ const faqs = [
 	a: Capitalize<string>
 }>
 
+const services = [
+	{
+		service: 'Kadry i płace',
+		price: 60
+	},
+	{
+		service: 'Księga przychodów i rozchodów',
+		price: 250
+	},
+	{
+		service: 'Księgi rachunkowe',
+		price: 400
+	}
+] as const satisfies Array<{
+	service: Capitalize<string>
+	price: number
+}>
+
 const tabs = [
+	{
+		value: 'prices',
+		label: 'Cennik',
+		content: (
+			<div className='bg-white p-6 rounded shadow mb-1 w-fit'>
+				<Table>
+					<TableHeader>
+						<TableRow>
+							<TableHead className='w-[100px]'>Usługa:</TableHead>
+							<TableHead className='text-right'>Cena od:</TableHead>
+						</TableRow>
+					</TableHeader>
+					<TableBody>
+						{services.map(({service, price}) => (
+							<TableRow key={service}>
+								<TableCell className='font-medium'>{service}</TableCell>
+								<TableCell className='text-right'>{price}</TableCell>
+							</TableRow>
+						))}
+					</TableBody>
+				</Table>
+			</div>
+		)
+	},
 	{
 		value: 'about',
 		label: 'O nas',
