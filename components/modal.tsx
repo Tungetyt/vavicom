@@ -46,7 +46,7 @@ export function ModalWithImages({
 							>
 								<Image
 									src={image}
-									alt='bali images'
+									alt='Vavicom office'
 									width='500'
 									height='500'
 									className='rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0'

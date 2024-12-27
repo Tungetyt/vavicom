@@ -44,7 +44,7 @@ const Home = () => {
 					<Image
 						className='invert mt-32 sm:mt-0'
 						src='/vavicom-logo-1_white.png'
-						alt='Next.js logo'
+						alt='Vavicom logo'
 						width={180}
 						height={38}
 						priority
@@ -81,7 +81,7 @@ const Home = () => {
 					<Image
 						className='mx-auto mb-4'
 						src='/vavicom-logo-1_white.png'
-						alt='Next.js logo'
+						alt='Vavicom logo'
 						width={180}
 						height={38}
 					/>
