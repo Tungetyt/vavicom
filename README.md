@@ -11,11 +11,11 @@ TODO:
 WorldMap
 Timeline
 
-Link Preview
-
 Panel klienta section
 
 Map (Lazy loaded) + Link to Google Map
 
 1. Unified code for both - depending on the env variable different jsons, icons and pictures are used
 2. Deploy Exzanco first for testing
+
+Fix Performance and Accessibility issues
