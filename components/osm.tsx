@@ -56,7 +56,7 @@ const OSM = () => {
 						}
 					}}
 				>
-					<Popup>{address}</Popup>
+					<Popup closeButton={false}>{address}</Popup>
 				</Marker>
 			))}
 		</MapContainer>
