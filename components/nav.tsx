@@ -138,7 +138,7 @@ const tabs = [
 			<>
 				<Image
 					className='invert sm:mt-0 hidden sm:block'
-					src='/logo.png'
+					src='/logo.avif'
 					alt='Vavicom logo'
 					width={30}
 					height={30}
