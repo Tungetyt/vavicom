@@ -17,7 +17,7 @@ const ContactFormModal = ({showBorder}: {showBorder?: boolean}) => (
 				KONTAKT
 			</span>
 		}
-		triggerClassName={`flex m-auto mb-32 sm:mb-0 bg-slate-950 dark:bg-white rounded-full w-fit  dark:text-black text-white px-4 sm:px-8 py-2 sm:py-4 hover:bg-slate-950/[0.8] hover:shadow-lg ${showBorder ? 'border-2 border-white' : ''}`}
+		triggerClassName={`flex m-auto mb-32 sm:mb-0 bg-slate-950 dark:bg-white rounded-full w-fit dark:text-black text-white px-4 sm:px-8 py-2 sm:py-4 hover:bg-slate-950/[0.8] hover:shadow-lg ${showBorder ? 'border-2 border-white' : ''}`}
 	>
 		<ContactForm />
 	</ModalWithImages>
@@ -85,8 +85,8 @@ const Home = () => {
 					<ContactInfo />
 					{locations.map(({address, url, city}) => (
 						<div key={address} className='flex items-center gap-1.5'>
-							<IconBuilding />
-							<LinkPreview url={url}>
+							<LinkPreview className='flex gap-1.5' url={url}>
+								<IconBuilding />
 								{city}, {address}
 							</LinkPreview>
 						</div>

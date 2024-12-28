@@ -342,7 +342,7 @@ const Nav = () => (
 	<Tabs defaultValue={tabs[0].value} className='mb-32 px-4 overflow-x-hidden'>
 		<TabsList className='w-full'>
 			{tabs.map(({label, value}) => (
-				<TabsTrigger key={value} value={value} className='px-1 sm:px-3'>
+				<TabsTrigger key={value} value={value} className='px-2 sm:px-3'>
 					{label}
 				</TabsTrigger>
 			))}
