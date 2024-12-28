@@ -14,6 +14,8 @@ import {
 } from '@/components/ui/table'
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs'
 import {contactEmail, locations} from '@/consts'
+import {IconFileCv, IconHelpOctagon, IconReceipt} from '@tabler/icons-react'
+import Image from 'next/image'
 import type {ReactNode} from 'react'
 
 const services = [
@@ -103,7 +105,12 @@ const faqs = [
 const tabs = [
 	{
 		value: 'prices',
-		label: 'Cennik',
+		label: (
+			<>
+				<IconReceipt className='hidden sm:block' />
+				Cennik
+			</>
+		),
 		content: (
 			<div className='bg-white p-6 rounded shadow mb-1 w-fit'>
 				<Table>
@@ -127,7 +134,18 @@ const tabs = [
 	},
 	{
 		value: 'about',
-		label: 'O nas',
+		label: (
+			<>
+				<Image
+					className='invert sm:mt-0 hidden sm:block'
+					src='/logo.png'
+					alt='Vavicom logo'
+					width={30}
+					height={30}
+				/>
+				O nas
+			</>
+		),
 		content: (
 			<div className='bg-white p-6 rounded shadow mb-1'>
 				<p className='mb-6'>
@@ -153,7 +171,12 @@ const tabs = [
 	},
 	{
 		value: 'faq',
-		label: 'FAQ',
+		label: (
+			<>
+				<IconHelpOctagon className='hidden sm:block' />
+				FAQ
+			</>
+		),
 		content: (
 			<Accordion
 				type='single'
@@ -171,7 +194,12 @@ const tabs = [
 	},
 	{
 		value: 'career',
-		label: 'Kariera',
+		label: (
+			<>
+				<IconFileCv className='hidden sm:block' />
+				Kariera
+			</>
+		),
 		content: (
 			<div className='bg-white p-6 rounded shadow  mb-1'>
 				{/* Sekcja: Adresy biur */}
@@ -306,24 +334,21 @@ const tabs = [
 	// }
 ] as const satisfies Array<{
 	value: Lowercase<string>
-	label: Capitalize<string>
+	label: ReactNode
 	content: ReactNode
 }>
 
 const Nav = () => (
-	<Tabs
-		defaultValue={tabs[0].value}
-		className='grid justify-items-center mb-32 px-4 overflow-x-hidden'
-	>
-		<TabsList>
+	<Tabs defaultValue={tabs[0].value} className='mb-32 px-4 overflow-x-hidden'>
+		<TabsList className='w-full'>
 			{tabs.map(({label, value}) => (
-				<TabsTrigger key={value} value={value}>
+				<TabsTrigger key={value} value={value} className='px-1 sm:px-3'>
 					{label}
 				</TabsTrigger>
 			))}
 		</TabsList>
 		{tabs.map(({content, value}) => (
-			<TabsContent key={value} value={value}>
+			<TabsContent key={value} value={value} className='mx-auto'>
 				{content}
 			</TabsContent>
 		))}

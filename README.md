@@ -19,3 +19,5 @@ Map (Lazy loaded) + Link to Google Map
 2. Deploy Exzanco first for testing
 
 Fix Performance and Accessibility issues
+
+Popup - rm x button
