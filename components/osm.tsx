@@ -46,11 +46,11 @@ const OSM = () => {
 					key={address}
 					position={coordinates as Writable<typeof coordinates>}
 					eventHandlers={{
-						mouseover: e => {
-							e.target.openPopup()
+						mouseover: ({target}) => {
+							target.openPopup()
 						},
-						mouseout: e => {
-							e.target.closePopup()
+						mouseout: ({target}) => {
+							target.closePopup()
 						}
 					}}
 				>
