@@ -31,10 +31,9 @@ const FitBounds = ({
 const OSM = () => {
 	return (
 		<MapContainer
-			scrollWheelZoom={false}
 			style={{height: '100%', width: '100%'}}
 			attributionControl={false}
-			zoomControl={false}
+			scrollWheelZoom={false}
 		>
 			<TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
 			<FitBounds
@@ -46,7 +45,6 @@ const OSM = () => {
 				<Marker
 					key={address}
 					position={coordinates as Writable<typeof coordinates>}
-					draggable={false}
 					eventHandlers={{
 						mouseover: e => {
 							e.target.openPopup()
