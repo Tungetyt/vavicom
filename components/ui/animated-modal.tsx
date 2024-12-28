@@ -86,7 +86,7 @@ export const ModalBody = ({
 						opacity: 1,
 						backdropFilter: 'blur(10px)'
 					}}
-					className='fixed [perspective:800px] [transform-style:preserve-3d] inset-0 h-full w-full  flex sm:items-center justify-center z-50'
+					className='fixed [perspective:800px] [transform-style:preserve-3d] inset-0 h-full w-full  flex sm:items-center justify-center z-[400]'
 				>
 					<motion.div
 						ref={modalRef}

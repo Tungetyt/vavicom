@@ -22,7 +22,7 @@ export function ModalWithImages({
 	return (
 		<Modal>
 			<ModalTrigger className={triggerClassName ?? ''}>{trigger}</ModalTrigger>
-			<ModalBody>
+			<ModalBody className='max-w-[56ch]'>
 				<ModalContent>
 					{children}
 					<div className='flex justify-center items-center mt-8'>
