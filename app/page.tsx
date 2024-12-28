@@ -1,12 +1,12 @@
-import ContactForm from '@/components/contact-form'
+import ContactForm, {ContactEmail} from '@/components/contact-form'
 import {Hero} from '@/components/hero'
 import {ModalWithImages} from '@/components/modal'
 import Nav from '@/components/nav'
 import OSMap from '@/components/osmap'
 import Products from '@/components/products'
 import {LinkPreview} from '@/components/ui/link-preview'
-import {contactEmail, contactPhone, locations} from '@/consts'
-import {IconBuilding, IconMail, IconPhone} from '@tabler/icons-react'
+import {contactPhone, locations} from '@/consts'
+import {IconBuilding, IconPhone} from '@tabler/icons-react'
 import Image from 'next/image'
 import {Fragment} from 'react'
 
@@ -25,14 +25,11 @@ const ContactFormModal = ({showBorder}: {showBorder?: boolean}) => (
 
 const ContactInfo = () => (
 	<div>
-		<p className='flex items-center gap-1.5'>
+		<a href={`tel:${contactPhone}`} className='flex items-center gap-1.5'>
 			<IconPhone />
 			{contactPhone}
-		</p>
-		<p className='flex items-center gap-1.5'>
-			<IconMail />
-			{contactEmail}
-		</p>
+		</a>
+		<ContactEmail />
 	</div>
 )
 

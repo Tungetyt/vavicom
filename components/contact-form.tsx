@@ -21,6 +21,13 @@ const inputNames = {
 
 type State = 'init' | 'sent' | 'failed'
 
+export const ContactEmail = () => (
+	<a href={`mailto:${contactEmail}`} className='flex items-center gap-1.5'>
+		<IconMail />
+		{contactEmail}
+	</a>
+)
+
 export default function ContactForm() {
 	const [state, submit, isPending] = useActionState(
 		async (_state: State, formData: FormData) => {
@@ -49,10 +56,7 @@ export default function ContactForm() {
 			<h2 className='font-bold text-xl text-neutral-800'>
 				Formularz kontaktowy
 			</h2>
-			<p className='flex items-center gap-1.5'>
-				<IconMail />
-				{contactEmail}
-			</p>
+			<ContactEmail />
 			<form className='mt-8' action={submit}>
 				<div className='flex flex-col gap-4 space-y-2 md:space-y-0 mb-4'>
 					<LabelInputContainer>
