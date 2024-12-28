@@ -21,8 +21,14 @@ const inputNames = {
 
 type State = 'init' | 'sent' | 'failed'
 
+const salutation = 'Dzień dobry,'
+const body = 'chciałabym/chciałbym się z wami skontaktować.'
+
 export const ContactEmail = () => (
-	<a href={`mailto:${contactEmail}`} className='flex items-center gap-1.5'>
+	<a
+		href={`mailto:${contactEmail}?subject=Vavicom Kontakt&body=${salutation} ${body}`}
+		className='flex items-center gap-1.5'
+	>
 		<IconMail />
 		{contactEmail}
 	</a>
@@ -80,10 +86,8 @@ export default function ContactForm() {
 							className='min-h-32 sm:min-h-28'
 							name={inputNames.message}
 							id={inputNames.message}
-							defaultValue={
-								'Dzień dobry,\nchciałabym/chciałbym się z wami skontaktować.\n'
-							}
-							placeholder='Dzień dobry, chciałabym/chciałbym się z wami skontaktować...'
+							defaultValue={`${salutation}\n${body}\n`}
+							placeholder={`${body}...`}
 						/>
 					</LabelInputContainer>
 				</div>
