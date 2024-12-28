@@ -17,7 +17,7 @@ import {Textarea} from './ui/textarea'
 const inputNames = {
 	user_email: 'user_email',
 	message: 'message'
-} as const satisfies Record<string, string>
+} as const satisfies Record<Lowercase<string>, Lowercase<string>>
 
 type State = 'init' | 'sent' | 'failed'
 
@@ -71,7 +71,6 @@ export default function ContactForm() {
 							disabled={isPending || state === 'sent'}
 							autoFocus
 							name={inputNames.user_email}
-							id={inputNames.user_email}
 							placeholder='email@gmail.com'
 							type='email'
 							required
@@ -85,7 +84,6 @@ export default function ContactForm() {
 							disabled={isPending || state === 'sent'}
 							className='min-h-32 sm:min-h-28'
 							name={inputNames.message}
-							id={inputNames.message}
 							defaultValue={`${salutation}\n${body}\n`}
 							placeholder={`${body}...`}
 						/>
