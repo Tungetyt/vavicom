@@ -17,5 +17,3 @@ Panel klienta section
 2. Deploy Exzanco first for testing
 
 Fix Performance issues
-
-commitlint
