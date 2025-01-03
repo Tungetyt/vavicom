@@ -17,6 +17,25 @@ import {contactEmail, locations} from '@/consts'
 import {IconFileCv, IconHelpOctagon, IconReceipt} from '@tabler/icons-react'
 import Image from 'next/image'
 import type {ReactNode} from 'react'
+import AnimatedCarousel from './animated-carousel'
+
+const imageUrls = [
+	'/Ogloszenia-o-najwazniejszych-zmianach.avif',
+	'/Podglad-ksiegowosci.avif',
+	'/Deklaracje-wartosci-oraz-terminy-zaplat.avif',
+	'/Mozliwosc-wystawiania-faktur-wlasnych.avif',
+	'/Ogloszenia-o-najwazniejszych-zmianach.avif'
+] as const satisfies Array<`/${string}.avif`>
+
+const carouselItems = imageUrls.map(url => ({
+	image: url,
+	description:
+		url
+			.split('/')
+			.pop()
+			?.replace(/\.[^/.]+$/, '')
+			.replace(/-/g, ' ') ?? ''
+}))
 
 const services = [
 	{
@@ -181,7 +200,7 @@ const tabs = [
 			<Accordion
 				type='single'
 				collapsible
-				className='bg-white pt-2 px-6 rounded shadow  mb-1'
+				className='bg-white pt-2 px-6 rounded shadow mb-1'
 			>
 				{faqs.map(({q, a}) => (
 					<AccordionItem key={q} value={q}>
@@ -325,6 +344,25 @@ const tabs = [
 					</ul>
 				</div>
 			</div>
+		)
+	},
+	{
+		value: 'client-panel-demo',
+		content: (
+			<div className='bg-white p-6 rounded shadow  mb-1'>
+				<p className='mb-2'>
+					Każdy Klient BR VAVICOM ma dostęp do wielofunkcyjego panelu.
+				</p>
+				<AnimatedCarousel items={carouselItems} />
+			</div>
+		),
+		label: (
+			<>
+				<div className='items-center justify-center w-6 h-6 border-2 border-black rounded-full bg-white hidden sm:flex'>
+					<span className='text-black text-xl font-bold'>e</span>
+				</div>
+				Panel Klienta
+			</>
 		)
 	}
 	// {
