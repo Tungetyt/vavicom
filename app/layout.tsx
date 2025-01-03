@@ -14,10 +14,10 @@ const geistMono = localFont({
 	weight: '100 900'
 })
 
-export const metadata: Metadata = {
+export const metadata = {
 	title: 'Vavicom Biuro Rachunkowe',
 	description: 'Kompleksowa obsługa księgowa - Warszawa • Józefosław'
-}
+} as const satisfies Metadata
 
 export default function RootLayout({
 	children

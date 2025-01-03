@@ -52,7 +52,7 @@ const Home = () => {
 						</div>
 						<div className='text-base sm:text-lg md:text-xl flex flex-col items-center'>
 							<div>
-								Oddziały:{' '}
+								Oddziały:
 								{locations.map(({city, url}, i) => (
 									<Fragment key={url}>
 										{' '}
