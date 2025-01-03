@@ -48,6 +48,7 @@ export const AuroraBackground = ({
 						)}
 					/>
 				</div>
+				<div className='pointer-events-none absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-white z-20' />
 				<div className='absolute top-4 left-4'>
 					<LinkPreview
 						className='text-black'
@@ -79,6 +80,7 @@ export const AuroraBackground = ({
 						<FaLinkedin className='inline mr-2' size={28} />
 					</LinkPreview>
 				</div>
+
 				{children}
 			</div>
 		</main>
