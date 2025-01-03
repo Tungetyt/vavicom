@@ -9,6 +9,7 @@ import {contactPhone, locations} from '@/consts'
 import {IconBuilding, IconPhone} from '@tabler/icons-react'
 import Image from 'next/image'
 import {Fragment} from 'react'
+import {FaFacebook, FaInstagram, FaLinkedin, FaXTwitter} from 'react-icons/fa6'
 
 const ContactFormModal = ({showBorder}: {showBorder?: boolean}) => (
 	<ModalWithImages
@@ -91,6 +92,20 @@ const Home = () => {
 							</LinkPreview>
 						</div>
 					))}
+					<div className='flex justify-center gap-2 mt-2'>
+						<LinkPreview url='https://www.facebook.com/VAVICOM/'>
+							<FaFacebook size={28} />
+						</LinkPreview>
+						<LinkPreview url='https://x.com/VAVICOM2'>
+							<FaXTwitter size={28} />
+						</LinkPreview>
+						<LinkPreview url='https://www.instagram.com/vavicom_br/'>
+							<FaInstagram size={28} />
+						</LinkPreview>
+						<LinkPreview url='https://www.linkedin.com/company/accounting-office-vavicom/'>
+							<FaLinkedin size={28} />
+						</LinkPreview>
+					</div>
 					<div className='mb-5' />
 					<ContactFormModal showBorder />
 				</div>
