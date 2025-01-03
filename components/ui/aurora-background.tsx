@@ -48,6 +48,14 @@ export const AuroraBackground = ({
 						)}
 					/>
 				</div>
+				<div className='absolute top-4 left-4'>
+					<LinkPreview
+						className='text-black'
+						url='https://panel.vavicom.pl/login'
+					>
+						Panel klienta
+					</LinkPreview>
+				</div>
 				<div className='absolute top-4 right-4 z-10'>
 					<LinkPreview
 						className='text-black'
