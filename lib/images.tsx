@@ -1,3 +1,5 @@
+export type Images = Array<`/${string}.avif`>
+
 export const images = [
 	'/88723845556176902.avif',
 	'/1438935597575109622.avif',
@@ -7,7 +9,7 @@ export const images = [
 	'/12950576627901361101.avif',
 	'/15133808056233984268.avif',
 	'/17768666122035772285.avif'
-] as const satisfies Array<`/${number}.avif`>
+] as const satisfies Images
 
 export function shuffle(array: Array<string>) {
 	let currentIndex = array.length
