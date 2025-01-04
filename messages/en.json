@@ -320,5 +320,9 @@
 				]
 			}
 		]
+	},
+	"LinkPreview": {
+		"hiddenImageAlt": "ukryty obraz",
+		"previewImageAlt": "podgląd obrazu"
 	}
 }

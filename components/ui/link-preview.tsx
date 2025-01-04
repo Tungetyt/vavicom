@@ -2,6 +2,7 @@
 import {cn} from '@/lib/utils'
 import * as HoverCardPrimitive from '@radix-ui/react-hover-card'
 import {AnimatePresence, motion, useMotionValue, useSpring} from 'framer-motion'
+import {useTranslations} from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 import {encode} from 'qss'
@@ -28,6 +29,8 @@ export const LinkPreview = ({
 	isStatic = false,
 	imageSrc = ''
 }: LinkPreviewProps) => {
+	const t = useTranslations('LinkPreview')
+
 	let src: string
 	if (!isStatic) {
 		const params = encode({
@@ -47,7 +50,6 @@ export const LinkPreview = ({
 	}
 
 	const [isOpen, setOpen] = useState(false)
-
 	const [isMounted, setIsMounted] = useState(false)
 
 	useEffect(() => {
@@ -56,7 +58,6 @@ export const LinkPreview = ({
 
 	const springConfig = {stiffness: 100, damping: 15}
 	const x = useMotionValue(0)
-
 	const translateX = useSpring(x, springConfig)
 
 	const handleMouseMove = (
@@ -64,7 +65,7 @@ export const LinkPreview = ({
 	) => {
 		const targetRect = (event.target as HTMLElement).getBoundingClientRect()
 		const eventOffsetX = event.clientX - targetRect.left
-		const offsetFromCenter = (eventOffsetX - targetRect.width / 2) / 2 // Reduce the effect to make it subtle
+		const offsetFromCenter = (eventOffsetX - targetRect.width / 2) / 2
 		x.set(offsetFromCenter)
 	}
 
@@ -78,8 +79,8 @@ export const LinkPreview = ({
 						height={height}
 						quality={quality}
 						layout={layout}
-						priority={true}
-						alt='hidden image'
+						priority
+						alt={t('hiddenImageAlt')}
 					/>
 				</div>
 			) : null}
@@ -136,9 +137,9 @@ export const LinkPreview = ({
 										height={height}
 										quality={quality}
 										layout={layout}
-										priority={true}
+										priority
 										className='rounded-lg'
-										alt='preview image'
+										alt={t('previewImageAlt')}
 									/>
 								</Link>
 							</motion.div>
