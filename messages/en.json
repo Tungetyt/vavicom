@@ -145,5 +145,8 @@
 				"Dbanie o prawidłowy obieg dokumentów i terminowość rozliczeń."
 			]
 		}
+	},
+	"OSMap": {
+		"loading": "Ładowanie mapy..."
 	}
 }

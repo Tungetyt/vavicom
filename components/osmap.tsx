@@ -1,8 +1,10 @@
 'use client'
+import {useTranslations} from 'next-intl'
 import dynamic from 'next/dynamic'
 import {useEffect, useRef, useState} from 'react'
 
 export default function OSMap() {
+	const t = useTranslations('OSMap')
 	const [shouldLoadMap, setShouldLoadMap] = useState(false)
 	const container = useRef<HTMLDivElement | null>(null)
 
@@ -28,7 +30,7 @@ export default function OSMap() {
 	const OSM = shouldLoadMap
 		? dynamic(() => import('@/components/osm'), {
 				ssr: false,
-				loading: () => <p>Ładowanie mapy...</p>
+				loading: () => <p>{t('loading')}</p>
 			})
 		: null
 
