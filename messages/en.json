@@ -165,5 +165,8 @@
 		"submitButton": "Wyślij",
 		"successMessage": "Wiadomość została wysłana! Dziękujemy!",
 		"errorMessage": "Nastąpił błąd, wiadomość nie została wysłana. Przepraszamy."
+	},
+	"ModalWithImages": {
+		"imageAlt": "Biuro Vavicom"
 	}
 }

@@ -7,6 +7,7 @@ import {
 } from '@/components/ui/animated-modal'
 import {images, shuffle} from '@/lib/images'
 import {motion} from 'framer-motion'
+import {useTranslations} from 'next-intl'
 import Image from 'next/image'
 import type {ReactNode} from 'react'
 
@@ -19,6 +20,8 @@ export function ModalWithImages({
 	trigger: ReactNode
 	triggerClassName?: string
 }) {
+	const t = useTranslations('ModalWithImages')
+
 	return (
 		<Modal>
 			<ModalTrigger className={triggerClassName ?? ''}>{trigger}</ModalTrigger>
@@ -46,7 +49,7 @@ export function ModalWithImages({
 							>
 								<Image
 									src={image}
-									alt='Vavicom office'
+									alt={t('imageAlt')}
 									width='500'
 									height='500'
 									className='rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0'
