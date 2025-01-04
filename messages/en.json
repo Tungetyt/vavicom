@@ -153,5 +153,17 @@
 		"previousSlide": "Poprzedni slajd",
 		"nextSlide": "Następny slajd",
 		"slideAlt": "Slajd {number}"
+	},
+	"ContactForm": {
+		"title": "Formularz kontaktowy",
+		"emailLabel": "Twój email",
+		"emailPlaceholder": "email@gmail.com",
+		"messageLabel": "Opisz w czym możemy Ci pomóc",
+		"messagePlaceholder": "chciałabym/chciałbym się z wami skontaktować...",
+		"salutation": "Dzień dobry,",
+		"submitButtonSending": "Wysyłanie...",
+		"submitButton": "Wyślij",
+		"successMessage": "Wiadomość została wysłana! Dziękujemy!",
+		"errorMessage": "Nastąpił błąd, wiadomość nie została wysłana. Przepraszamy."
 	}
 }
