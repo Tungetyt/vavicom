@@ -1,5 +1,6 @@
 'use client'
 import {AnimatePresence, motion} from 'framer-motion'
+import {useTranslations} from 'next-intl'
 import Image from 'next/image'
 import {type FC, useState} from 'react'
 
@@ -11,6 +12,7 @@ const AnimatedCarousel: FC<
 		}>
 	}>
 > = ({items}) => {
+	const t = useTranslations('AnimatedCarousel')
 	const [currentIndex, setCurrentIndex] = useState(0)
 
 	const nextSlide = () =>
@@ -29,7 +31,7 @@ const AnimatedCarousel: FC<
 				type='button'
 				onClick={prevSlide}
 				className='absolute left-2 top-1/2 z-10 -translate-y-1/2 bg-black/30 text-white px-2 py-1 rounded'
-				aria-label='Previous Slide'
+				aria-label={t('previousSlide')}
 			>
 				‹
 			</button>
@@ -37,7 +39,7 @@ const AnimatedCarousel: FC<
 				type='button'
 				onClick={nextSlide}
 				className='absolute right-2 top-1/2 z-10 -translate-y-1/2 bg-black/30 text-white px-2 py-1 rounded'
-				aria-label='Next Slide'
+				aria-label={t('nextSlide')}
 			>
 				›
 			</button>
@@ -53,7 +55,7 @@ const AnimatedCarousel: FC<
 				>
 					<Image
 						src={items[currentIndex].image}
-						alt={`Slide ${currentIndex + 1}`}
+						alt={t('slideAlt', {number: currentIndex + 1})}
 						fill
 						style={{objectFit: 'contain', objectPosition: 'center'}}
 						sizes='(max-width: 768px) 100vw, 800px'

@@ -148,5 +148,10 @@
 	},
 	"OSMap": {
 		"loading": "Ładowanie mapy..."
+	},
+	"AnimatedCarousel": {
+		"previousSlide": "Poprzedni slajd",
+		"nextSlide": "Następny slajd",
+		"slideAlt": "Slajd {number}"
 	}
 }
