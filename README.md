@@ -28,3 +28,5 @@ ASK GPT:
 * what would be better for SEO, SPA with Dialogs or MPA?
 * Additional languages?
 * 2 websitets remaining?
+
+different phone number for English website

@@ -7,22 +7,45 @@ import Products from '@/components/products'
 import {LinkPreview} from '@/components/ui/link-preview'
 import {contactPhone, locations} from '@/consts'
 import {IconBuilding, IconPhone} from '@tabler/icons-react'
+import type {Metadata} from 'next'
+import {useTranslations} from 'next-intl'
+import {type RequestConfig, getTranslations} from 'next-intl/server'
 import Image from 'next/image'
 import {Fragment} from 'react'
 import {FaFacebook, FaInstagram, FaLinkedin, FaXTwitter} from 'react-icons/fa6'
 
-const ContactFormModal = ({showBorder}: {showBorder?: boolean}) => (
-	<ModalWithImages
-		trigger={
-			<span className='group-hover/modal-btn:translate-x-40 text-center transition duration-500'>
-				KONTAKT
-			</span>
-		}
-		triggerClassName={`flex m-auto mb-32 sm:mb-0 bg-slate-950 dark:bg-white rounded-full w-fit dark:text-black text-white px-4 sm:px-8 py-2 sm:py-4 hover:bg-slate-950/[0.8] hover:shadow-lg ${showBorder ? 'border-2 border-white' : ''}`}
-	>
-		<ContactForm />
-	</ModalWithImages>
-)
+export type Props = {params: Promise<RequestConfig>}
+
+export async function generateMetadata({params}: Props) {
+	const {locale} = await params
+
+	if (!locale) return {} as const satisfies Metadata
+
+	const t = await getTranslations({locale, namespace: 'Metadata'})
+
+	return {
+		title: t('title'),
+		description: t('description')
+	} as const satisfies Metadata
+}
+
+const ContactFormModal = ({showBorder}: {showBorder?: boolean}) => {
+	const t = useTranslations('Home')
+	return (
+		<ModalWithImages
+			trigger={
+				<span className='group-hover/modal-btn:translate-x-40 text-center transition duration-500'>
+					{t('kontakt')}
+				</span>
+			}
+			triggerClassName={`flex m-auto mb-32 sm:mb-0 bg-slate-950 dark:bg-white rounded-full w-fit dark:text-black text-white px-4 sm:px-8 py-2 sm:py-4 hover:bg-slate-950/[0.8] hover:shadow-lg ${
+				showBorder ? 'border-2 border-white' : ''
+			}`}
+		>
+			<ContactForm />
+		</ModalWithImages>
+	)
+}
 
 const ContactInfo = () => (
 	<div>
@@ -34,7 +57,9 @@ const ContactInfo = () => (
 	</div>
 )
 
-const Home = () => {
+export default function Home() {
+	const t = useTranslations('Home')
+
 	return (
 		<>
 			<Hero>
@@ -49,11 +74,11 @@ const Home = () => {
 					/>
 					<div className='text-center font-extralight text-base dark:text-neutral-200 py-4'>
 						<div className='text-lg sm:text-2xl md:text-2xl'>
-							Kompleksowa obsługa księgowa
+							{t('kompleksowaObsluga')}
 						</div>
 						<div className='text-base sm:text-lg md:text-xl flex flex-col items-center'>
 							<div>
-								Oddziały:
+								{t('oddzialy')}
 								{locations.map(({city, url}, i) => (
 									<Fragment key={url}>
 										{' '}
@@ -64,7 +89,6 @@ const Home = () => {
 									</Fragment>
 								))}
 							</div>
-
 							<ContactInfo />
 						</div>
 					</div>
@@ -113,4 +137,3 @@ const Home = () => {
 		</>
 	)
 }
-export default Home
