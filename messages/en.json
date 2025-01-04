@@ -324,5 +324,8 @@
 	"LinkPreview": {
 		"hiddenImageAlt": "ukryty obraz",
 		"previewImageAlt": "podgląd obrazu"
+	},
+	"AuroraBackground": {
+		"clientPanel": "Panel klienta"
 	}
 }

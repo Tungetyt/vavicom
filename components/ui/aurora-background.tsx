@@ -1,6 +1,7 @@
 'use client'
 import {LinkPreview} from '@/components/ui/link-preview'
 import {cn} from '@/lib/utils'
+import {useTranslations} from 'next-intl'
 import type {ReactNode} from 'react'
 import {FaFacebook, FaInstagram, FaLinkedin, FaXTwitter} from 'react-icons/fa6'
 
@@ -15,6 +16,8 @@ export const AuroraBackground = ({
 	showRadialGradient = true,
 	...props
 }: AuroraBackgroundProps) => {
+	const t = useTranslations('AuroraBackground')
+
 	return (
 		<main>
 			<div
@@ -54,7 +57,7 @@ export const AuroraBackground = ({
 						className='text-black'
 						url='https://panel.vavicom.pl/login'
 					>
-						Panel klienta
+						{t('clientPanel')}
 					</LinkPreview>
 				</div>
 				<div className='absolute top-4 right-4 z-10'>
