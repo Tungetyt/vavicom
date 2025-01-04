@@ -210,7 +210,7 @@ export default function Nav() {
 			value: 'client-panel-demo',
 			label: (
 				<>
-					<div className='items-center justify-center w-6 h-6 border-2 border-black rounded-full bg-white hidden sm:flex'>
+					<div className='items-center justify-center h-6 aspect-square border-2 border-black rounded-full bg-white hidden sm:flex'>
 						<span className='text-black text-xl font-bold'>e</span>
 					</div>
 					{t('tabs.clientPanelDemo')}
