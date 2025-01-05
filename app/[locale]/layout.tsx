@@ -5,6 +5,7 @@ import {routing} from '@/i18n/routing'
 import {NextIntlClientProvider} from 'next-intl'
 import {getMessages, setRequestLocale} from 'next-intl/server'
 import {notFound} from 'next/navigation'
+import Script from 'next/script'
 import type {ReactNode} from 'react'
 
 const geistSans = localFont({
@@ -45,6 +46,12 @@ export default async function RootLayout({
 				<NextIntlClientProvider messages={messages}>
 					{children}
 				</NextIntlClientProvider>
+				<Script
+					src='https://umami-vavicom.vercel.app/script.js'
+					data-website-id='8bb1e161-221a-40e0-bac1-e06282d6806c'
+					async
+					strategy='lazyOnload'
+				/>
 			</body>
 		</html>
 	)
