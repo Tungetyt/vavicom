@@ -15,9 +15,10 @@ import {
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs'
 import {contactEmail, locations} from '@/consts'
 import type {Images} from '@/lib/images'
-import {IconFileCv, IconHelpOctagon, IconReceipt} from '@tabler/icons-react'
+import {IconFileCv, IconReceipt} from '@tabler/icons-react'
 import {useTranslations} from 'next-intl'
 import Image from 'next/image'
+import {FaQuestion} from 'react-icons/fa'
 import AnimatedCarousel from './animated-carousel'
 
 const imageUrls = [
@@ -108,7 +109,7 @@ export default function Nav() {
 			value: 'faq',
 			label: (
 				<>
-					<IconHelpOctagon className='hidden sm:block' />
+					<FaQuestion className='hidden sm:block' />
 					{t('tabs.faq')}
 				</>
 			),

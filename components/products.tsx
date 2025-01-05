@@ -1,24 +1,20 @@
 import {ModalWithImages} from '@/components/modal'
 import ProductCard from '@/components/product-card'
 import {images} from '@/lib/images'
-import {
-	IconBook2,
-	IconChessKnight,
-	IconCoins,
-	IconGavel,
-	IconReportAnalytics,
-	IconTaxEuro
-} from '@tabler/icons-react'
+import {IconCoins, IconReportAnalytics} from '@tabler/icons-react'
 import {useTranslations} from 'next-intl'
+import {GoLaw} from 'react-icons/go'
+import {LiaChessSolid} from 'react-icons/lia'
+import {LuBookText, LuBriefcaseBusiness} from 'react-icons/lu'
 
 const size = 64
 const icons = [
-	<IconBook2 size={size} key='IconBook2' />,
+	<LuBookText size={size} key='LuBookText' />,
 	<IconCoins size={size} key='IconCoins' />,
-	<IconTaxEuro size={size} key='IconTaxEuro' />,
+	<LuBriefcaseBusiness size={size} key='LuBriefcaseBusiness' />,
 	<IconReportAnalytics size={size} key='IconReportAnalytics' />,
-	<IconChessKnight size={size} key='IconChessKnight' />,
-	<IconGavel size={size} key='IconGavel' />
+	<LiaChessSolid size={size} key='LiaChessSolid' />,
+	<GoLaw size={size} key='GoLaw' />
 ]
 
 export default function Products() {
