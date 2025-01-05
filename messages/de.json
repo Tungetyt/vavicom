@@ -1,0 +1,348 @@
+{
+	"Home": {
+		"kontakt": "KONTAKT",
+		"kompleksowaObsluga": "Umfassende Buchhaltungsleistungen",
+		"oddzialy": "Zweigstellen:",
+		"ariaGoToGoogleMaps": "Zu Google Maps wechseln",
+		"ariaGoToFacebook": "Zu Facebook wechseln",
+		"ariaGoToX": "Zu X (Twitter) wechseln",
+		"ariaGoToInstagram": "Zu Instagram wechseln",
+		"ariaGoToLinkedIn": "Zu LinkedIn wechseln"
+	},
+	"Metadata": {
+		"title": "Vavicom Buchhaltungsbüro",
+		"description": "Umfassende Buchhaltungsbetreuung – Warschau • Józefosław"
+	},
+	"Nav": {
+		"services": [
+			{
+				"service": "Personalwesen und Löhne",
+				"price": 60
+			},
+			{
+				"service": "Einnahmen- und Ausgabenbuch",
+				"price": 250
+			},
+			{
+				"service": "Handelsbücher",
+				"price": 400
+			}
+		],
+		"faqs": [
+			{
+				"q": "Worum geht es bei der Online-Buchhaltung?",
+				"a": "Das ist eine moderne Form der Buchhaltung, die einen Fernzugriff auf alle Finanzdaten Ihres Unternehmens ermöglicht. Dank der firmeneigenen Plattform von VAVICOM haben Sie rund um die Uhr Einblick in Dokumente, einen schnellen Informationsfluss und eine laufende Datenintegration zwischen Ihnen und dem Buchhaltungsbüro – unabhängig davon, wo Sie sich befinden."
+			},
+			{
+				"q": "Was ist eine Systemintegration?",
+				"a": "Die Systemintegration verbindet die wichtigsten Geschäftsprozesse (Rechnungsstellung, Zahlungen, Lagerverwaltung) an einem Ort. Durch das Hinzufügen buchhalterischer Daten (Kosten, Löhne) genügt ein Klick, um einen umfassenden Einblick in den Zustand des Unternehmens zu erhalten."
+			},
+			{
+				"q": "Wie viel Zeit spart man mit Online-Buchhaltung?",
+				"a": "Die Online-Buchhaltung macht häufige Besuche im Büro überflüssig und beschleunigt den Informationsfluss. Sowohl kleinere als auch größere Unternehmen können so viel Zeit sparen und gleichzeitig laufend die Richtigkeit der eingegebenen Daten kontrollieren."
+			},
+			{
+				"q": "Wie sieht der Datenzugriff in der Online-Buchhaltung aus?",
+				"a": "Rund um die Uhr. Sie können Berichte, Diagramme und Übersichten von jedem Ort der Welt generieren sowie in Echtzeit Lagerbestände und Kundenstammdaten überprüfen."
+			},
+			{
+				"q": "Warum lohnt es sich, die Buchhaltung an externe Buchhaltungsbüros auszulagern?",
+				"a": "Sie sparen Kosten für Finanz- und Buchhaltungssysteme, die Einstellung und Schulung von Buchhaltern sowie die Unterhaltung von Arbeitsplätzen. Gleichzeitig haben Sie die Sicherheit, dass Ihre Finanzen von einem Team betreut werden, das stets über aktuelles Steuerwissen verfügt."
+			},
+			{
+				"q": "Kann man das Buchhaltungsbüro während des Jahres wechseln?",
+				"a": "Ja, zu jedem beliebigen Zeitpunkt – am bequemsten jedoch zu Beginn eines neuen Fiskaljahres. Während des laufenden Jahres ist es entscheidend, die Verantwortlichkeit für frühere Buchungen und Steuerabrechnungen festzulegen."
+			},
+			{
+				"q": "Ist Ihnen die Zeit zu schade, um sich mit den sich schnell ändernden Vorschriften auseinanderzusetzen?",
+				"a": "Das Buchhaltungsbüro verfolgt alle Änderungen im Steuerrecht und kümmert sich um deren korrekte Umsetzung, sodass Sie sich auf die Weiterentwicklung Ihres Unternehmens konzentrieren können."
+			},
+			{
+				"q": "Haben Sie Angst vor Fehlern bei der eigenständigen Buchhaltung?",
+				"a": "Die Fachleute des Buchhaltungsbüros minimieren das Risiko teurer Fehler. So bleiben Ihre Abrechnungen stets konform mit den geltenden Vorschriften."
+			},
+			{
+				"q": "Sorgen Sie sich, dass Dokumente verloren gehen könnten?",
+				"a": "VAVICOM stellt eine moderne Online-Plattform zur Verfügung, auf der alle Rechnungen und Dokumente an einem Ort archiviert sind. So können Sie jederzeit prüfen, was bereits übermittelt wurde und wann."
+			},
+			{
+				"q": "Haben Sie schlechte Erfahrungen mit der Zusammenarbeit mit Buchhaltungsbüros gemacht?",
+				"a": "Wir setzen auf partnerschaftliche Beziehungen zu unseren Kunden, aktive Beratung und ein stabiles Team von Spezialisten. Wir legen Wert auf eine langfristige Zusammenarbeit, die auf Vertrauen basiert."
+			},
+			{
+				"q": "Haben Sie niemanden, mit dem Sie aktuelle finanz- und buchhalterische Entscheidungen besprechen können?",
+				"a": "VAVICOM ist Ihr Geschäftspartner – wir informieren Sie regelmäßig über gesetzliche Änderungen und unterstützen Sie bei finanziellen Entscheidungen."
+			},
+			{
+				"q": "Was ist Hybrid-Buchhaltung?",
+				"a": "Das ist die Kombination aus traditioneller Betreuung und modernen Online-Lösungen. Sie behalten den direkten Kontakt mit einem Spezialisten und profitieren gleichzeitig von den Vorteilen des Online-Zugriffs auf Dokumente und Daten."
+			},
+			{
+				"q": "In welcher Form reichen Sie Unterlagen beim Büro ein?",
+				"a": "Am bequemsten elektronisch – z. B. über eine App, per E-Mail oder eine Online-Plattform. Wenn Sie möchten, können Sie sie auch persönlich oder per Kurier zustellen."
+			},
+			{
+				"q": "Sind Ihnen Ganzheitlichkeit, Professionalität und Pünktlichkeit wichtig?",
+				"a": "Bei VAVICOM gewährleisten wir volle Vertraulichkeit, Datensicherheit und eine fristgerechte Abwicklung aller uns anvertrauten Aufgaben. Alles, damit Sie sich sicher fühlen und sich voll auf Ihr Geschäft konzentrieren können."
+			},
+			{
+				"q": "Sind meine Daten sicher und kann ich auf volle Diskretion der Zusammenarbeit zählen?",
+				"a": "DATENSCHUTZRICHTLINIE Buchhaltungsbüro Vavicom. Verantwortlicher: Verantwortlich für die Datenverarbeitung ist VAVICOM sp. z o.o. mit Sitz in Piaseczno. Kontaktdaten: Kontaktaufnahme mit dem Verantwortlichen ist möglich unter: elektronisch: info@vavicom.pl telefonisch: +48 606 368 694 postalisch: ul. Grochowskiego 7 lok.25, 05-500 Piaseczno Der Verantwortliche hat einen Datenschutzbeauftragten ernannt, der in allen Fragen zum Schutz personenbezogener Daten sowie zur Umsetzung der den natürlichen Personen zustehenden Rechte kontaktiert werden kann: iod@vavicom.pl Zweck und Rechtsgrundlage der Datenverarbeitung Kommunikation per E-Mail und Post: Art. 6 Abs. 1 lit. f) DSGVO Rechtsgrundlage für die Verarbeitung ist das berechtigte Interesse des Verantwortlichen an der Führung der Korrespondenz. Telefonischer Kontakt: Art. 6 Abs. 1 lit. f) DSGVO Rechtsgrundlage für die Verarbeitung ist das berechtigte Interesse des Verantwortlichen, die gemeldete Angelegenheit im Zusammenhang mit der ausgeübten Tätigkeit zu erledigen. Rekrutierung: Art. 6 Abs. 1 lit. c) DSGVO Rechtsgrundlage für die Verarbeitung ist die rechtliche Verpflichtung des Verantwortlichen gemäß dem Arbeitsgesetzbuch sowie Art. 6 Abs. 1 lit. a) DSGVO Rechtsgrundlage für die Verarbeitung ist die Einwilligung zum Zweck des Rekrutierungsverfahrens in Bezug auf Daten, die nicht durch Rechtsvorschriften gefordert sind, sowie für zukünftige Rekrutierungsverfahren. Dienstleistungserbringung: Art. 6 Abs. 1 lit. a) DSGVO sowie Art. 10 Abs. 2 des Gesetzes vom 18. Juli 2002 über die Erbringung elektronischer Dienste. Rechtsgrundlage für die Verarbeitung ist die Einwilligung. Art. 6 Abs. 1 lit. b) DSGVO Rechtsgrundlage für die Verarbeitung ist der Abschluss und die Erfüllung des Vertrags. Art. 6 Abs. 1 lit. f) DSGVO Rechtsgrundlage ist das berechtigte Interesse des Verantwortlichen, insbesondere hinsichtlich der Vertragserfüllung und dem Marketing eigener Dienstleistungen. Datenerfassung in Geschäftskontakten: Art. 6 Abs. 1 lit. a) DSGVO Rechtsgrundlage für die Verarbeitung ist die Einwilligung. Führung von Rechnungs- und Steuerunterlagen: Art. 6 Abs. 1 lit. c) DSGVO i. V. m. Art. 74 Abs. 2 des Gesetzes vom 29. September 1994 über das Rechnungswesen. Rechtsgrundlage für die Verarbeitung ist die gesetzliche Verpflichtung des Verantwortlichen gemäß dem Rechnungslegungsgesetz. Kommunikation mit den für die Vertragserfüllung zuständigen Personen auf Seiten des Geschäftspartners: Art. 6 Abs. 1 lit. f) DSGVO Rechtsgrundlage für die Verarbeitung ist das berechtigte Interesse des Verantwortlichen an der Kommunikation mit Geschäftspartnern. Empfänger der Daten: Dienstleister, die bestimmte Leistungen erbringen, einschließlich IT-Dienstleister, Post- und Kurierdienste. Dienstleister für Rechts- und Beratungsleistungen sowie Unterstützung bei der Geltendmachung fälliger Ansprüche, insbesondere Rechtsanwaltskanzleien. Behörden mit gesetzlicher Befugnis zum Erhalt personenbezogener Daten. Rechte der betroffenen Person: Das Recht auf Auskunft über die personenbezogenen Daten sowie das Recht, deren Berichtigung, Löschung oder Einschränkung der Verarbeitung zu verlangen. Das Recht auf Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten. Das Recht, eine erteilte Einwilligung jederzeit zu widerrufen, ohne dass dies die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung berührt. Soweit Ihre Daten zum Abschluss und zur Durchführung eines Dienstleistungsvertrags oder aufgrund Ihrer Einwilligung verarbeitet werden, haben Sie auch das Recht auf Datenübertragbarkeit. Ihnen steht ferner das Recht auf Beschwerde bei der Präsidentin bzw. dem Präsidenten des Amts für den Schutz personenbezogener Daten zu. Aufbewahrungsfrist der Daten: Ihre personenbezogenen Daten werden bis zur Erfüllung des Zwecks, für den sie erhoben wurden, gespeichert und anschließend, sofern es sich um Archivmaterial handelt, für den Zeitraum aufbewahrt, der sich aus dem Gesetz vom 14. Juli 1983 über das nationale Archivgut und die Archive ergibt. Werden Ihre personenbezogenen Daten zur Führung von Rechnungs- und Steuerunterlagen verarbeitet, so werden diese Daten 5 Jahre lang ab dem Ende des Kalenderjahres aufbewahrt, in dem die Steuerpflicht entstanden ist. Werden Ihre personenbezogenen Daten zur Erbringung von Vertrauensdiensten gemäß Art. 17 Abs. 2 des Gesetzes vom 5. September 2016 über Vertrauensdienste und elektronische Identifizierung verarbeitet, so werden die personenbezogenen Daten für den gesetzlich vorgeschriebenen Zeitraum aufbewahrt, d. h. 20 Jahre. Werden Ihre personenbezogenen Daten für aktuelle und zukünftige Rekrutierungsverfahren verarbeitet, so werden sie für einen Zeitraum von 12 Monaten aufbewahrt. Werden personenbezogene Daten zum Zweck der Geltendmachung Ihrer Ansprüche verarbeitet, so werden sie für die gesetzlich festgelegte Verjährungsfrist aufbewahrt. Im Falle Ihrer Einwilligung in die Verarbeitung Ihrer personenbezogenen Daten zu Marketingzwecken werden die Daten bis zum Widerruf der Einwilligung gespeichert."
+			}
+		],
+		"carouselDescriptions": [
+			"Ankündigungen zu den wichtigsten Änderungen",
+			"Buchhaltungsübersicht",
+			"Werteerklärungen und Zahlungstermine",
+			"Möglichkeit der Eigenrechnungsstellung",
+			"Ankündigungen zu den wichtigsten Änderungen"
+		],
+		"tabs": {
+			"prices": "Preisliste",
+			"about": "Über uns",
+			"faq": "FAQ",
+			"career": "Karriere",
+			"clientPanelDemo": "Kundenbereich"
+		},
+		"table": {
+			"service": "Dienstleistung:",
+			"price": "Preis ab:"
+		},
+		"about": {
+			"p1": "Vavicom ist ein modernes, lizenziertes Buchhaltungsbüro mit langjähriger Erfahrung, tätig in Warschau (Mokotów, Ursynów) und in ganz Polen. Wir unterstützen Unternehmen in der umfassenden Finanz- und Buchhaltungsbetreuung: Wir führen Bücher, Steuerabrechnungen, Lohnlisten sowie Personal- und Lohnadministration. Unser Team von Spezialisten kümmert sich um jede Phase der Zusammenarbeit und setzt dabei auf bewährte Prozesse und innovative Technologien – so bieten wir einen ständigen, 24/7 Online-Zugang zur Buchhaltungsdokumentation.",
+			"p2": "Wir unterstützen sowohl neue Unternehmer als auch erfahrene Unternehmen mit unterschiedlichen Geschäftsschwerpunkten. Wir garantieren eine individuelle Herangehensweise, ein flexibles Preisangebot und umfassende Unterstützung bei Finanz- und Steuerberatung. Wenn Sie uns Ihre Buchhaltung anvertrauen, erhalten Sie eine professionelle Betreuung und mehr Zeit für die Weiterentwicklung Ihres Geschäfts. Kontaktieren Sie uns und erfahren Sie, was wir für Ihr Unternehmen tun können!"
+		},
+		"panelIntro": "Jeder VAVICOM-Kunde hat Zugriff auf ein vielseitiges Kundenportal.",
+		"career": {
+			"heading1": "Hybride Arbeitsweise, Büros:",
+			"p1": "Aufgrund des dynamischen Wachstums suchen wir neue Mitarbeiter für unser Team:",
+			"positions": [
+				"Buchhalter/in",
+				"Fachkraft für Personalwesen und Löhne",
+				"Vertriebsmitarbeiter / Account Manager",
+				"Student (bezahltes Praktikum in der Buchhaltungsabteilung)"
+			],
+			"howToApply": "Wie bewerben?",
+			"applyLine1": "Senden Sie Ihren aktuellen Lebenslauf an {contactEmail}. Bitte fügen Sie auch eine Klausel über die Einwilligung zur Verarbeitung personenbezogener Daten für die Zwecke des Rekrutierungsprozesses bei.",
+			"applyLine2": "Schließen Sie sich uns an und entwickeln Sie sich in einem innovativen Buchhaltungsbüro weiter!",
+			"programHeading": "Praktikumsprogramm",
+			"programP": "Für Studierende in den letzten Semestern haben wir erneut bezahlte Praktika eingeführt, die Folgendes ermöglichen:",
+			"programList": [
+				"Praktisches Erlernen des Buchhalterberufs unter Anleitung erfahrener Experten.",
+				"Einblicke in die Besonderheiten der Betreuung verschiedener Unternehmen.",
+				"Arbeiten in einer angenehmen Atmosphäre und Erlernen des Comarch ERP Optima-Systems.",
+				"Kennenlernen moderner Lösungen sowie des Dokumentenflusses in einem Buchhaltungsbüro."
+			],
+			"requirementsHeading": "Bewerben Sie sich, wenn:",
+			"requirements": [
+				"Sie studieren Buchhaltung, Wirtschaft, Finanzen oder ein verwandtes Fachgebiet.",
+				"Sie arbeiten gerne mit Zahlen und fühlen sich in MS Office (insbesondere Excel und Word) sicher.",
+				"Sie besitzen analytische Fähigkeiten, schätzen Teamarbeit und können auch eigenständig agieren.",
+				"Sie sind sorgfältig, 2-3 Tage pro Woche verfügbar und achten auf den Schutz vertraulicher Daten.",
+				"Sie möchten praktische Erfahrungen in Buchhaltung und Finanzberichterstattung sammeln."
+			],
+			"tasksHeading": "Aufgabenbereich:",
+			"tasks": [
+				"Verbuchen grundlegender Dokumente und Nutzung des Buchhaltungssystems.",
+				"Unterstützung der Abteilung bei aktuellen Aufgaben (Buchhaltungsdokumentation, Berichterstattung).",
+				"Zusammenarbeit mit Kunden und externen Geschäftspartnern.",
+				"Unterstützung bei der Büroorganisation und beim Posteingang.",
+				"Gewährleistung eines korrekten Dokumentenflusses und fristgerechter Abrechnungen."
+			]
+		}
+	},
+	"OSMap": {
+		"loading": "Karte wird geladen..."
+	},
+	"AnimatedCarousel": {
+		"previousSlide": "Vorherige Folie",
+		"nextSlide": "Nächste Folie",
+		"slideAlt": "Folie {number}"
+	},
+	"ContactForm": {
+		"title": "Kontaktformular",
+		"emailLabel": "Ihre E-Mail-Adresse",
+		"emailPlaceholder": "email@gmail.com",
+		"messageLabel": "Beschreiben Sie, wie wir Ihnen helfen können",
+		"messagePlaceholder": "ich möchte mich mit euch in Verbindung setzen...",
+		"salutation": "Guten Tag,",
+		"submitButtonSending": "Senden...",
+		"submitButton": "Senden",
+		"successMessage": "Nachricht wurde gesendet! Vielen Dank!",
+		"errorMessage": "Es ist ein Fehler aufgetreten, die Nachricht wurde nicht versendet. Wir bitten um Entschuldigung."
+	},
+	"ModalWithImages": {
+		"imageAlt": "Vavicom-Büro"
+	},
+	"Products": {
+		"productsContent": [
+			{
+				"title": "Buchhaltung",
+				"content": [
+					"Komplexe und sich ständig ändernde Gesetzesvorschriften im Bereich Wirtschafts-, Finanz- und Steuerrecht erfordern eine ständige Beobachtung und korrekte Auslegung der Rechtsnormen.",
+					"Wenn Sie uns die laufende Führung Ihrer Handelsbücher und die Erstellung von Finanzberichten übertragen, müssen Sie sich nicht mehr auf Gesetzesänderungen konzentrieren und können sich stattdessen auf das Tagesgeschäft fokussieren.",
+					"",
+					"Unsere Leistungen umfassen:",
+					[
+						"Führung des Einnahmen- und Ausgabenbuchs (KPIR)",
+						"Führung der Handelsbücher",
+						"Erstellung oder Aktualisierung der Rechnungslegungspolitik in Zusammenarbeit mit dem Kunden",
+						"Vorbereitung der Datenbasis im Finanz- und Buchhaltungssystem",
+						"Erfassung von Dokumenten, die Sie und Ihre Geschäftspartner erhalten",
+						"Laufende Führung der Buchhaltung",
+						"Finanzberichterstattung an die Geschäftsleitung des Unternehmens bzw. die Konzernzentrale nach Ihren Vorgaben",
+						"Erstellung gesetzlicher Finanzabschlüsse und Unterstützung bei der Erstellung des Geschäftsberichts der Geschäftsführung"
+					],
+					"",
+					"Unsere oberste Priorität ist es, eine pünktliche und qualitativ hochwertige Buchhaltung sicherzustellen. Unsere Buchhaltungs- und Berichtsdienstleistungen passen wir stets an Ihre spezifischen Erwartungen an – sowohl formal als auch inhaltlich – und berücksichtigen dabei gesetzliche sowie kundenseitige Fristen.",
+					"Wir bieten eine umfassende Betreuung von wirtschaftlichen Einheiten, insbesondere Mikro-, Klein- und Mittelbetrieben. Das Hauptziel ist die Erfüllung der laufenden Pflichten des Steuerpflichtigen in Bezug auf die Buchführung sowie die steuerliche Berichterstattung.",
+					"",
+					"Wir bieten attraktive Preise:",
+					[
+						"Einnahmen-Aufzeichnungen für pauschalbesteuerte Unternehmen ab 200 PLN",
+						"KPIR (Einnahmen- und Ausgabenbuch) ab 250 PLN",
+						"Handelsbücher (Bilanzbuchhaltung) ab 400 PLN"
+					]
+				]
+			},
+			{
+				"title": "Personalwesen und Löhne",
+				"content": [
+					"Wir bieten eine umfassende Betreuung bei der Lohnabrechnung gemäß den geltenden Vorschriften des Arbeitsrechts, der Sozialversicherung und der Einkommensteuer für natürliche Personen.",
+					"Darüber hinaus kümmern wir uns um die ordnungsgemäße und rechtskonforme Verwaltung von Personalakten und sämtlichen Dokumenten rund um das Arbeitsverhältnis und Urlaubsregelungen. Wir erstellen Abrechnungen für die Sozialversicherung (ZUS), den Staatlichen Fonds zur Rehabilitation Behinderter (PFRON) sowie das Finanzamt. Bei Fragen arbeiten wir mit diesen Institutionen anhand der vorbereiteten Unterlagen zusammen.",
+					"Der Leistungsumfang beinhaltet auch Unterstützung bei der Einstellung neuer und dem Ausscheiden bestehender Mitarbeiter. Wir achten darauf, dass die Personal- und Lohnprozesse, die wir für Sie abwickeln, gesetzeskonform, effizient und leicht umsetzbar sind.",
+					"",
+					"Im Rahmen unserer Personal- und Lohnleistungen bieten wir Ihnen unter anderem:",
+					[
+						"Berechnung von Löhnen unter Berücksichtigung von Zuschlägen und Abzügen",
+						"Berechnung von Krankheits- und Mutterschaftsleistungen",
+						"Erstellung von PIT- und ZUS-Erklärungen im Namen des Arbeitgebers",
+						"Vorbereitung von Lohnunterlagen für das Unternehmen und dessen Mitarbeitende",
+						"Unterstützung bei der Auszahlung von Löhnen und Sozialversicherungsbeiträgen",
+						"Erstellung und Einreichung der Jahresmeldungen / Erklärungen (PIT-11, PIT-4R, PIT-40)",
+						"Anlage und Verwaltung von Personalakten",
+						"Erfassung und Überwachung des Urlaubsanspruchs von Mitarbeitenden",
+						"Überwachung der Gültigkeit von ärztlichen Untersuchungen und Arbeitssicherheits-Schulungen",
+						"Ausstellung von Arbeitszeugnissen",
+						"Erstellung und Abrechnung von Lohnlisten für Personen, die auf Grundlage von zivilrechtlichen Verträgen beschäftigt sind",
+						"Ausstellen von Informationen über Einkünfte aus anderen Quellen (PIT-28, PIT-8C)"
+					],
+					"",
+					"Unser Angebot umfasst Lösungen, die die organisatorische Struktur Ihres Unternehmens, die Komplexität der Lohnbestandteile und die Personal- und Lohnberichte berücksichtigen. Wir reagieren schnell und flexibel auf Ihre Bedürfnisse und Anforderungen. Wir gewährleisten vollständige Vertraulichkeit und Sicherheit bei der Aufbewahrung der Personal- und Lohnunterlagen sowie bei Restrukturierungsprojekten. Wir helfen Ihnen, die Kosten für die Personalverwaltung zu senken.",
+					"Unser breites Angebot richtet sich an alle Arbeitgeber, die Mitarbeitende beschäftigen, unabhängig von der Unternehmensgröße. Wir unterstützen auch Selbstständige.",
+					"",
+					"Wir bieten attraktive Preise:",
+					[
+						"Lohnabrechnung ab 45 PLN",
+						"Personalverwaltung ab 35 PLN pro Mitarbeitendem"
+					]
+				]
+			},
+			{
+				"title": "Steuerabrechnungen",
+				"content": [
+					"Das polnische Steuersystem sieht in den meisten Fällen eine regelmäßige Steuerzahlungspflicht vor.",
+					"Dies erfordert eine systematische Berechnung der Steuerverbindlichkeiten sowie die Erstellung vieler Informationen und Steuererklärungen mit verschiedenen Fälligkeiten für die Finanzbehörden. Das Buchhaltungsbüro VAVICOM bietet die Erstellung der erforderlichen Steuererklärungen sowie Unterstützung im Kontakt mit den Finanzbehörden, einschließlich der Betreuung von Steuerprüfungen.",
+					"",
+					"Unsere Leistungen im Rahmen der Erstellung von Körperschaftsteuerabrechnungen (CIT) umfassen die komplette Erstellung periodischer Berechnungen und der jährlichen Erklärung CIT-8. Insbesondere beinhalten diese Leistungen:",
+					[
+						"Periodische und jährliche CIT-Berechnungen mit detaillierten Informationen",
+						"Jährliche Abrechnung, Erstellung und Einreichung der Steuererklärung CIT-8 mit den entsprechenden Anhängen, basierend auf den periodischen CIT-Berechnungen",
+						"Ermittlung der geschuldeten Steuer, die das Unternehmen vor Ablauf der gesetzlichen Zahlungsfrist an das Finanzamt zu überweisen hat"
+					],
+					"",
+					"Die Abrechnung der Umsatzsteuer (VAT) umfasst die Erstellung von Umsatzsteuerregistern und -erklärungen, darunter:",
+					[
+						"Erstellung der Einkaufs- und Verkaufsregister (VAT) anhand der eingegangenen Unterlagen",
+						"Vorschläge zur Einstufung von Transaktionen, die die Höhe der Steuerschuld (Kosten der Einnahmeerzielung) beeinflussen können",
+						"Erstellung von Umsatzsteuererklärungen auf Basis der Umsatzsteuerregister",
+						"Information über die Höhe der zu zahlenden Umsatzsteuer (VAT)",
+						"Erstellung von Zusammenfassenden Meldungen (VAT-UE) über innergemeinschaftliche Erwerbs- und Verkaufstransaktionen sowie die Korrektur dieser Meldungen bei Bedarf",
+						"Erstellung monatlicher Intrastat-Meldungen (falls erforderlich)",
+						"Ausweisung eines möglichen Vorsteuererstattungsanspruchs in der Umsatzsteuererklärung und ggf. Vorbereitung der Anträge auf Erstattung der Umsatzsteuer"
+					]
+				]
+			},
+			{
+				"title": "Finanzdienstleistungen",
+				"content": [
+					"Das Finanzmanagement eines Unternehmens ist ein wesentlicher Bestandteil der täglichen Aufgaben von Inhabern und Führungskräften.",
+					"Das Buchhaltungsbüro VAVICOM verfügt über ein Team von Spezialisten mit langjähriger Erfahrung in Finanzmanagement, strategischer Beratung sowie Optimierung geschäftlicher Prozesse und Kosten. Unsere Spezialisten entwickeln im Rahmen der Implementierung ein auf die Bedürfnisse jedes Kunden individuell zugeschnittenes Berichterstattungssystem.",
+					"Wir bieten:",
+					[
+						"Businesspläne und Finanzmodelle",
+						"Führung des internen Rechnungswesens",
+						"Kostenanalysen und -optimierung",
+						"Überwachung und Forderungsmanagement",
+						"Controllingsysteme",
+						"Analyse der Finanzierungskosten, einschließlich Leasingkosten",
+						"Unterstützung bei der Zusammenarbeit mit Banken und Finanzierungsinstituten, Versicherern"
+					],
+					"Wir erstellen Businesspläne und Finanzmodelle, die zur Bewertung der Wirtschaftlichkeit von Investitionsprojekten sowie zur Vorbereitung der erforderlichen Unterlagen für die Finanzierung dienen. Wir entwickeln interne Rechnungswesenmodelle und Finanzanalysen – Berichterstattungssysteme, die individuell auf die Bedürfnisse jedes Kunden zugeschnitten sind.",
+					"Wir analysieren die Geschäftsergebnisse Ihres Unternehmens und schlagen alternative Lösungen vor, die auf eine Steigerung der Rentabilität/Effizienz abzielen.",
+					"Eine effektive Eintreibung von Forderungen muss nicht in einem Gerichtsverfahren und dem Verlust eines Kunden enden. Unser Team bietet ein Monitoring und Inkasso Ihrer Forderungen bereits in einem sehr frühen Stadium an. Wenn solche Maßnahmen nicht zum gewünschten Ergebnis führen, übernehmen wir die komplette gerichtliche und vollstreckungsrechtliche Eintreibung."
+				]
+			},
+			{
+				"title": "Unternehmensdienstleistungen",
+				"content": [
+					"Jedes Unternehmen benötigt Expertenwissen über sich schnell ändernde Rechtsvorschriften und den richtigen Umgang damit.",
+					"",
+					"Unser Team von Unternehmensberatern unterstützt Sie in folgenden Bereichen:",
+					[
+						"Nutzung von Krisenpaketen und Fördermitteln",
+						"Änderung von Arbeitsverträgen",
+						"Aufrechterhaltung und Verbesserung der Liquidität",
+						"Entwicklung und Implementierung von Krisenplänen",
+						"Neuverhandlung von Verträgen mit Lieferanten und Geschäftspartnern",
+						"Restrukturierung",
+						"Digitalisierung und Automatisierung von Unternehmen"
+					],
+					"Die Umsetzung weitreichender betriebswirtschaftlicher und steuerlicher Lösungen ermöglicht es, in Krisenzeiten zu bestehen und sich im Aufschwung nach der Krise einen Wettbewerbsvorteil zu sichern.",
+					"Wir entwickeln Lösungen zur Sicherung der finanziellen Stabilität von Unternehmen, etwa im Bereich öffentlich-rechtlicher Verbindlichkeiten, Forderungsmanagement, Analyse der Kundenbonität usw.",
+					"Wir prüfen die Verträge, die Sie mit Geschäftspartnern abgeschlossen haben, und identifizieren mögliche Optionen zur Neuverhandlung von Konditionen. Aufgrund der gesundheitlichen Lage können Schritte zur Änderung oder Neuverhandlung bestehender Verträge unternommen werden, insbesondere in Bezug auf die Anpassung von Vergütungs- und Zahlungsmodalitäten oder den Rücktritt vom Vertrag.",
+					"Ist eine finanzielle Restrukturierung des Unternehmens die einzige Chance, die Zahlungsfähigkeit zu erhalten, sind wir bereit, einen Plan zur Reduzierung, Stundung oder Ratenzahlung öffentlich-rechtlicher und vertraglicher Verbindlichkeiten zu erstellen.",
+					"Unter Digitalisierung verstehen wir die Einführung modernster technischer und IT-Lösungen, die eine gleichbleibend hohe Qualität in der Kundenbetreuung gewährleisten und gleichzeitig die vorhandenen Ressourcen optimal nutzen. Oft geht dies mit einer Anpassung des bisherigen Geschäftsplans und der bisherigen Arbeitsweise einher, verbessert die interne und externe Kommunikation erheblich und beschleunigt den Zugang zu Informationen, was eine genauere und effektivere Prozesskontrolle ermöglicht."
+				]
+			},
+			{
+				"title": "Weitere Dienstleistungen",
+				"content": [
+					"Unter Digitalisierung verstehen wir die Einführung modernster technischer und IT-Lösungen, die eine gleichbleibend hohe Qualität in der Kundenbetreuung gewährleisten und gleichzeitig die vorhandenen Ressourcen optimal nutzen. Oft geht dies mit einer Anpassung des bisherigen Geschäftsplans und der bisherigen Arbeitsweise einher, verbessert die interne und externe Kommunikation erheblich und beschleunigt den Zugang zu Informationen, was eine genauere und effektivere Prozesskontrolle ermöglicht.",
+					"Müssen Sie einen Vorstandswechsel durchführen oder haben sich Ihre Gesellschafter geändert? Möchten Sie Ihr Geschäftsjahr ändern, das Stammkapital senken oder umgekehrt das Unternehmen kapitalisieren? Sie brauchen keine spezialisierten Anwaltskanzleien zu suchen.",
+					"",
+					"Wir bieten folgende Dienstleistungen:",
+					[
+						"Registrierung einer Gewerbetätigkeit",
+						"Gründung von Gesellschaften",
+						"Aussetzung der Tätigkeit oder Liquidation einer GmbH",
+						"Registeränderungen wie Wechsel der Eigentümer, Vorstandsmitglieder, Firmensitz, Geschäftsfelder (PKD) usw.",
+						"Eigentumsumwandlungen und Änderung der Rechtsform des Unternehmens",
+						"Fusionen und Übernahmen",
+						"Rechtsunterstützung – Vorbereitung von Rechtsdokumenten, Beschlüssen, Verträgen"
+					],
+					"",
+					"Wir bieten einen Rundum-Service bei der Gründung von Kapitalgesellschaften. Dieser Service beinhaltet die Ausarbeitung des Gesellschaftsvertrags, damit dieses wichtige Dokument an Ihre individuellen Bedürfnisse, die Größe und die Art Ihres Geschäfts angepasst ist, stets darauf bedacht, Ihre Interessen und Sicherheit umfassend zu wahren.",
+					"Während des Prozesses bereiten wir die Anträge vor, reichen sie beim Gericht und Finanzamt sowie beim Statistischen Amt ein und verfolgen deren Bearbeitung. Wir unterstützen bei der Umsetzung von gesellschaftsrechtlichen Änderungen, z. B. beim Wechsel von Vorstandsmitgliedern oder bei Satzungsänderungen.",
+					"Wir unterstützen bei der Einhaltung formaler Pflichten im Zusammenhang mit dem Jahresabschluss der Gesellschaft, z. B. durch die Feststellung der Finanzabschlüsse in der Gesellschafter- oder Hauptversammlung, Einreichung der Finanzabschlüsse beim Finanzamt sowie Hinterlegung der Finanzabschlüsse beim Handelsregistergericht."
+				]
+			}
+		]
+	},
+	"LinkPreview": {
+		"hiddenImageAlt": "verstecktes Bild",
+		"previewImageAlt": "Bildvorschau"
+	},
+	"AuroraBackground": {
+		"clientPanel": "Kundenportal",
+		"ariaGoToClientPanel": "Zum Kundenportal wechseln",
+		"ariaGoToFacebook": "Zu Facebook wechseln",
+		"ariaGoToX": "Zu X (Twitter) wechseln",
+		"ariaGoToInstagram": "Zu Instagram wechseln",
+		"ariaGoToLinkedIn": "Zu LinkedIn wechseln"
+	},
+	"LanguageSwitcher": {
+		"button": "Sprache wählen",
+		"menuLabel": "Verfügbare Sprachen"
+	}
+}

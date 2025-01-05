@@ -13,6 +13,7 @@ import {IoLanguageOutline} from 'react-icons/io5'
 const languages = [
 	{code: 'en', label: 'English'},
 	{code: 'pl', label: 'Polski'},
+	{code: 'de', label: 'Deutsch'},
 	{code: 'fr', label: 'Français'}
 ] as const satisfies Array<{code: Lowercase<string>; label: Capitalize<string>}>
 
@@ -29,7 +30,7 @@ export function LanguageSwitcher() {
 
 	function handleChangeLanguage(lang: Code) {
 		const params = new URLSearchParams(Array.from(searchParams.entries()))
-		const newPath = pathname.replace(/^\/(en|pl|fr)/, '')
+		const newPath = pathname.replace(/^\/(en|pl|fr|de)/, '')
 		router.push(`/${lang}${newPath}?${params.toString()}`)
 	}
 
