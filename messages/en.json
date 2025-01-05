@@ -2,7 +2,12 @@
 	"Home": {
 		"kontakt": "CONTACT",
 		"kompleksowaObsluga": "Comprehensive accounting service",
-		"oddzialy": "Branches:"
+		"oddzialy": "Branches:",
+		"ariaGoToGoogleMaps": "Go to Google Maps",
+		"ariaGoToFacebook": "Go to Facebook",
+		"ariaGoToX": "Go to X",
+		"ariaGoToInstagram": "Go to Instagram",
+		"ariaGoToLinkedIn": "Go to LinkedIn"
 	},
 	"Metadata": {
 		"title": "Vavicom Accounting Office",
@@ -329,7 +334,12 @@
 		"previewImageAlt": "image preview"
 	},
 	"AuroraBackground": {
-		"clientPanel": "Client panel"
+		"clientPanel": "Client Panel",
+		"ariaGoToClientPanel": "Go to Client Panel",
+		"ariaGoToFacebook": "Go to Facebook",
+		"ariaGoToX": "Go to X",
+		"ariaGoToInstagram": "Go to Instagram",
+		"ariaGoToLinkedIn": "Go to LinkedIn"
 	},
 	"LanguageSwitcher": {
 		"button": "Choose language",

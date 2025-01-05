@@ -18,11 +18,9 @@ export type Props = {params: Promise<RequestConfig>}
 
 export async function generateMetadata({params}: Props) {
 	const {locale} = await params
-
 	if (!locale) return {} as const satisfies Metadata
 
 	const t = await getTranslations({locale, namespace: 'Metadata'})
-
 	return {
 		title: t('title'),
 		description: t('description')
@@ -38,9 +36,11 @@ const ContactFormModal = ({showBorder}: {showBorder?: boolean}) => {
 					{t('kontakt')}
 				</span>
 			}
-			triggerClassName={`flex m-auto mb-32 sm:mb-0 bg-slate-950 dark:bg-white rounded-full w-fit dark:text-black text-white px-4 sm:px-8 py-2 sm:py-4 hover:bg-slate-950/[0.8] hover:shadow-lg ${
-				showBorder ? 'border-2 border-white' : ''
-			}`}
+			triggerClassName={`flex m-auto mb-32 sm:mb-0 bg-slate-950 dark:bg-white 
+        rounded-full w-fit dark:text-black text-white px-4 sm:px-8 py-2 sm:py-4 
+        hover:bg-slate-950/[0.8] hover:shadow-lg ${
+					showBorder ? 'border-2 border-white' : ''
+				}`}
 		>
 			<ContactForm />
 		</ModalWithImages>
@@ -83,7 +83,11 @@ export default function Home() {
 								{locations.map(({city, url}, i) => (
 									<Fragment key={url}>
 										{' '}
-										<LinkPreview className='text-black' url={url}>
+										<LinkPreview
+											className='text-black'
+											url={url}
+											ariaLabel={t('ariaGoToGoogleMaps')}
+										>
 											{city}
 										</LinkPreview>
 										{i < locations.length - 1 ? ' •' : null}
@@ -96,8 +100,10 @@ export default function Home() {
 					<ContactFormModal />
 				</>
 			</Hero>
+
 			<Products />
 			<Nav />
+
 			<footer className='bg-slate-950 flex flex-wrap justify-center gap-8 p-8 text-white'>
 				<OSMap />
 				<div>
@@ -114,24 +120,40 @@ export default function Home() {
 					<ContactInfo />
 					{locations.map(({address, url, city}) => (
 						<div key={address} className='flex items-center gap-1.5'>
-							<LinkPreview className='flex gap-1.5' url={url}>
+							<LinkPreview
+								className='flex gap-1.5'
+								url={url}
+								ariaLabel={t('ariaGoToGoogleMaps')}
+							>
 								<IconBuilding />
 								{city}, {address}
 							</LinkPreview>
 						</div>
 					))}
 					<div className='flex justify-center gap-2 mt-2'>
-						<LinkPreview url='https://www.facebook.com/VAVICOM/'>
-							<FaFacebook size={28} />
+						<LinkPreview
+							url='https://www.facebook.com/VAVICOM/'
+							ariaLabel={t('ariaGoToFacebook')}
+						>
+							<FaFacebook size={28} aria-hidden />
 						</LinkPreview>
-						<LinkPreview url='https://x.com/VAVICOM2'>
-							<FaXTwitter size={28} />
+						<LinkPreview
+							url='https://x.com/VAVICOM2'
+							ariaLabel={t('ariaGoToX')}
+						>
+							<FaXTwitter size={28} aria-hidden />
 						</LinkPreview>
-						<LinkPreview url='https://www.instagram.com/vavicom_br/'>
-							<FaInstagram size={28} />
+						<LinkPreview
+							url='https://www.instagram.com/vavicom_br/'
+							ariaLabel={t('ariaGoToInstagram')}
+						>
+							<FaInstagram size={28} aria-hidden />
 						</LinkPreview>
-						<LinkPreview url='https://www.linkedin.com/company/accounting-office-vavicom/'>
-							<FaLinkedin size={28} />
+						<LinkPreview
+							url='https://www.linkedin.com/company/accounting-office-vavicom/'
+							ariaLabel={t('ariaGoToLinkedIn')}
+						>
+							<FaLinkedin size={28} aria-hidden />
 						</LinkPreview>
 					</div>
 					<div className='mb-5' />

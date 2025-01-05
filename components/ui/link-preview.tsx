@@ -1,4 +1,5 @@
 'use client'
+
 import {cn} from '@/lib/utils'
 import * as HoverCardPrimitive from '@radix-ui/react-hover-card'
 import {AnimatePresence, motion, useMotionValue, useSpring} from 'framer-motion'
@@ -8,19 +9,33 @@ import Link from 'next/link'
 import {encode} from 'qss'
 import {type ReactNode, useEffect, useState} from 'react'
 
-type LinkPreviewProps = {
-	children: ReactNode
-	url: string
-	className?: string
-	width?: number
-	height?: number
-	quality?: number
-	layout?: string
-} & ({isStatic: true; imageSrc: string} | {isStatic?: false; imageSrc?: never})
+type BaseProps = {
+	readonly children: ReactNode
+	readonly url: string
+	readonly ariaLabel: string
+	readonly className?: string
+	readonly width?: number
+	readonly height?: number
+	readonly quality?: number
+	readonly layout?: string
+}
 
-export const LinkPreview = ({
+type StaticProps = {
+	readonly isStatic: true
+	readonly imageSrc: string
+}
+
+type DynamicProps = {
+	readonly isStatic?: false
+	readonly imageSrc?: never
+}
+
+type LinkPreviewProps = BaseProps & (StaticProps | DynamicProps)
+
+export function LinkPreview({
 	children,
 	url,
+	ariaLabel,
 	className,
 	width = 200,
 	height = 125,
@@ -28,8 +43,14 @@ export const LinkPreview = ({
 	layout = 'fixed',
 	isStatic = false,
 	imageSrc = ''
-}: LinkPreviewProps) => {
+}: LinkPreviewProps) {
 	const t = useTranslations('LinkPreview')
+
+	if (!ariaLabel || ariaLabel.trim().length === 0) {
+		throw new Error(
+			'LinkPreview requires a non-empty ariaLabel prop for accessibility'
+		)
+	}
 
 	let src: string
 	if (!isStatic) {
@@ -60,10 +81,8 @@ export const LinkPreview = ({
 	const x = useMotionValue(0)
 	const translateX = useSpring(x, springConfig)
 
-	const handleMouseMove = (
-		event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-	) => {
-		const targetRect = (event.target as HTMLElement).getBoundingClientRect()
+	function handleMouseMove(event: React.MouseEvent<HTMLElement>) {
+		const targetRect = event.currentTarget.getBoundingClientRect()
 		const eventOffsetX = event.clientX - targetRect.left
 		const offsetFromCenter = (eventOffsetX - targetRect.width / 2) / 2
 		x.set(offsetFromCenter)
@@ -71,7 +90,7 @@ export const LinkPreview = ({
 
 	return (
 		<>
-			{isMounted ? (
+			{isMounted && (
 				<div className='hidden'>
 					<Image
 						src={src}
@@ -83,21 +102,23 @@ export const LinkPreview = ({
 						alt={t('hiddenImageAlt')}
 					/>
 				</div>
-			) : null}
+			)}
 
 			<HoverCardPrimitive.Root
 				openDelay={50}
 				closeDelay={100}
-				onOpenChange={open => {
-					setOpen(open)
-				}}
+				onOpenChange={open => setOpen(open)}
 			>
-				<HoverCardPrimitive.Trigger
-					onMouseMove={handleMouseMove}
-					className={cn('text-white', className)}
-					href={url}
-				>
-					{children}
+				<HoverCardPrimitive.Trigger asChild>
+					<Link
+						href={url}
+						aria-label={ariaLabel}
+						onMouseMove={handleMouseMove}
+						className={cn('inline-flex items-center text-white', className)}
+					>
+						{children}
+						<span className='sr-only'>{ariaLabel}</span>
+					</Link>
 				</HoverCardPrimitive.Trigger>
 
 				<HoverCardPrimitive.Content
@@ -122,17 +143,16 @@ export const LinkPreview = ({
 								}}
 								exit={{opacity: 0, y: 20, scale: 0.6}}
 								className='shadow-xl rounded-xl'
-								style={{
-									x: translateX
-								}}
+								style={{x: translateX}}
 							>
 								<Link
 									href={url}
+									aria-label={ariaLabel}
 									className='block p-1 bg-white border-2 border-transparent shadow rounded-xl hover:border-neutral-200 dark:hover:border-neutral-800'
 									style={{fontSize: 0}}
 								>
 									<Image
-										src={isStatic ? imageSrc : src}
+										src={src}
 										width={width}
 										height={height}
 										quality={quality}

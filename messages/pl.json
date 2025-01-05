@@ -2,7 +2,12 @@
 	"Home": {
 		"kontakt": "KONTAKT",
 		"kompleksowaObsluga": "Kompleksowa obsługa księgowa",
-		"oddzialy": "Oddziały:"
+		"oddzialy": "Oddziały:",
+		"ariaGoToGoogleMaps": "Przejdź do Google Maps",
+		"ariaGoToFacebook": "Przejdź do Facebooka",
+		"ariaGoToX": "Przejdź do X (Twitter)",
+		"ariaGoToInstagram": "Przejdź do Instagrama",
+		"ariaGoToLinkedIn": "Przejdź do LinkedIn"
 	},
 	"Metadata": {
 		"title": "Vavicom Biuro Rachunkowe",
@@ -326,7 +331,12 @@
 		"previewImageAlt": "podgląd obrazu"
 	},
 	"AuroraBackground": {
-		"clientPanel": "Panel klienta"
+		"clientPanel": "Panel klienta",
+		"ariaGoToClientPanel": "Przejdź do panelu klienta",
+		"ariaGoToFacebook": "Przejdź do Facebooka",
+		"ariaGoToX": "Przejdź do X (Twitter)",
+		"ariaGoToInstagram": "Przejdź do Instagrama",
+		"ariaGoToLinkedIn": "Przejdź do LinkedIn"
 	},
 	"LanguageSwitcher": {
 		"button": "Wybierz język",

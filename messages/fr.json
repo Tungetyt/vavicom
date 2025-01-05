@@ -2,7 +2,12 @@
 	"Home": {
 		"kontakt": "CONTACT",
 		"kompleksowaObsluga": "Service comptable complet",
-		"oddzialy": "Agences:"
+		"oddzialy": "Agences:",
+		"ariaGoToGoogleMaps": "Aller sur Google Maps",
+		"ariaGoToFacebook": "Aller sur Facebook",
+		"ariaGoToX": "Aller sur X",
+		"ariaGoToInstagram": "Aller sur Instagram",
+		"ariaGoToLinkedIn": "Aller sur LinkedIn"
 	},
 	"Metadata": {
 		"title": "Vavicom Cabinet Comptable",
@@ -329,7 +334,12 @@
 		"previewImageAlt": "aperçu de l’image"
 	},
 	"AuroraBackground": {
-		"clientPanel": "Espace client"
+		"clientPanel": "Espace client",
+		"ariaGoToClientPanel": "Aller à l'espace client",
+		"ariaGoToFacebook": "Aller sur Facebook",
+		"ariaGoToX": "Aller sur X (Twitter)",
+		"ariaGoToInstagram": "Aller sur Instagram",
+		"ariaGoToLinkedIn": "Aller sur LinkedIn"
 	},
 	"LanguageSwitcher": {
 		"button": "Choisissez la langue",
