@@ -1,331 +1,338 @@
 {
 	"Home": {
-		"kontakt": "KONTAKT",
-		"kompleksowaObsluga": "Kompleksowa obsługa księgowa",
-		"oddzialy": "Oddziały:"
+		"kontakt": "CONTACT",
+		"kompleksowaObsluga": "Comprehensive accounting service",
+		"oddzialy": "Branches:"
 	},
 	"Metadata": {
-		"title": "Vavicom Biuro Rachunkowe",
-		"description": "Kompleksowa obsługa księgowa - Warszawa • Józefosław"
+		"title": "Vavicom Accounting Office",
+		"description": "Comprehensive accounting service - Warsaw • Józefosław"
 	},
 	"Nav": {
 		"services": [
 			{
-				"service": "Kadry i płace",
+				"service": "HR and payroll",
 				"price": 60
 			},
 			{
-				"service": "Księga przychodów i rozchodów",
+				"service": "Revenue and expense ledger",
 				"price": 250
 			},
 			{
-				"service": "Księgi rachunkowe",
+				"service": "Accounting books",
 				"price": 400
 			}
 		],
 		"faqs": [
 			{
-				"q": "Na czym polega księgowość online?",
-				"a": "To nowoczesna forma księgowości, która umożliwia zdalny dostęp do wszelkich danych finansowych Twojej firmy. Dzięki autorskiej platformie VAVICOM masz 24/7 podgląd dokumentów, szybki obieg informacji oraz bieżącą integrację danych między Tobą a biurem rachunkowym – bez względu na to, gdzie się znajdujesz."
+				"q": "What is online accounting about?",
+				"a": "It is a modern form of accounting that enables remote access to all your company’s financial data. With VAVICOM’s proprietary platform, you have 24/7 document previews, rapid information flow, and real-time data integration between you and the accounting office—regardless of location."
 			},
 			{
-				"q": "Co to jest integracja systemów?",
-				"a": "Integracja systemów łączy kluczowe operacje w firmie (fakturowanie, wpłaty, obsługę magazynu) w jednym miejscu. Dzięki temu, po dodaniu danych księgowych (koszty, płace), wystarczy jedno kliknięcie, by otrzymać kompleksowy wgląd w stan przedsiębiorstwa."
+				"q": "What is system integration?",
+				"a": "System integration consolidates key company operations (invoicing, payments, warehouse management) in one place. Once the accounting data (costs, payroll) is added, one click provides a comprehensive overview of the business."
 			},
 			{
-				"q": "Jaka jest oszczędność czasu przy księgowości online?",
-				"a": "Księgowość online eliminuje konieczność częstych wizyt w biurze i przyspiesza przepływ informacji. Zarówno mniejsze, jak i większe firmy mogą w ten sposób zaoszczędzić mnóstwo czasu i na bieżąco kontrolować poprawność wprowadzanych danych."
+				"q": "How much time can be saved with online accounting?",
+				"a": "Online accounting eliminates the need for frequent office visits and speeds up information flow. Both smaller and larger businesses can save a lot of time this way and continually monitor the correctness of data entry."
 			},
 			{
-				"q": "Jak wygląda dostęp do danych w księgowości online?",
-				"a": "Całodobowy. Możesz generować raporty, wykresy i zestawienia z dowolnego miejsca na świecie, a także kontrolować stany magazynowe i bazę kontrahentów w czasie rzeczywistym."
+				"q": "What does data access look like in online accounting?",
+				"a": "It is available 24/7. You can generate reports, graphs, and summaries from anywhere in the world, and also monitor inventory levels and the contractor database in real time."
 			},
 			{
-				"q": "Dlaczego warto zlecać księgowość zewnętrznym biurom rachunkowym?",
-				"a": "Oszczędzasz na zakupie systemów finansowo-księgowych, zatrudnianiu i szkoleniu księgowych oraz utrzymywaniu stanowisk pracy. Jednocześnie masz pewność, że Twoje finanse prowadzi zespół z zawsze aktualną wiedzą o przepisach podatkowych."
+				"q": "Why outsource accounting to external accounting offices?",
+				"a": "You save on purchasing financial-accounting systems, hiring and training accountants, and maintaining workstations. At the same time, you can be sure that your finances are handled by a team with up-to-date tax regulation expertise."
 			},
 			{
-				"q": "Czy można zmienić biuro rachunkowe w ciągu roku?",
-				"a": "Tak, w dowolnym momencie – choć najwygodniej zrobić to na początku nowego okresu fiskalnego. W trakcie roku kluczowe jest ustalenie odpowiedzialności za poprzednie księgowania i rozliczenia podatkowe."
+				"q": "Can I change accounting offices mid-year?",
+				"a": "Yes, anytime—though it’s most convenient at the start of a new fiscal period. Mid-year changes require clarifying responsibility for previous accounting entries and tax settlements."
 			},
 			{
-				"q": "Szkoda Ci czasu na analizowanie szybko zmieniających się przepisów?",
-				"a": "Biuro rachunkowe śledzi wszelkie zmiany w prawie podatkowym i dba o ich właściwe wdrożenie, a Ty możesz skupić się na rozwoju swojej firmy."
+				"q": "Is it too time-consuming for you to follow rapidly changing regulations?",
+				"a": "An accounting office tracks all changes in tax law and ensures their proper implementation, leaving you free to focus on growing your business."
 			},
 			{
-				"q": "Obawiasz się błędów przy samodzielnej księgowości?",
-				"a": "Specjaliści z biura rachunkowego minimalizują ryzyko kosztownych błędów. Dzięki temu Twoje rozliczenia zawsze będą zgodne z obowiązującymi przepisami."
+				"q": "Are you worried about mistakes in do-it-yourself accounting?",
+				"a": "Accounting office specialists minimize the risk of costly errors. This way, your settlements are always compliant with current regulations."
 			},
 			{
-				"q": "Martwisz się, że dokumenty mogą się zgubić?",
-				"a": "VAVICOM udostępnia nowoczesną platformę online, gdzie wszystkie faktury i dokumenty są archiwizowane w jednym miejscu. Z łatwością sprawdzisz, co już zostało przekazane i kiedy."
+				"q": "Concerned that documents might get lost?",
+				"a": "VAVICOM provides a modern online platform where all invoices and documents are archived in one place. You can easily check what has already been submitted and when."
 			},
 			{
-				"q": "Masz złe doświadczenia ze współpracy z biurami rachunkowymi?",
-				"a": "Stawiamy na partnerskie relacje z klientami, aktywne doradztwo oraz stabilny zespół specjalistów. Zależy nam na długofalowej współpracy opartej na zaufaniu."
+				"q": "Do you have bad experiences with accounting offices?",
+				"a": "We focus on partnerships with our clients, active consulting, and a stable team of specialists. We care about long-term cooperation based on trust."
 			},
 			{
-				"q": "Nie masz z kim skonsultować bieżących decyzji finansowo-księgowych?",
-				"a": "VAVICOM to Twój partner biznesowy – regularnie informujemy o zmianach w prawie oraz wspieramy w decyzjach finansowych."
+				"q": "No one to consult your current financial and accounting decisions with?",
+				"a": "VAVICOM is your business partner — we regularly inform you about legal changes and support you in financial decisions."
 			},
 			{
-				"q": "Czym jest księgowość hybrydowa?",
-				"a": "To połączenie tradycyjnej obsługi z nowoczesnymi rozwiązaniami online. Zachowujesz bezpośredni kontakt ze specjalistą, a jednocześnie korzystasz z zalet internetowego dostępu do dokumentów i danych."
+				"q": "What is hybrid accounting?",
+				"a": "It is a combination of traditional service with modern online solutions. You maintain direct contact with a specialist while enjoying the benefits of internet-based document and data access."
 			},
 			{
-				"q": "W jakiej formie przekazujesz dokumenty do biura?",
-				"a": "Najwygodniej elektronicznie – np. za pomocą aplikacji, maila czy platformy online. Jeśli wolisz, możesz też dostarczyć je osobiście lub kurierem."
+				"q": "In what form do you provide documents to the office?",
+				"a": "Electronically is most convenient — for example, via an app, email, or online platform. If you prefer, you can also deliver them in person or by courier."
 			},
 			{
-				"q": "Ważna jest dla Ciebie kompleksowość, profesjonalizm i terminowość?",
-				"a": "W VAVICOM zapewniamy pełną poufność, bezpieczeństwo danych oraz terminową realizację wszystkich powierzonych nam spraw. Wszystko po to, byś czuł się pewnie i mógł skupić się na swoim biznesie."
+				"q": "Is comprehensiveness, professionalism, and timeliness important to you?",
+				"a": "At VAVICOM, we provide full confidentiality, data security, and on-time execution of all entrusted matters. This is to ensure you feel confident and can focus on your business."
 			},
 			{
-				"q": "Czy moje dane są bezpieczne i mogę liczyć na pełną dyskrecję współpracy?",
-				"a": "POLITYKA PRYWATNOŚCI Biuro Rachunkowe Vavicom. Administrator: Administratorem danych jest VAVICOM sp. z o.o. z siedzibą w Piasecznie. Dane kontaktowe: Z Administratorem można się skontaktować: elektronicznie: info@vavicom.pl telefonicznie: +48 606 368 694 listownie: ul. Grochowskiego 7 lok.25, 05-500 Piaseczno Administrator powołał Inspektora Ochrony Danych, z którym można skontaktować się we wszystkich kwestiach dotyczących ochrony danych osobowych oraz sposobu realizacji przysługujących osobom fizycznym praw za pomocą email: iod@vavicom.pl Cel przetwarzania i podstawa prawna przetwarzania danych osobowych Komunikacja drogą e-mailową oraz tradycyjną: art. 6 ust. 1 lit. f) RODO Podstawą prawną przetwarzania jest uzasadniony interes Administratora polegający na prowadzeniu korespondencji. Kontakt telefoniczny: art. 6 ust. 1 lit. f) RODO Podstawą prawną przetwarzania jest uzasadniony interes Administratora polegający na konieczności załatwienia zgłoszonej sprawy związanej z prowadzoną działalnością. Rekrutacja: art. 6 ust. 1 lit. c) RODO Podstawą prawną przetwarzania jest obowiązek prawny ciążący na Administratorze w związku z przepisami Kodeksu pracy oraz art. 6 ust. 1 lit. a) RODO Podstawą prawną przetwarzania jest zgoda w celu przeprowadzenia procesu rekrutacji w zakresie danych niewymaganych przepisami prawa, a także dla celów przyszłych procesów rekrutacyjnych. Świadczenie usług: art. 6 ust. 1 lit. a) RODO oraz art. 10 ust. 2 ustawy z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną. Podstawą prawną przetwarzania jest wyrażona zgoda. Art. 6 ust. 1 lit. b) RODO Podstawą prawną przetwarzania jest zawarcie i wykonanie umowy. Art. 6 ust. 1 lit. f) RODO Podstawą prawną przetwarzania jest prawnie uzasadniony interes Administratora polegający w szczególności na realizacji umowy, marketingu usług własnych. Gromadzenie danych w kontaktach biznesowych: art. 6 ust. 1 lit. a) RODO Podstawą prawną przetwarzania jest wyrażona zgoda. Prowadzenie ksiąg rachunkowych i dokumentacji podatkowej: art. 6 ust. 1 lit. c) RODO w zw. z art. 74 ust. 2 ustawy z dnia 29 września 1994 r. o rachunkowości. Podstawą prawną przetwarzania jest obowiązek prawny ciążący na Administratorze w związku z przepisami ustawy o rachunkowości. Komunikacja z osobami odpowiedzialnymi za wykonanie umowy po stronie partnera biznesowego: art. 6 ust. 1 lit. f) RODO Podstawą prawną przetwarzania jest uzasadniony interes Administratora polegający na komunikacji z partnerami biznesowymi. Odbiorcy danych: podmioty zapewniające świadczenie określonych usług, w tym m.in. dostawcom usług teleinformatycznych, operatorom pocztowym, firmom kurierskim. Dostawcy usług prawnych i doradczych oraz wspierających Administratora w dochodzeniu należnych roszczeń w szczególności kancelariom prawnym. Organy uprawnionym do otrzymania danych osobowych na podstawie przepisów prawa. Prawa osoby, której dane dotyczą: Prawo dostępu do danych osobowych oraz prawo do żądania ich sprostowania, usunięcia lub ograniczenia przetwarzania. Prawo do wniesienia sprzeciwu wobec przetwarzania Państwa danych osobowych. Prawo do jej cofnięcia w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem. W zakresie, w jakim Państwa dane są przetwarzane w celu zawarcia i wykonywania umowy o świadczenie usług lub przetwarzane na podstawie Państwa zgody przysługuje Państwu, także prawo do przenoszenia danych osobowych. Przysługuje Państwu, również prawo do wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych Okres przechowywania danych: Państwa dane osobowe przechowywane będą do chwili realizacji zadania, dla którego zostały zebrane a następnie, jeśli chodzi o materiały archiwalne, przez czas wynikający z przepisów ustawy z dnia 14 lipca 1983 r. o narodowym zasobie archiwalnym i archiwach. W przypadku przetwarzania Państwa danych osobowych w celu prowadzenia ksiąg rachunkowych i dokumentacji podatkowej dane osobowe będą przechowywane przez 5 lat liczonych od końca roku kalendarzowego, w którym powstał obowiązek podatkowy. W przypadku przetwarzania Państwa danych osobowych do świadczenia usług zaufania o których mowa w art. 17 ust. 2 ustawy z dnia 5 września 2016 r. o usługach zaufania oraz identyfikacji elektronicznej dane osobowe przechowywane będą przez okres wymagany prawem tj. 20 lat. W przypadku przetwarzania Państwa danych osobowych dla potrzeb obecnych oraz przyszłych procesów rekrutacyjnych dane osobowe przechowywane będą przez okres 12 miesięcy. W przypadku przetwarzania danych osobowych w celu dochodzenia Państwa roszczeń dane osobowe będą przechowywane przez okres przedawnienia roszczeń określony w przepisach prawa. W przypadku wyrażenia przez Państwa zgody na przetwarzanie danych osobowych w celach marketingowych dane będą przechowywane do czasu jej wycofania."
+				"q": "Are my data secure and can I count on complete discretion in our cooperation?",
+				"a": "PRIVACY POLICY Vavicom Accounting Office. Administrator: The data controller is VAVICOM sp. z o.o. based in Piaseczno. Contact details: You can contact the Controller by: email: info@vavicom.pl phone: +48 606 368 694 mail: ul. Grochowskiego 7 lok.25, 05-500 Piaseczno The Administrator has appointed a Data Protection Officer, who can be contacted on all matters related to personal data protection and the exercise of rights held by individuals at iod@vavicom.pl Purpose of processing and legal basis for personal data processing Email and traditional mail communication: art. 6(1)(f) GDPR The legal basis is the Controller’s legitimate interest in conducting correspondence. Telephone contact: art. 6(1)(f) GDPR The legal basis is the Controller’s legitimate interest in addressing issues related to the activity. Recruitment: art. 6(1)(c) GDPR The legal basis is a legal obligation incumbent on the Controller under the Labor Code, and art. 6(1)(a) GDPR The legal basis is consent for data not required by law and for future recruitment processes. Service provision: art. 6(1)(a) GDPR and art. 10(2) of the Act of July 18, 2002 on electronic service provision. The legal basis is expressed consent. Art. 6(1)(b) GDPR The legal basis is contract performance. Art. 6(1)(f) GDPR The legal basis is the Controller’s legitimate interest in, in particular, contract performance and own service marketing. Data collection in business contacts: art. 6(1)(a) GDPR The legal basis is expressed consent. Keeping accounting records and tax documentation: art. 6(1)(c) GDPR in connection with art. 74(2) of the Accounting Act of September 29, 1994. The legal basis is a legal obligation on the Controller arising from the Accounting Act. Communication with persons responsible for contract performance on the business partner’s side: art. 6(1)(f) GDPR The legal basis is the Controller’s legitimate interest in communication with business partners. Data recipients: entities providing specified services, including IT service providers, postal operators, courier companies. Legal and consulting service providers and those supporting the Controller in claiming due receivables, especially law offices. Authorities entitled to receive personal data under the law. Rights of the data subject: The right of access to personal data and the right to request rectification, erasure, or restriction of processing. The right to object to the processing of personal data. The right to withdraw consent at any time without affecting the lawfulness of processing carried out on the basis of consent before its withdrawal. To the extent that data are processed for the purpose of concluding and performing a service contract or based on your consent, you also have the right to data portability. You also have the right to lodge a complaint with the President of the Personal Data Protection Office. Data retention period: Your personal data will be stored until the task for which they were collected is completed and then, for archival materials, for the period resulting from the Act of July 14, 1983 on the national archival resource and archives. In the case of data processed for keeping accounting records and tax documentation, data will be stored for 5 years from the end of the calendar year in which the tax liability arose. For data processed for trust services referred to in art. 17(2) of the Act of September 5, 2016 on trust services and electronic identification, data will be stored for the legally required period of 20 years. For data processed for current and future recruitment processes, data will be stored for 12 months. For data processed for the purpose of pursuing claims, data will be stored for the limitation period provided by law. If you have given consent for your data to be processed for marketing purposes, the data will be stored until you withdraw your consent."
 			}
 		],
 		"carouselDescriptions": [
-			"Ogłoszenia o najważniejszych zmianach",
-			"Podgląd księgowości",
-			"Deklaracje wartości oraz terminy zapłat",
-			"Możliwość wystawiania faktur własnych",
-			"Ogłoszenia o najważniejszych zmianach"
+			"Notices of the most important changes",
+			"Accounting overview",
+			"Declared values and payment deadlines",
+			"Option to issue your own invoices",
+			"Notices of the most important changes"
 		],
 		"tabs": {
-			"prices": "Cennik",
-			"about": "O nas",
+			"prices": "Pricing",
+			"about": "About us",
 			"faq": "FAQ",
-			"career": "Kariera",
-			"clientPanelDemo": "Panel Klienta"
+			"career": "Career",
+			"clientPanelDemo": "Client Panel"
 		},
 		"table": {
-			"service": "Usługa:",
-			"price": "Cena od:"
+			"service": "Service:",
+			"price": "Price from:"
 		},
 		"about": {
-			"p1": "Vavicom to nowoczesne, licencjonowane biuro rachunkowe z wieloletnim doświadczeniem, działające w Warszawie (Mokotów, Ursynów) i w całej Polsce. Pomagamy firmom w kompleksowej obsłudze finansowo-księgowej: prowadzimy księgi, rozliczenia podatkowe, listy płac oraz administrację kadrowo-płacową. Nasz zespół specjalistów dba o każdy etap współpracy, wykorzystując sprawdzone procesy i innowacyjne technologie – dzięki temu zapewniamy stały, 24/7 dostęp online do dokumentacji księgowej.",
-			"p2": "Wspieramy zarówno nowych przedsiębiorców, jak i doświadczone podmioty o różnych profilach działalności. Zapewniamy indywidualne podejście, elastyczną ofertę cenową oraz pełne wsparcie w zakresie doradztwa finansowego i podatkowego. Powierzając nam księgowość, zyskujesz profesjonalną opiekę i więcej czasu na rozwijanie swojego biznesu. Skontaktuj się z nami i sprawdź, co możemy zrobić dla Twojej firmy!"
+			"p1": "Vavicom is a modern, licensed accounting office with many years of experience, operating in Warsaw (Mokotów, Ursynów) and throughout Poland. We assist companies with comprehensive financial-accounting service: we handle books, tax settlements, payroll, and HR administration. Our team of specialists oversees every stage of cooperation, using proven processes and innovative technologies — ensuring constant, 24/7 online access to accounting documentation.",
+			"p2": "We support both new entrepreneurs and established entities across various industries. We provide an individual approach, flexible pricing, and comprehensive support in financial and tax consulting. Entrusting us with your accounting gives you professional care and more time to grow your business. Contact us and find out what we can do for your company!"
 		},
-		"panelIntro": "Każdy Klient BR VAVICOM ma dostęp do wielofunkcyjego panelu.",
+		"panelIntro": "Every VAVICOM Accounting Office client has access to a multifunctional panel.",
 		"career": {
-			"heading1": "Praca hybrydowa, biura:",
-			"p1": "W związku z dynamicznym rozwojem poszukujemy nowych osób do naszego zespołu:",
+			"heading1": "Hybrid work, offices:",
+			"p1": "Due to dynamic growth, we are looking for new team members:",
 			"positions": [
-				"Księgowa / Księgowy",
-				"Specjalista ds. Kadr i Płac",
-				"Przedstawiciel handlowy / Account Manager",
-				"Student (płatny staż w dziale Księgowości)"
+				"Accountant",
+				"HR and Payroll Specialist",
+				"Sales Representative / Account Manager",
+				"Student (paid internship in the Accounting Department)"
 			],
-			"howToApply": "Jak aplikować?",
-			"applyLine1": "Prześlij swoje aktualne CV na adres {contactEmail}. Prosimy także o dołączenie klauzuli o zgodzie na przetwarzanie danych osobowych na potrzeby rekrutacji.",
-			"applyLine2": "Dołącz do nas i rozwijaj się w innowacyjnym biurze rachunkowym!",
-			"programHeading": "Program stażowy",
-			"programP": "Z myślą o studentach ostatnich lat studiów ponownie uruchomiliśmy płatne staże, które umożliwiają:",
+			"howToApply": "How to apply?",
+			"applyLine1": "Send your current CV to {contactEmail}. Please also include a clause consenting to the processing of personal data for recruitment purposes.",
+			"applyLine2": "Join us and develop your skills in an innovative accounting office!",
+			"programHeading": "Internship program",
+			"programP": "For final-year students, we have re-launched paid internships that provide:",
 			"programList": [
-				"Praktyczną naukę zawodu księgowego pod okiem doświadczonych ekspertów.",
-				"Poznanie specyfiki obsługi różnych podmiotów gospodarczych.",
-				"Pracę w przyjaznej atmosferze i naukę systemu Comarch ERP Optima.",
-				"Zapoznanie się z nowoczesnymi rozwiązaniami i procesem obiegu dokumentów w biurze rachunkowym."
+				"Hands-on learning of the accounting profession under the guidance of experienced experts.",
+				"Insight into serving different types of business entities.",
+				"Work in a friendly atmosphere and experience with the Comarch ERP Optima system.",
+				"Familiarity with modern solutions and document flow processes in an accounting office."
 			],
-			"requirementsHeading": "Aplikuj, jeśli:",
+			"requirementsHeading": "Apply if:",
 			"requirements": [
-				"Studiujesz księgowość, ekonomię, finanse lub kierunki pokrewne.",
-				"Lubisz pracę z liczbami, a w MS Office (zwłaszcza Excel i Word) czujesz się pewnie.",
-				"Masz umiejętności analityczne, cenisz pracę zespołową i potrafisz też działać samodzielnie.",
-				"Jesteś skrupulatny/-a, dyspozycyjny/-a 2-3 dni w tygodniu i dbasz o poufność danych.",
-				"Chcesz zdobyć realne doświadczenie w księgowości i sprawozdawczości finansowej."
+				"You study accounting, economics, finance, or related fields.",
+				"You enjoy working with numbers and feel comfortable in MS Office (especially Excel and Word).",
+				"You have analytical skills, value teamwork, and can also act independently.",
+				"You are meticulous, available 2-3 days a week, and safeguard data confidentiality.",
+				"You want to gain real experience in accounting and financial reporting."
 			],
-			"tasksHeading": "Zakres zadań:",
+			"tasksHeading": "Tasks include:",
 			"tasks": [
-				"Księgowanie podstawowych dokumentów i obsługa systemu księgowego.",
-				"Wsparcie działu w bieżących zadaniach (dokumentacja księgowa, sprawozdawczość).",
-				"Współpraca z klientami i zewnętrznymi partnerami biznesowymi.",
-				"Pomoc w prowadzeniu sekretariatu i systemu kancelaryjnego.",
-				"Dbanie o prawidłowy obieg dokumentów i terminowość rozliczeń."
+				"Posting basic documents and operating the accounting system.",
+				"Supporting the department in daily tasks (accounting documentation, reporting).",
+				"Cooperating with clients and external business partners.",
+				"Assisting in running the secretariat and office systems.",
+				"Ensuring proper document flow and timely settlements."
 			]
 		}
 	},
 	"OSMap": {
-		"loading": "Ładowanie mapy..."
+		"loading": "Loading map..."
 	},
 	"AnimatedCarousel": {
-		"previousSlide": "Poprzedni slajd",
-		"nextSlide": "Następny slajd",
-		"slideAlt": "Slajd {number}"
+		"previousSlide": "Previous slide",
+		"nextSlide": "Next slide",
+		"slideAlt": "Slide {number}"
 	},
 	"ContactForm": {
-		"title": "Formularz kontaktowy",
-		"emailLabel": "Twój email",
+		"title": "Contact form",
+		"emailLabel": "Your email",
 		"emailPlaceholder": "email@gmail.com",
-		"messageLabel": "Opisz w czym możemy Ci pomóc",
-		"messagePlaceholder": "chciałabym/chciałbym się z wami skontaktować...",
-		"salutation": "Dzień dobry,",
-		"submitButtonSending": "Wysyłanie...",
-		"submitButton": "Wyślij",
-		"successMessage": "Wiadomość została wysłana! Dziękujemy!",
-		"errorMessage": "Nastąpił błąd, wiadomość nie została wysłana. Przepraszamy."
+		"messageLabel": "Describe how we can help you",
+		"messagePlaceholder": "I would like to get in touch with you...",
+		"salutation": "Hello,",
+		"submitButtonSending": "Sending...",
+		"submitButton": "Send",
+		"successMessage": "Your message has been sent! Thank you!",
+		"errorMessage": "An error has occurred, the message was not sent. We apologize."
 	},
 	"ModalWithImages": {
-		"imageAlt": "Biuro Vavicom"
+		"imageAlt": "Vavicom office"
 	},
 	"Products": {
 		"productsContent": [
 			{
-				"title": "Księgowość",
+				"title": "Accounting",
 				"content": [
-					"Skomplikowane i dynamiczne zmiany prawa gospodarczego, w tym sprawozdawczości finansowej i podatkowej wymagają nieustannego śledzenia i prawidłowego interpretowania przepisów prawa.",
-					"Zlecając bieżące prowadzenie ksiąg rachunkowych i sporządzanie sprawozdań finansowych, możesz przestać koncentrować się na śledzeniu zmian w przepisach i skupić się na codziennym prowadzeniu biznesu.",
+					"Complex and constantly changing business law, including financial reporting and tax regulations, requires continuous monitoring and correct legal interpretation.",
+					"By outsourcing the ongoing bookkeeping and financial reporting, you can stop focusing on tracking regulatory changes and devote yourself fully to daily business operations.",
 					"",
-					"Nasze usługi obejmują:",
+					"Our services include:",
 					[
-						"prowadzenie księgi przychodów i rozchodów KPIR;",
-						"prowadzenie ksiąg handlowych;",
-						"sporządzanie lub aktualizację polityki rachunkowości we współpracy z Klientem;",
-						"przygotowanie bazy danych w systemie finansowo – księgowym;",
-						"ewidencję dokumentów otrzymywanych do Państwa i kontrahentów;",
-						"bieżące prowadzenie ksiąg rachunkowych;",
-						"raportowanie danych finansowych do zarządu firmy oraz grupy zgodnie z Państwa wymogami;",
-						"przygotowanie statutowych sprawozdań finansowych oraz pomoc w sporządzeniu sprawozdania zarządu z działalności;"
+						"keeping the revenue and expense ledger (KPIR)",
+						"keeping commercial books",
+						"preparing or updating the accounting policy in cooperation with the Client",
+						"setting up the data base in a financial-accounting system",
+						"recording documents received for your business and its contractors",
+						"ongoing bookkeeping",
+						"reporting financial data to the company’s management and group in line with your requirements",
+						"preparing statutory financial statements and assisting in the preparation of management reports"
 					],
 					"",
-					"Naszym priorytetem jest zagwarantowanie klientom obsługi księgowej zawsze na czas i przy zachowaniu najwyższych standardów jakości. Świadczone przez nas usługi księgowe i sprawozdawczości zawsze dostosowujemy do konkretnych oczekiwań zarówno pod względem formalnym, jak i merytorycznym z uwzględnieniem terminów ustawowych i wymaganych przez klienta.",
-					"Świadczymy kompleksową obsługę podmiotów gospodarczych w szczególności mikro, małych i średnich przedsiębiorstw. Podstawowym celem jest wypełnienie bieżących obowiązków podatnika w zakresie prowadzenia ksiąg rachunkowych oraz sprawozdawczości podatkowej.",
+					"Our priority is to guarantee on-time accounting services for our clients, always maintaining the highest quality standards. We tailor the accounting and reporting services to specific expectations both formally and substantively, including statutory deadlines and client-imposed time frames.",
+					"We provide comprehensive services to business entities, especially micro, small, and medium enterprises. Our primary goal is to fulfill the taxpayer’s ongoing obligations regarding bookkeeping and tax reporting.",
 					"",
-					"Proponujemy konkurencyjne ceny:",
+					"We offer competitive prices:",
 					[
-						"Ewidencja przychodów dla potrzeb podatku zryczałtowanego od 200 zł.",
-						"KPIR księga przychodów i rozchodów od 250 zł.",
-						"Księgowość rachunkowa (księgi handlowe) od 400 zł."
+						"Income records for lump-sum tax from 200 PLN",
+						"Revenue and expense ledger (KPIR) from 250 PLN",
+						"Accounting (commercial books) from 400 PLN"
 					]
 				]
 			},
 			{
-				"title": "Kadry i płace",
+				"title": "HR and payroll",
 				"content": [
-					"Zapewniamy kompleksową obsługę w zakresie naliczania płac zgodnie z obowiązującymi przepisami prawa pracy, ubezpieczeń społecznych oraz podatku dochodowego od osób fizycznych.",
-					"Dbamy również o prawidłowe, zgodne z kodeksem pracy, administrowanie teczkami personalnymi i całą dokumentacją dotyczącą stosunku pracy i urlopów. Przygotowujemy deklaracje rozliczeniowe do ZUS, PFRON oraz urzędu skarbowego. Współpracujemy z tymi instytucjami w zakresie przygotowanej dokumentacji w przypadku jakichkolwiek pytań.",
-					"Zakres usług obejmuje także pomoc w procesie zatrudniania nowych oraz odchodzących pracowników. Dbamy o to, żeby procesy kadrowe i płacowe realizowane dla Państwa były zgodne z przepisami, efektywne i łatwe w realizacji.",
+					"We provide comprehensive services for payroll calculation in compliance with labor law, social insurance, and personal income tax regulations.",
+					"We also ensure correct, legally compliant administration of employee personal files and all documentation related to employment relationships and leave. We prepare ZUS, PFRON, and tax office returns. We cooperate with these institutions regarding prepared documentation whenever questions arise.",
+					"Our services also cover assistance in hiring new employees and offboarding. We make sure that your HR and payroll processes comply with the regulations, are effective, and are easy to manage.",
 					"",
-					"W ramach usługi prowadzenia kadr i płac oferujemy Państwu między innymi:",
+					"Our HR and payroll services include, among others:",
 					[
-						"naliczanie wynagrodzeń z uwzględnieniem dodatków i potrąceń;",
-						"naliczanie świadczeń związanych z chorobą i macierzyństwem;",
-						"sporządzanie deklaracji PIT i ZUS w imieniu pracodawcy;",
-						"przygotowywanie dokumentacji płacowej dla firmy i jej pracowników;",
-						"asystę przy płatnościach wynagrodzeń i składek na ubezpieczenia społeczne;",
-						"przygotowywanie i składanie rocznych informacji o dochodach/deklaracji (PIT-11, PIT-4R, PIT-40);",
-						"tworzenie i administracja teczek personalnych;",
-						"ewidencję i kontrolę wymiaru urlopów pracowniczych;",
-						"monitorowanie ważności badań lekarskich i szkoleń BHP;",
-						"przygotowywanie świadectw pracy;",
-						"przygotowywanie i rozliczanie list płac dla osób zatrudnionych na podstawie umów cywilno-prawnych;",
-						"sporządzanie informacji o przychodach z innych źródeł (PIT-28, PIT-8C)."
+						"calculating salaries including bonuses and deductions",
+						"calculating benefits related to illness and maternity",
+						"preparing PIT and ZUS declarations on behalf of the employer",
+						"preparing payroll documentation for the company and its employees",
+						"assistance with salary payments and social insurance contributions",
+						"preparing and submitting annual income statements/declarations (PIT-11, PIT-4R, PIT-40)",
+						"creating and maintaining employee personal files",
+						"recording and monitoring employees’ leave entitlement",
+						"tracking the validity of medical examinations and OHS training",
+						"preparing employment certificates",
+						"preparing and settling payroll for those employed under civil-law contracts",
+						"preparing statements of income from other sources (PIT-28, PIT-8C)"
 					],
 					"",
-					"Nasze oferta Oferujemy rozwiązania uwzględniające specyfikę struktury organizacyjnej obowiązującej w Państwa firmie, złożoność składników płacowych i raportów kadrowo-płacowych. Szybko reagujemy i jesteśmy elastyczni w stosunku do Państwa potrzeb i wymagań. Zapewniamy całkowitą poufność i bezpieczeństwo w przechowywaniu danych kadrowo-płacowych oraz prowadzonych projektów restrukturyzacyjnych. Pomagamy obniżyć koszty zarządzania kadrami.",
-					"Naszą szeroką ofertę kierujemy do każdego pracodawcy, który zatrudnia pracowników, niezależnie od wielkości firmy również pomagamy prowadzącym działalność gospodarczą w formie samozatrudnienia.",
+					"Our offer provides solutions that account for the specific organizational structure of your company, the complexity of payroll components, and HR-payroll reporting. We respond quickly and adjust to your needs and requirements. We guarantee complete confidentiality and data security for HR-payroll records and restructuring projects. We help reduce HR management costs.",
+					"We offer our broad range of services to any employer who hires employees, regardless of company size. We also help sole proprietors who are self-employed.",
 					"",
-					"Proponujemy konkurencyjne ceny:",
-					["Usługi Płacowe od 45 zł", "Usługi Kadrowe od 35 zł za 1 pracownika"]
-				]
-			},
-			{
-				"title": "Rozliczenia księgowo-podatkowe",
-				"content": [
-					"Polski system podatkowy w większości przypadków nakłada cykliczny obowiązek płacenia podatków.",
-					"Wymaga to systematycznego kalkulowania zobowiązań podatkowych oraz sporządzania dla organów skarbowych wielu informacji i zeznań podatkowych o różnych terminach wymagalności. Biuro Rachunkowe VAVICOM oferuje usługi sporządzania wymaganych deklaracji podatkowych, jak również wsparcie w kontaktach z organami podatkowymi, obejmujące m.in. obsługę kontroli podatkowych.",
-					"",
-					"Nasze prace w ramach przygotowania rozliczeń z tytułu CIT obejmują kompleksowe przygotowanie okresowych kalkulacji oraz rocznego zeznania CIT-8. W szczególności, usługi te zawierają przygotowanie:",
+					"We offer competitive prices:",
 					[
-						"Okresowych oraz rocznej kalkulacji CIT wraz ze szczegółowymi informacjami;",
-						"rocznego rozliczenia, przygotowanie i złożenia zeznania podatkowego CIT-8 wraz ze stosownymi załącznikami sporządzonego na podstawie okresowych kalkulacji CIT;",
-						"ustalenie kwoty podatku należnego, który Spółka zobowiązana jest przelać na rachunek bankowy urzędu skarbowego przed upływem ustawowego terminu płatności."
-					],
-					"",
-					"Rozliczenia podatku VAT obejmują przygotowanie rejestrów oraz deklaracji VAT, w tym:",
-					[
-						"sporządzanie rejestrów zakupu i sprzedaży VAT na podstawie otrzymanej dokumentacji;",
-						"przedstawianie propozycji klasyfikacji transakcji, które mogłyby wpływać na wysokość zobowiązania podatkowego, tzw. koszty uzyskania przychodów;",
-						"sporządzanie deklaracji VAT w oparciu o rejestry VAT;",
-						"informowanie o wysokości zobowiązania podatkowego VAT do zapłaty;",
-						"sporządzanie deklaracji VAT-UE – informacji podsumowującej o dokonanych wewnątrzwspólnotowych transakcjach zakupu i sprzedaży, a także korekty deklaracji VAT-UE;",
-						"przygotowanie miesięcznych deklaracji Intrastat (jeśli będzie to wymagane);",
-						"wskazanie kwoty potencjalnego zwrotu podatku VAT na deklaracji VAT oraz przygotowywanie wniosków o zwrot podatku VAT (w razie potrzeby)."
+						"Payroll services from 45 PLN",
+						"HR services from 35 PLN per employee"
 					]
 				]
 			},
 			{
-				"title": "Usługi finansowe",
+				"title": "Accounting and tax settlements",
 				"content": [
-					"Zarządzanie finansami przedsiębiorstwa to nieoderwalna część codziennych zadań właścicieli oraz osób zarządzających.",
-					"Biuro Rachunkowe VAVICOM posiada zespół specjalistów z wieloletnim doświadczeniem w zakresie zarządzania finansami, doradztwa strategicznego oraz optymalizacji procesów gospodarczych i kosztów. W ramach wdrożenia nasi specjaliści zaprojektują system raportowania indywidualnie dobrany do potrzeb każdego Klienta.",
-					"Oferujemy:",
+					"The Polish tax system generally imposes a recurring obligation to pay taxes.",
+					"This requires regular calculation of tax liabilities and preparing many tax returns and statements for the tax authorities, each with specific deadlines. The VAVICOM Accounting Office provides services in preparing all required tax returns and supports communication with tax authorities, including handling tax inspections.",
+					"",
+					"Our work on CIT settlements includes the complete preparation of periodic calculations and the annual CIT-8 return. In particular, these services include:",
 					[
-						"Biznesplany i modele finansowe",
-						"Prowadzenie rachunkowości zarządczej",
-						"Analizy i optymalizację kosztów",
-						"Monitorowanie i windykację należności",
-						"Tworzenie systemów controlingowych",
-						"Analizy kosztów finasowania w tym kosztów leasingu",
-						"Wsparcie we współpracy z bankami i instytucjami finansującymi, ubezpieczycielami"
+						"periodic and annual CIT calculations with detailed information",
+						"preparation and filing of the annual CIT-8 tax return and attachments based on periodic CIT calculations",
+						"determination of the amount of tax due, which the company must remit to the tax office before the statutory deadline"
 					],
-					"Tworzymy biznesplany i modele finansowe, które służą do oceny efektywności projektów inwestycyjnych oraz przygotowania dokumentacji niezbędnej do uzyskania finansowania. Tworzymy modele rachunkowości zarządczej i analizy finansowe – systemy raportowania indywidualnie zaprojektowane dla potrzeb każdego Klienta.",
-					"Przeprowadzamy analizy wyników przedsiębiorstwa oraz zaproponujemy alternatywne rozwiązania zmierzające do podniesienia rentowności/efektywności działalności gospodarczej.",
-					"Skuteczna windykacja nie musi kończyć się sporem sądowym i utratą klienta. Nasz zespół świadczy usługi monitorowania należności oraz ich odzyskiwania już na bardzo wczesnym etapie. Kiedy takie działania nie przyniosą oczekiwanego efektu prowadzimy kompleksową windykacją sądową i egzekucyjną."
+					"",
+					"VAT settlements include preparing registers and VAT returns, specifically:",
+					[
+						"creating VAT purchase and sales registers based on submitted documentation",
+						"providing classification suggestions for transactions that may affect tax liabilities (costs of revenue generation)",
+						"preparing VAT returns based on VAT registers",
+						"notifying about the amount of VAT tax liability due",
+						"preparing VAT-EU returns — summary information on intra-Community purchase and sales transactions, as well as corrections of VAT-EU returns",
+						"preparing monthly Intrastat returns (if required)",
+						"indicating potential VAT refund amounts on the VAT return and preparing refund requests if needed"
+					]
 				]
 			},
 			{
-				"title": "Usługi biznesowe",
+				"title": "Financial services",
 				"content": [
-					"Każdy zarządzający biznesem potrzebuje eksperckiej wiedzy w zakresie dynamicznie zmieniających się przepisów prawa i właściwym na nie reagowaniem.",
-					"",
-					"Zespół doradców biznesowych wspiera naszych klientów w zakresie:",
+					"Managing corporate finances is a necessary part of everyday tasks for owners and managers.",
+					"The VAVICOM Accounting Office has a team of specialists with many years of experience in financial management, strategic consulting, and optimization of business processes and costs. As part of implementation, our experts will design a reporting system tailored to each Client’s needs.",
+					"We offer:",
 					[
-						"Skorzystania z pakietów antykryzysowych i dotacji",
-						"Zmiany umów z pracownikami",
-						"Utrzymania i poprawy płynności finansowej",
-						"Opracowania i wdrożenia planów kryzysowych",
-						"Renegocjacji umów z dostawcami kontrahentami",
-						"Restrukturyzacji",
-						"Digitalizacji i automatyzacji przedsiębiorstw"
+						"Business plans and financial models",
+						"Managerial accounting",
+						"Cost analysis and optimization",
+						"Receivables monitoring and collection",
+						"Building controlling systems",
+						"Analysis of financing costs including leasing costs",
+						"Support in cooperation with banks and financing or insurance institutions"
 					],
-					"Wdrażanie szeroko pojętych rozwiązań operacyjnych oraz podatkowych pozwala przetrwać w okresie kryzysu oraz uzyskać przewagę konkurencyjną w okresie pokryzysowym.",
-					"Opracowujemy rozwiązania zapewniające płynność finansową firm, w tym w obszarze zobowiązań publiczno-prawnych, windykacji należności, analizy wypłacalności klientów itp.",
-					"Możemy przeanalizować treści umów zawartych z kontrahentami, zidentyfikować potencjalne możliwości renegocjacji stawek. Z uwagi na sytuację epidemiologiczną, dopuszczalne jest podjęcie kroków, zmierzających do zmiany lub renegocjacji zawartych umów, w szczególności w aspekcie modyfikacji warunków wynagrodzenia i płatności oraz odstąpienia od umowy.",
-					"Kiedy jedyną szansą przed utratą płynności finansowej, pozostaje przeprowadzenie postępowania restrukturyzacyjnego przedsiębiorstwa, jesteśmy gotowi opracować plan w zakresie zmniejszenia, odroczenia lub rozłożenia na raty należności publicznoprawnych oraz wobec kontrahentów.",
-					"Digitalizacja jest usługą wdrożenia najnowocześniejszych rozwiązań technologicznych i informatycznych, które gwarantują utrzymanie najwyższej jakości obsługi kontrahentów, przy jednoczesnym optymalnym wykorzystaniu posiadanych zasobów. Często związana jest z przemodelowaniem dotychczasowego planu biznesowego i sposobu działania, przynosi poprawę komunikacji wewnętrznej i zewnętrznej oraz znacznie przyspiesza dostęp do informacji, pozwalającej na dokładniejsze i skuteczniejsze kontrolowanie procesów."
+					"We prepare business plans and financial models to evaluate the effectiveness of investment projects and to prepare documents needed to secure funding. We design managerial accounting and financial analysis systems — reporting solutions individually tailored to each Client’s needs.",
+					"We analyze the company’s results and propose alternative solutions to increase profitability/efficiency of business activities.",
+					"Effective debt collection does not have to end in litigation or losing a client. Our team offers receivables monitoring and recovery at a very early stage. If such measures do not yield the desired result, we conduct comprehensive court and enforcement proceedings."
 				]
 			},
 			{
-				"title": "Usługi pozostałe",
+				"title": "Business services",
 				"content": [
-					"Digitalizacja jest usługą wdrożenia najnowocześniejszych rozwiązań technologicznych i informatycznych, które gwarantują utrzymanie najwyższej jakości obsługi kontrahentów, przy jednoczesnym optymalnym wykorzystaniu posiadanych zasobów. Często związana jest z przemodelowaniem dotychczasowego planu biznesowego i sposobu działania, przynosi poprawę komunikacji wewnętrznej i zewnętrznej oraz znacznie przyspiesza dostęp do informacji, pozwalającej na dokładniejsze i skuteczniejsze kontrolowanie procesów.",
-					"Potrzebujesz przeprowadzić zmianę zarządu lub zmienili się wspólnicy? Chcesz dokonać zmiany roku obrotowego, obniżyć kapitał zakładowy albo przeciwnie Twoja spółka potrzebuje dokapitalizowania? Nie musisz szukać wyspecjalizowanych kancelarii prawnych.",
+					"Every business manager needs expert knowledge of ever-changing regulations and how to respond to them properly.",
 					"",
-					"Oferujemy następujące usługi:",
+					"Our business advisory team supports our clients with:",
 					[
-						"Rejestracja działalności gospodarczej",
-						"Zakładanie spółek",
-						"Zawieszenie działalności lub likwidacja spółki z o.o.",
-						"Zmiany rejestrowe takie jak zmiana właścicieli, członków zarządu, siedziby spółki, zakresu działalności (PKD) itp.",
-						"Przekształcenia własnościowe i zmiana formy prawnej działalności",
-						"Fuzje i przejęcia",
-						"Asysta Prawna – przygotowywanie dokumentów prawnych, uchwał, umów"
+						"Taking advantage of anti-crisis packages and grants",
+						"Changing employment contracts",
+						"Maintaining and improving financial liquidity",
+						"Developing and implementing crisis management plans",
+						"Renegotiating contracts with suppliers and partners",
+						"Restructuring",
+						"Digitizing and automating business operations"
+					],
+					"Implementing broadly understood operational and tax solutions helps businesses survive during crises and gain a competitive edge afterwards.",
+					"We develop solutions that ensure a company’s financial liquidity, including in the area of public-law obligations, debt collection, and analyzing client solvency.",
+					"We can examine contracts with contractors, identify possible renegotiation options. Due to the epidemiological situation, it is permissible to take steps aimed at changing or renegotiating signed contracts, especially regarding modification of remuneration and payment conditions or withdrawing from the contract.",
+					"When the only way to avoid losing financial liquidity is to conduct restructuring proceedings, we stand ready to develop a plan to reduce, defer, or spread out in installments any public-law or contractor liabilities.",
+					"Digitization is the implementation of cutting-edge technological and IT solutions, ensuring the highest quality of service to your contractors while optimally utilizing existing resources. It often involves reshaping your current business plan and operating methods, improving both internal and external communication, and significantly speeding up access to information for more accurate and effective process control."
+				]
+			},
+			{
+				"title": "Other services",
+				"content": [
+					"Digitization is the implementation of cutting-edge technological and IT solutions that ensure the highest quality of service for your contractors while optimally utilizing your resources. It often involves reconfiguring an existing business plan and methods of operation, which improves internal and external communication and greatly accelerates access to information that allows for more precise and effective process control.",
+					"Do you need to change your management board or have the shareholders changed? Want to change your fiscal year, reduce share capital, or—on the contrary—your company needs more capital? You do not need to search for specialized law firms.",
+					"",
+					"We offer the following services:",
+					[
+						"Business registration",
+						"Company formation",
+						"Business suspension or liquidation of a limited liability company",
+						"Registration changes such as changing owners, board members, company headquarters, scope of activity (PKD), etc.",
+						"Ownership transformations and changes in legal form",
+						"Mergers and acquisitions",
+						"Legal assistance — drafting legal documents, resolutions, and contracts"
 					],
 					"",
-					"Oferujemy kompleksową usługę zakładania spółek kapitałowych. Usługa zawiera przygotowanie treści umowy spółki, tak aby ten ważny dokument został dopasowany do indywidualnych potrzeb, wielkości i charakteru Twojego biznesu, mając na względzie Twój szeroko rozumiany interes i bezpieczeństwo.",
-					"W trakcie procesu przygotowujemy, składamy i monitorujemy wnioski w sądzie i urzędzie skarbowym oraz w urzędzie statystycznym. Wspieramy w procesie wprowadzania zmian korporacyjnych w spółce, takich jak zmiany członków zarządu, czy zmiany statutu spółki.",
-					"Pomagamy w wypełnianiu formalnych obowiązków związanych z procesem zamykania roku obrotowego spółki, poprzez m.in. zatwierdzanie sprawozdań finansowych przez zgromadzenie wspólników lub akcjonariuszy, złożenie sprawozdań finansowych do urzędu skarbowego, złożenie sprawozdań finansowych do sądu rejestrowego."
+					"We provide a comprehensive service for establishing capital companies. This service includes drafting the company’s articles so that this important document is tailored to your individual needs, business size, and nature, ensuring a broad sense of security and protection of your interests.",
+					"During the process, we prepare, file, and track applications in court, the tax office, and the statistical office. We support the introduction of corporate changes, such as changes in board members or changes to the company statute.",
+					"We help fulfill formal obligations associated with closing a company’s financial year, including approving financial statements by the shareholders’ meeting, submitting financial statements to the tax office, and filing the financial statements with the commercial court."
 				]
 			}
 		]
 	},
 	"LinkPreview": {
-		"hiddenImageAlt": "ukryty obraz",
-		"previewImageAlt": "podgląd obrazu"
+		"hiddenImageAlt": "hidden image",
+		"previewImageAlt": "image preview"
 	},
 	"AuroraBackground": {
-		"clientPanel": "Panel klienta"
+		"clientPanel": "Client panel"
+	},
+	"LanguageSwitcher": {
+		"button": "Choose language",
+		"menuLabel": "Available languages"
 	}
 }

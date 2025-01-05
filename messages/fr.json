@@ -1,0 +1,338 @@
+{
+	"Home": {
+		"kontakt": "CONTACT",
+		"kompleksowaObsluga": "Service comptable complet",
+		"oddzialy": "Agences:"
+	},
+	"Metadata": {
+		"title": "Vavicom Cabinet Comptable",
+		"description": "Service comptable complet - Varsovie • Józefosław"
+	},
+	"Nav": {
+		"services": [
+			{
+				"service": "Paie et ressources humaines",
+				"price": 60
+			},
+			{
+				"service": "Livre des recettes et des dépenses",
+				"price": 250
+			},
+			{
+				"service": "Comptabilité générale",
+				"price": 400
+			}
+		],
+		"faqs": [
+			{
+				"q": "En quoi consiste la comptabilité en ligne?",
+				"a": "C’est une forme moderne de comptabilité qui permet un accès à distance à toutes les données financières de votre entreprise. Grâce à la plateforme propriétaire de VAVICOM, vous disposez d’un aperçu 24h/24 et 7j/7 de vos documents, d’un flux d’informations rapide ainsi que d’une intégration en temps réel des données entre vous et le cabinet comptable, où que vous soyez."
+			},
+			{
+				"q": "Qu’est-ce que l’intégration des systèmes?",
+				"a": "L’intégration des systèmes réunit les opérations clés de l’entreprise (facturation, paiements, gestion de stock) en un seul endroit. Ainsi, après l’ajout des données comptables (coûts, salaires), un seul clic suffit pour obtenir une vue d’ensemble de la situation de l’entreprise."
+			},
+			{
+				"q": "Quel gain de temps apporte la comptabilité en ligne?",
+				"a": "La comptabilité en ligne élimine la nécessité de visites fréquentes au cabinet et accélère la circulation de l’information. Les petites comme les grandes entreprises peuvent ainsi économiser beaucoup de temps et contrôler en continu l’exactitude des données saisies."
+			},
+			{
+				"q": "Comment se présente l’accès aux données en comptabilité en ligne?",
+				"a": "Il est permanent. Vous pouvez générer des rapports, graphiques et tableaux de n’importe où dans le monde, mais aussi surveiller les stocks et la base de fournisseurs en temps réel."
+			},
+			{
+				"q": "Pourquoi confier la comptabilité à un cabinet externe?",
+				"a": "Vous économisez sur l’achat de systèmes financiers et comptables, sur le recrutement et la formation de comptables, ainsi que sur l’entretien des postes de travail. En même temps, vous avez la certitude que vos finances sont gérées par une équipe dont les connaissances fiscales sont toujours à jour."
+			},
+			{
+				"q": "Peut-on changer de cabinet comptable en cours d’année?",
+				"a": "Oui, à tout moment – même si cela reste plus simple au début d’une nouvelle période fiscale. En cours d’année, il est essentiel de définir la responsabilité relative aux écritures et aux déclarations fiscales antérieures."
+			},
+			{
+				"q": "Vous n’avez pas le temps d’analyser les lois qui changent rapidement?",
+				"a": "Le cabinet comptable suit toutes les évolutions du droit fiscal et veille à leur mise en œuvre correcte, pendant que vous vous consacrez au développement de votre entreprise."
+			},
+			{
+				"q": "Avez-vous peur de faire des erreurs en gérant vous-même votre comptabilité?",
+				"a": "Les spécialistes du cabinet comptable réduisent au minimum le risque d’erreurs coûteuses. Ainsi, vos déclarations resteront toujours conformes à la législation en vigueur."
+			},
+			{
+				"q": "Vous craignez que certains documents se perdent?",
+				"a": "VAVICOM met à votre disposition une plateforme en ligne moderne où toutes les factures et documents sont archivés en un seul endroit. Vous pouvez facilement vérifier ce qui a déjà été transmis et à quel moment."
+			},
+			{
+				"q": "Avez-vous eu de mauvaises expériences avec des cabinets comptables?",
+				"a": "Nous misons sur des relations de partenariat avec nos clients, un accompagnement actif et une équipe de spécialistes stable. Nous tenons à établir une collaboration durable et basée sur la confiance."
+			},
+			{
+				"q": "Vous n’avez personne à qui soumettre vos décisions financières et comptables?",
+				"a": "VAVICOM est votre partenaire de confiance – nous vous informons régulièrement des changements législatifs et vous accompagnons dans vos décisions financières."
+			},
+			{
+				"q": "Qu’est-ce que la comptabilité hybride?",
+				"a": "C’est la combinaison d’un service traditionnel et de solutions modernes en ligne. Vous conservez un contact direct avec le spécialiste tout en profitant des avantages d’un accès Internet à vos documents et données."
+			},
+			{
+				"q": "Sous quelle forme transmettez-vous les documents au cabinet?",
+				"a": "Le plus pratique est de le faire par voie électronique – par exemple, via une application, un e-mail ou une plateforme en ligne. Si vous le préférez, vous pouvez aussi les remettre en main propre ou par coursier."
+			},
+			{
+				"q": "Vous accordez de l’importance à un service complet, professionnel et ponctuel?",
+				"a": "Chez VAVICOM, nous garantissons la confidentialité, la sécurité des données et le respect des délais pour toutes les missions confiées. Notre priorité est de vous apporter une tranquillité d’esprit pour vous concentrer sur votre activité."
+			},
+			{
+				"q": "Mes données sont-elles en sécurité et puis-je compter sur une confidentialité totale?",
+				"a": "POLITIQUE DE CONFIDENTIALITÉ – Cabinet Comptable Vavicom. Administrateur : Les données sont administrées par VAVICOM sp. z o.o., dont le siège est à Piaseczno. Coordonnées : Pour contacter l’Administrateur : par e-mail : info@vavicom.pl par téléphone : +48 606 368 694 par courrier : ul. Grochowskiego 7 lok.25, 05-500 Piaseczno L’Administrateur a désigné un Délégué à la Protection des Données, que vous pouvez contacter pour toute question concernant la protection des données personnelles et l’exercice des droits des personnes physiques : iod@vavicom.pl Objet et base légale du traitement des données personnelles Communication par e-mail et voie postale : art. 6, par.1, let.f) RGPD. La base légale du traitement est l’intérêt légitime de l’Administrateur, consistant à assurer la correspondance. Contact téléphonique : art. 6, par.1, let.f) RGPD. La base légale du traitement est l’intérêt légitime de l’Administrateur, consistant à traiter la demande liée à son activité. Recrutement : art. 6, par.1, let.c) RGPD. La base légale du traitement est l’obligation légale incombant à l’Administrateur, conformément aux dispositions du Code du Travail, ainsi que art. 6, par.1, let.a) RGPD. La base légale du traitement est le consentement pour mener à bien la procédure de recrutement dans la mesure des données non requises par la loi, et pour les futurs processus de recrutement. Prestation de services : art. 6, par.1, let.a) RGPD et art. 10, par.2 de la loi du 18 juillet 2002 relative à la prestation de services par voie électronique. La base légale du traitement est le consentement. Art. 6, par.1, let.b) RGPD. La base légale du traitement est la conclusion et l’exécution du contrat. Art. 6, par.1, let.f) RGPD. La base légale du traitement est l’intérêt légitime de l’Administrateur, consistant notamment en l’exécution du contrat et le marketing de ses propres services. Collecte de données dans le cadre des relations d’affaires : art. 6, par.1, let.a) RGPD. La base légale du traitement est le consentement. Tenue des livres comptables et de la documentation fiscale : art. 6, par.1, let.c) RGPD, en lien avec l’art. 74, par.2 de la loi du 29 septembre 1994 sur la comptabilité. La base légale du traitement est l’obligation légale incombant à l’Administrateur, conformément à la loi sur la comptabilité. Communication avec les responsables de l’exécution du contrat côté partenaire commercial : art. 6, par.1, let.f) RGPD. La base légale du traitement est l’intérêt légitime de l’Administrateur, consistant en la communication avec ses partenaires commerciaux. Destinataires des données : les entités chargées de fournir certains services, notamment les fournisseurs de services téléinformatiques, opérateurs postaux, transporteurs. Les fournisseurs de services juridiques et de conseil, ainsi que ceux qui soutiennent l’Administrateur dans le recouvrement de créances, notamment les cabinets d’avocats. Les autorités habilitées à recevoir des données personnelles en vertu de la loi. Droits de la personne concernée : Le droit d’accéder aux données personnelles, ainsi que le droit de demander leur rectification, suppression ou limitation du traitement. Le droit de s’opposer au traitement de vos données personnelles. Le droit de le retirer à tout moment, sans effet sur la légalité du traitement effectué avant ce retrait. Dans la mesure où vos données sont traitées aux fins de la conclusion et de l’exécution d’un contrat de prestation de services, ou sur la base de votre consentement, vous disposez également du droit à la portabilité de vos données. Vous avez également le droit de déposer une plainte auprès du Président de l’Office pour la Protection des Données Personnelles. Durée de conservation des données : Vos données personnelles sont conservées jusqu’à la réalisation de la mission pour laquelle elles ont été collectées, puis, s’agissant des archives, pour la durée prévue par la loi du 14 juillet 1983 sur les archives nationales. En cas de traitement de vos données personnelles pour la tenue de livres comptables et de la documentation fiscale, les données sont conservées pendant 5 ans à compter de la fin de l’année civile au cours de laquelle l’obligation fiscale est née. Si vos données personnelles sont traitées pour la prestation de services de confiance visés à l’art. 17, par.2 de la loi du 5 septembre 2016 sur les services de confiance et l’identification électronique, elles seront conservées pendant la durée exigée par la loi, à savoir 20 ans. Pour le traitement de vos données personnelles à des fins de recrutement présentes et futures, vos données seront conservées pendant 12 mois. Si vos données sont traitées en vue d’exercer ou de défendre vos droits, elles seront conservées jusqu’à l’expiration des délais de prescription prévus par la loi. En cas de consentement pour le traitement à des fins de marketing, les données sont conservées jusqu’au retrait de ce consentement."
+			}
+		],
+		"carouselDescriptions": [
+			"Annonces sur les changements les plus importants",
+			"Aperçu de la comptabilité",
+			"Déclarations de valeurs et dates de paiement",
+			"Possibilité d’émettre vos propres factures",
+			"Annonces sur les changements les plus importants"
+		],
+		"tabs": {
+			"prices": "Tarifs",
+			"about": "À propos",
+			"faq": "FAQ",
+			"career": "Carrière",
+			"clientPanelDemo": "Espace client"
+		},
+		"table": {
+			"service": "Service :",
+			"price": "Prix à partir de :"
+		},
+		"about": {
+			"p1": "Vavicom est un cabinet comptable moderne et agréé, doté de nombreuses années d’expérience, actif à Varsovie (Mokotów, Ursynów) et dans toute la Pologne. Nous accompagnons les entreprises dans la gestion financière et comptable : tenue des livres, déclarations fiscales, gestion de la paie et administration du personnel. Notre équipe de spécialistes assure chaque étape de la collaboration en utilisant des processus éprouvés et des technologies novatrices. Grâce à cela, nous offrons un accès en ligne 24h/24 et 7j/7 à la documentation comptable.",
+			"p2": "Nous soutenons aussi bien les nouveaux entrepreneurs que les entités expérimentées ayant des profils d’activité variés. Nous offrons une approche individuelle, une tarification flexible et un accompagnement complet dans les domaines du conseil financier et fiscal. En nous confiant votre comptabilité, vous bénéficiez d’une prise en charge professionnelle et d’un gain de temps pour développer votre entreprise. Contactez-nous et découvrez ce que nous pouvons faire pour vous!"
+		},
+		"panelIntro": "Chaque client du cabinet VAVICOM dispose d’un panel multifonctionnel.",
+		"career": {
+			"heading1": "Travail hybride, bureaux :",
+			"p1": "Grâce à notre développement rapide, nous recherchons de nouveaux collaborateurs :",
+			"positions": [
+				"Comptable",
+				"Spécialiste en paie et ressources humaines",
+				"Représentant commercial / Account Manager",
+				"Étudiant (stage rémunéré au service Comptabilité)"
+			],
+			"howToApply": "Comment postuler?",
+			"applyLine1": "Envoyez-nous votre CV à jour à l’adresse {contactEmail}. Merci d’inclure également une clause d’autorisation de traitement des données personnelles dans le cadre du processus de recrutement.",
+			"applyLine2": "Rejoignez-nous et développez-vous au sein d’un cabinet comptable innovant!",
+			"programHeading": "Programme de stage",
+			"programP": "Pensés pour les étudiants de fin de cursus universitaire, nos stages rémunérés offrent la possibilité de :",
+			"programList": [
+				"Se former concrètement au métier de comptable sous la supervision d’experts expérimentés.",
+				"Découvrir les spécificités de divers types d’entreprises.",
+				"Travailler dans une ambiance conviviale et se former au système Comarch ERP Optima.",
+				"Se familiariser avec les solutions modernes et le processus de gestion documentaire d’un cabinet comptable."
+			],
+			"requirementsHeading": "Postulez si vous :",
+			"requirements": [
+				"Suivez des études en comptabilité, économie, finance ou domaines similaires.",
+				"Appréciez le travail avec les chiffres et maîtrisez Microsoft Office (en particulier Excel et Word).",
+				"Possédez des compétences analytiques, privilégiez le travail d’équipe tout en sachant aussi travailler de manière autonome.",
+				"Êtes méticuleux(se), disponible 2 à 3 jours par semaine et veillez à la confidentialité des données.",
+				"Souhaitez acquérir une expérience concrète en comptabilité et en reporting financier."
+			],
+			"tasksHeading": "Vos missions :",
+			"tasks": [
+				"Comptabiliser les documents de base et utiliser le système comptable.",
+				"Assister l’équipe dans les tâches en cours (documentation comptable, reporting).",
+				"Collaborer avec les clients et partenaires externes.",
+				"Aider à la gestion du secrétariat et du système d’archivage.",
+				"Veiller à la bonne circulation des documents et au respect des échéances."
+			]
+		}
+	},
+	"OSMap": {
+		"loading": "Chargement de la carte..."
+	},
+	"AnimatedCarousel": {
+		"previousSlide": "Diapositive précédente",
+		"nextSlide": "Diapositive suivante",
+		"slideAlt": "Diapositive {number}"
+	},
+	"ContactForm": {
+		"title": "Formulaire de contact",
+		"emailLabel": "Votre e-mail",
+		"emailPlaceholder": "email@gmail.com",
+		"messageLabel": "Décrivez-nous comment nous pouvons vous aider",
+		"messagePlaceholder": "j’aimerais vous contacter...",
+		"salutation": "Bonjour,",
+		"submitButtonSending": "Envoi...",
+		"submitButton": "Envoyer",
+		"successMessage": "Le message a été envoyé! Merci!",
+		"errorMessage": "Une erreur s’est produite, le message n’a pas été envoyé. Nous nous en excusons."
+	},
+	"ModalWithImages": {
+		"imageAlt": "Bureau Vavicom"
+	},
+	"Products": {
+		"productsContent": [
+			{
+				"title": "Comptabilité",
+				"content": [
+					"Les changements complexes et rapides du droit des affaires, notamment en matière de reporting financier et fiscal, nécessitent une veille constante et une interprétation correcte de la législation.",
+					"En externalisant la tenue courante de vos livres comptables et l’établissement des rapports financiers, vous n’avez plus à vous focaliser sur l’évolution de la législation et pouvez consacrer votre énergie à la gestion quotidienne de votre activité.",
+					"",
+					"Nos services incluent :",
+					[
+						"La tenue du livre des recettes et des dépenses (KPIR).",
+						"La tenue des livres de commerce.",
+						"La création ou la mise à jour de la politique comptable, en collaboration avec le Client.",
+						"La préparation de la base de données dans un système financier et comptable.",
+						"L’enregistrement des documents reçus de votre part et de la part de vos fournisseurs.",
+						"La tenue courante des livres comptables.",
+						"Le reporting financier à la direction de l’entreprise et au groupe, selon vos exigences.",
+						"La préparation des états financiers légaux et l’assistance à la rédaction du rapport de gestion."
+					],
+					"",
+					"Notre priorité est de garantir à nos clients un service comptable toujours dans les délais et répondant aux plus hauts standards de qualité. Nous adaptons constamment nos prestations de comptabilité et de reporting aux attentes spécifiques, à la fois formelles et techniques, en tenant compte des délais légaux et de ceux requis par le client.",
+					"Nous assurons une prestation complète aux entités économiques, notamment aux micro, petites et moyennes entreprises. Notre objectif principal est de satisfaire aux obligations courantes du contribuable en matière de tenue des livres comptables et de reporting fiscal.",
+					"",
+					"Nous proposons des tarifs concurrentiels :",
+					[
+						"Enregistrement des recettes pour l’impôt forfaitaire à partir de 200 PLN.",
+						"KPIR (livre des recettes et des dépenses) à partir de 250 PLN.",
+						"Comptabilité générale (livres de commerce) à partir de 400 PLN."
+					]
+				]
+			},
+			{
+				"title": "Paie et ressources humaines",
+				"content": [
+					"Nous proposons une prise en charge complète de l’établissement des salaires conformément aux dispositions du droit du travail, des assurances sociales et de l’impôt sur le revenu des personnes physiques.",
+					"Nous veillons également à la gestion correcte, conforme au Code du travail, des dossiers personnels et de tous les documents relatifs au contrat de travail et aux congés. Nous préparons les déclarations auprès de la ZUS, du PFRON et de l’administration fiscale, et gérons la communication avec ces organismes en cas de question.",
+					"Nous couvrons également le recrutement et le départ des salariés. Nous veillons à ce que l’administration RH et la paie soient conformes aux réglementations, efficaces et simples à mettre en œuvre.",
+					"",
+					"Nos prestations dans le cadre de la paie et des ressources humaines incluent, entre autres :",
+					[
+						"Le calcul des salaires en tenant compte des primes et retenues.",
+						"Le calcul des indemnités liées à la maladie et à la maternité.",
+						"L’établissement des déclarations PIT et ZUS au nom de l’employeur.",
+						"La préparation de la documentation salariale pour l’entreprise et ses salariés.",
+						"L’assistance pour le paiement des salaires et des cotisations de sécurité sociale.",
+						"La préparation et la transmission des informations/déclarations annuelles (PIT-11, PIT-4R, PIT-40).",
+						"La création et la gestion des dossiers du personnel.",
+						"La saisie et le contrôle du nombre de jours de congés des salariés.",
+						"Le suivi de la validité des examens médicaux et des formations en santé et sécurité au travail.",
+						"La préparation des certificats de travail.",
+						"La préparation et la déclaration des fiches de paie pour les personnes employées sous contrat civil (mandat, etc.).",
+						"L’établissement des informations sur les revenus provenant d’autres sources (PIT-28, PIT-8C)."
+					],
+					"",
+					"Notre offre Nous proposons des solutions tenant compte de la structure organisationnelle de votre entreprise, de la complexité des éléments de rémunération et des rapports RH. Nous réagissons rapidement et faisons preuve de flexibilité pour répondre à vos besoins et exigences. Nous garantissons la confidentialité et la sécurité totales des données RH, ainsi que des projets de restructuration en cours. Nous vous aidons à réduire les coûts de gestion du personnel.",
+					"Notre offre s’adresse à tout employeur, quelle que soit la taille de l’entreprise. Nous soutenons également les entrepreneurs individuels (auto-entrepreneurs).",
+					"",
+					"Nous proposons des tarifs concurrentiels :",
+					[
+						"Services de paie à partir de 45 PLN",
+						"Services RH à partir de 35 PLN par salarié"
+					]
+				]
+			},
+			{
+				"title": "Déclarations comptables et fiscales",
+				"content": [
+					"Le système fiscal polonais impose généralement le paiement récurrent d’impôts.",
+					"Cela implique un calcul régulier des obligations fiscales, ainsi que la préparation de nombreuses informations et déclarations fiscales à des échéances diverses. Le Cabinet Comptable VAVICOM propose la préparation des déclarations fiscales obligatoires et un accompagnement dans vos démarches auprès de l’administration fiscale, y compris en cas de contrôle.",
+					"",
+					"Notre travail pour la préparation des déclarations d’Impôt sur les Sociétés (CIT) couvre la réalisation complète des calculs périodiques et de la déclaration annuelle CIT-8. En particulier, ces prestations incluent :",
+					[
+						"Les calculs périodiques et annuels de CIT, accompagnés d’informations détaillées.",
+						"Le calcul final et le dépôt de la déclaration CIT-8, avec les annexes nécessaires, sur la base des calculs CIT périodiques.",
+						"La détermination du montant de l’impôt dû que la Société doit verser au Trésor avant l’échéance légale."
+					],
+					"",
+					"Les déclarations de TVA comprennent l’élaboration des registres et des déclarations de TVA, notamment :",
+					[
+						"L’élaboration des registres d’achats et de ventes de TVA à partir de la documentation fournie.",
+						"La proposition de classification des opérations pouvant affecter l’assiette fiscale, c’est-à-dire les coûts déductibles.",
+						"La préparation des déclarations de TVA sur la base des registres de TVA.",
+						"L’information sur le montant de la TVA à régler.",
+						"L’établissement des déclarations de TVA-UE – récapitulatif des achats et ventes intracommunautaires, ainsi que la correction de ces déclarations si nécessaire.",
+						"La préparation des déclarations Intrastat mensuelles (si nécessaire).",
+						"L’indication du montant potentiel de remboursement de la TVA sur la déclaration, ainsi que la préparation des demandes de remboursement de TVA (si nécessaire)."
+					]
+				]
+			},
+			{
+				"title": "Services financiers",
+				"content": [
+					"La gestion financière d’une entreprise fait partie intégrante des tâches quotidiennes des propriétaires et des dirigeants.",
+					"Le Cabinet Comptable VAVICOM s’appuie sur une équipe de spécialistes disposant d’une longue expérience en gestion financière, conseil stratégique, optimisation des processus et des coûts. Dans le cadre d’une intégration, nos spécialistes conçoivent un système de reporting adapté aux besoins spécifiques de chaque Client.",
+					"Nous proposons :",
+					[
+						"Rédaction de business plans et de modèles financiers",
+						"Tenue de la comptabilité de gestion",
+						"Analyses et optimisation des coûts",
+						"Suivi et recouvrement des créances",
+						"Mise en place de systèmes de contrôle de gestion",
+						"Analyses des coûts de financement (y compris leasing)",
+						"Accompagnement dans les relations avec les banques, les organismes de financement et les assureurs"
+					],
+					"Nous réalisons des business plans et des modèles financiers permettant d’évaluer la viabilité des projets d’investissement et d’élaborer la documentation nécessaire pour obtenir des financements. Nous créons des modèles de comptabilité de gestion et des analyses financières – des systèmes de reporting conçus sur mesure pour chaque Client.",
+					"Nous analysons les résultats de l’entreprise et proposons des solutions alternatives visant à améliorer la rentabilité et l’efficacité de l’activité.",
+					"Un recouvrement réussi ne doit pas forcément se terminer par un litige judiciaire et la perte d’un client. Notre équipe propose un service de suivi et de recouvrement des créances dès le début. Si aucune solution n’est trouvée, nous réalisons une procédure de recouvrement judiciaire et d’exécution complète."
+				]
+			},
+			{
+				"title": "Services commerciaux",
+				"content": [
+					"Tout chef d’entreprise a besoin d’une expertise face à l’évolution rapide de la législation et de la nécessité d’y réagir de façon adéquate.",
+					"",
+					"Notre équipe de consultants accompagne nos clients sur :",
+					[
+						"L’accès aux dispositifs anti-crise et aux subventions",
+						"La modification des contrats des salariés",
+						"Le maintien et l’amélioration de la liquidité financière",
+						"L’élaboration et la mise en œuvre de plans de crise",
+						"La renégociation des contrats avec les fournisseurs et partenaires",
+						"La restructuration",
+						"La digitalisation et l’automatisation des entreprises"
+					],
+					"La mise en place de solutions opérationnelles et fiscales constitue un facteur clé pour assurer la continuité en période de crise et accroître l’avantage concurrentiel par la suite.",
+					"Nous élaborons des solutions pour préserver la liquidité financière des entreprises, notamment en ce qui concerne les obligations fiscales, le recouvrement des créances et l’évaluation de la solvabilité des clients.",
+					"Nous pouvons analyser le contenu des contrats que vous avez conclus avec vos partenaires et identifier les possibilités de renégocier les tarifs. En raison des circonstances sanitaires, il est possible de modifier ou renégocier ces contrats, notamment sur les conditions de rémunération et de paiement, voire d’y renoncer.",
+					"Lorsqu’une restructuration de l’entreprise est la seule solution pour éviter la perte de liquidités, nous pouvons établir un plan visant à réduire, reporter ou échelonner les dettes fiscales et commerciales.",
+					"La digitalisation consiste à déployer des solutions technologiques et informatiques à la pointe, garantissant une qualité optimale de service aux partenaires, tout en tirant le meilleur parti de vos ressources. Souvent associée à une refonte du plan d’affaires et du mode de fonctionnement, elle améliore la communication interne et externe et accélère l’accès à l’information, permettant un contrôle plus précis et plus efficace des processus."
+				]
+			},
+			{
+				"title": "Autres services",
+				"content": [
+					"La digitalisation consiste à déployer des solutions technologiques et informatiques de pointe, qui garantissent le plus haut niveau de qualité de service aux partenaires, tout en optimisant les ressources disponibles. Souvent, cela implique de remodeler le plan d’affaires et la façon de travailler, ce qui améliore la communication interne et externe et accélère l’accès à l’information, permettant un contrôle plus précis et plus efficace des processus.",
+					"Besoin de changer la direction ou de nouveaux associés? Vous voulez modifier l’exercice comptable, réduire le capital social ou au contraire injecter des fonds dans votre société? Vous n’avez pas besoin de chercher d’autres cabinets spécialisés.",
+					"",
+					"Nous proposons les prestations suivantes :",
+					[
+						"Enregistrement d’activité commerciale",
+						"Création de sociétés",
+						"Suspension d’activité ou liquidation d’une SARL (sp. z o.o.)",
+						"Modifications d’enregistrement telles que changement de propriétaires, de membres de la direction, de siège social, d’objet social (PKD), etc.",
+						"Restructuration de la propriété et changement de forme juridique",
+						"Fusions et acquisitions",
+						"Assistance juridique – préparation de documents légaux, de résolutions, de contrats"
+					],
+					"",
+					"Nous offrons un service complet de création de sociétés par actions. Notre service inclut la rédaction des statuts de la société afin qu’ils soient adaptés aux besoins, à la taille et à la nature de votre entreprise, tout en préservant au maximum vos intérêts et votre sécurité.",
+					"Pendant ce processus, nous préparons, déposons et suivons les dossiers auprès du tribunal et de l’administration fiscale ainsi que de l’office statistique. Nous assurons un soutien pour toute modification concernant la société, telle que le changement de membres du conseil d’administration, ou la modification des statuts.",
+					"Nous vous aidons à remplir les formalités liées à la clôture de l’exercice social, notamment l’approbation des états financiers par l’assemblée des associés ou des actionnaires, le dépôt de ceux-ci auprès de l’administration fiscale et le dépôt au greffe du tribunal."
+				]
+			}
+		]
+	},
+	"LinkPreview": {
+		"hiddenImageAlt": "image cachée",
+		"previewImageAlt": "aperçu de l’image"
+	},
+	"AuroraBackground": {
+		"clientPanel": "Espace client"
+	},
+	"LanguageSwitcher": {
+		"button": "Choisissez la langue",
+		"menuLabel": "Langues disponibles"
+	}
+}

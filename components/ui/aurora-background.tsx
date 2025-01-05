@@ -1,4 +1,5 @@
 'use client'
+import {LanguageSwitcher} from '@/components/language-switcher'
 import {LinkPreview} from '@/components/ui/link-preview'
 import {cn} from '@/lib/utils'
 import {useTranslations} from 'next-intl'
@@ -60,7 +61,7 @@ export const AuroraBackground = ({
 						{t('clientPanel')}
 					</LinkPreview>
 				</div>
-				<div className='absolute top-4 right-4 z-10'>
+				<div className='absolute top-4 left-1/2 transform -translate-x-1/2 z-10'>
 					<LinkPreview
 						className='text-black'
 						url='https://www.facebook.com/VAVICOM/'
@@ -82,6 +83,10 @@ export const AuroraBackground = ({
 					>
 						<FaLinkedin className='inline mr-2' size={28} />
 					</LinkPreview>
+				</div>
+
+				<div className='absolute top-4 right-4 z-10'>
+					<LanguageSwitcher />
 				</div>
 
 				{children}
