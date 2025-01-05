@@ -66,13 +66,14 @@ export default function Home() {
 				<>
 					<Image
 						className='invert mt-32 sm:mt-0'
-						src='/vavicom-logo-1_white.avif'
+						src='/logo.avif'
 						alt='Vavicom logo'
 						width={180}
 						height={38}
 						priority
 					/>
-					<div className='text-center font-extralight text-base dark:text-neutral-200 py-4'>
+					<p className='text-xl sm:text-2xl md:text-3xl'>Vavicom</p>
+					<div className='text-center font-extralight text-base dark:text-neutral-200 pb-4'>
 						<div className='text-lg sm:text-2xl md:text-2xl'>
 							{t('kompleksowaObsluga')}
 						</div>
@@ -102,11 +103,14 @@ export default function Home() {
 				<div>
 					<Image
 						className='mx-auto mb-4'
-						src='/vavicom-logo-1_white.avif'
+						src='/logo.avif'
 						alt='Vavicom logo'
 						width={180}
 						height={38}
 					/>
+					<p className='text-xl sm:text-2xl md:text-3xl text-center pb-2'>
+						Vavicom
+					</p>
 					<ContactInfo />
 					{locations.map(({address, url, city}) => (
 						<div key={address} className='flex items-center gap-1.5'>
