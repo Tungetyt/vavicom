@@ -24,7 +24,7 @@ export default function OSMap() {
 
 		if (container.current) observer.observe(container.current)
 
-		return observer.disconnect
+		return () => observer.disconnect()
 	}, [])
 
 	const OSM = shouldLoadMap
