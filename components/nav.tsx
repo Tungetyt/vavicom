@@ -75,7 +75,7 @@ export default function Nav() {
 						<TableBody>
 							{services.map(({service, price}) => (
 								<TableRow key={service}>
-									<TableCell className='font-medium'>{service}</TableCell>
+									<TableCell className='font-medium w-64'>{service}</TableCell>
 									<TableCell className='text-right'>{price}</TableCell>
 								</TableRow>
 							))}
